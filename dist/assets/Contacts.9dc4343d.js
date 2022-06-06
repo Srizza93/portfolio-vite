@@ -1,1 +1,0 @@
-import{_ as t,o as c,c as o}from"./index.7cefde37.js";const s={name:"Contacts"},a={class:"contacts"};function e(n,r,_,p,d,f){return c(),o("div",a,"Contacts")}var l=t(s,[["render",e]]);export{l as default};
