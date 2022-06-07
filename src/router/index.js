@@ -28,7 +28,7 @@ const routes = routeOptions.map((route) => {
 });
 
 const router = createRouter({
-  history: createWebHistory("/portfolio/"),
+  history: createWebHistory("/portfolio-vite/"),
   base: "/",
   routes,
 });
