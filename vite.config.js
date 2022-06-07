@@ -6,3 +6,6 @@ export default defineConfig({
   base: "/portfolio-vite/",
   plugins: [vue()],
 });
+
+// GH PAGES
+// git subtree push --prefix dist origin gh-pages
