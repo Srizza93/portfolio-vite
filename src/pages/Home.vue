@@ -15,7 +15,7 @@
       </div>
       <img class="content_img" alt="pencil" src="../assets/pencil.jpg" />
     </div>
-    <router-link class="home_button" to="/portfolio"
+    <router-link class="open-button" to="/portfolio"
       >Check out my projects</router-link
     >
   </div>
@@ -31,7 +31,6 @@ export default {
 .home
  display flex
  flex-direction column
- max-width 750px
  text-align left
 
 .content
@@ -49,6 +48,7 @@ export default {
  color #0f52ba
 
 .content_img
+ max-width 315px
  border-radius 50%
  object-fit cover
 
@@ -63,32 +63,10 @@ export default {
  color #000033
  font-size 20px
 
-.home_button
- width 100%
- max-width 250px
- padding 15px 30px
- border-radius 15px
- background-color #3498db
- color white
- text-align center
- text-decoration none
- white-space nowrap
- font-weight bold
- animation blink 1s linear infinite
-
-@keyframes blink
- 0% {
-   outline none
- }
- 50% {
-   outline 3px solid #3498db
- }
- 100% {
-   outline-offset 5px
-   outline transparent
- }
-
 @media screen and (max-width 750px)
+ .home
+  align-items center
+
  .content
   flex-direction column
   align-items center

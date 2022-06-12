@@ -91,6 +91,7 @@ export default {
  background-color white
  transition-duration 2s
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ z-index 9999
 
 .links-open
  right 0
