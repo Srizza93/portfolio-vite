@@ -15,7 +15,8 @@
         class="project_subcontainer_button open-button"
         @click="openDetails(project)"
       >
-        Show details
+        <span v-if="!project.toggle">Show details</span>
+        <span v-else>Close details</span>
       </button>
       <div
         class="project_subcontainer_details"
@@ -109,13 +110,13 @@ export default {
 
 .project_subcontainer_details
  max-height 0
+ padding 0 30px
  overflow hidden
  transition 1s ease-in
  text-align left
 
 .open-details
  max-height 800px
- padding 30px
 
 .project_subcontainer_details_title
  font-weight bold
