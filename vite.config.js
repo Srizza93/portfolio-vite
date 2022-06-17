@@ -8,4 +8,6 @@ export default defineConfig({
 });
 
 // GH PAGES
+// git add dist -f
+// git commit -m "adding dist"
 // git subtree push --prefix dist origin gh-pages

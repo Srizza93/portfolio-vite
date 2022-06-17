@@ -208,4 +208,8 @@ export default {
 
 .project:first-child
  margin-top 100px
+
+@media screen and (max-width 400px)
+ .project
+  padding-right 10px
 </style>

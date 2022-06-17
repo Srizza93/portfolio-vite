@@ -6,11 +6,13 @@
       </div>
     </div>
     <div class="project_subcontainer">
-      <img
-        class="project_subcontainer_image"
-        :src="getImageUrl(project.image)"
-        :alt="project.name"
-      />
+      <a class="project_subcontainer_link" :href="project.link">
+        <img
+          class="project_subcontainer_link_image"
+          :src="getImageUrl(project.image)"
+          :alt="project.name"
+        />
+      </a>
       <button
         class="project_subcontainer_button open-button"
         @click="openDetails(project)"
@@ -101,7 +103,14 @@ export default {
  border 1px solid #dedede
  border-radius 15px
 
-.project_subcontainer_image
+.project_subcontainer_link
+ transition-duration 1s
+.project_subcontainer_link:hover
+ opacity .7
+
+.project_subcontainer_link_image
+ width 100%
+ max-width 500px
  border-radius 15px 15px 0 0
 
 .project_subcontainer_button
