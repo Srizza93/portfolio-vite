@@ -1,6 +1,6 @@
 <template>
   <div class="resume">
-    <span class="header">Download my cv in your preferred language</span>
+    <span class="header">{{ $t("resume.header") }}</span>
     <div class="cvs">
       <a
         class="cvs_cv"
@@ -12,7 +12,7 @@
       >
         <img class="cvs_cv_flag" :src="getImageUrl(cv.img)" :alt="cv.alt" />
         <div class="cvs_cv_download">
-          <span>Download</span>
+          <span>{{ $t("resume.download") }}</span>
         </div>
       </a>
     </div>

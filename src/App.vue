@@ -2,11 +2,73 @@
   <div class="app-sub">
     <navigation-bar />
     <router-view class="router-view"></router-view>
+    <img
+      class="act-lang flag"
+      :src="getImageUrl(actLang.img)"
+      alt="flag"
+      @click="toggleLangs"
+    />
+    <div class="langs" v-bind:class="{ 'langs-open': langsOpen }">
+      <img
+        class="langs_flag flag"
+        v-for="lang in langs"
+        :key="'lang-' + lang.key"
+        :src="getImageUrl(lang.img)"
+        alt="flag"
+        @click="selectLang(lang)"
+      />
+    </div>
   </div>
 </template>
 
-<script setup>
+<script>
 import NavigationBar from "./components/NavigationBar.vue";
+
+export default {
+  name: "App",
+  components: { NavigationBar },
+  data() {
+    return {
+      langsOpen: false,
+      actLang: {
+        id: 1,
+        name: "eng",
+        img: "uk-flag.png",
+      },
+      langs: [
+        {
+          id: 1,
+          name: "eng",
+          img: "uk-flag.png",
+        },
+        {
+          id: 2,
+          name: "fr",
+          img: "fr-flag.png",
+        },
+        {
+          id: 3,
+          name: "ita",
+          img: "ita-flag.png",
+        },
+      ],
+    };
+  },
+  methods: {
+    getImageUrl(pic) {
+      return new URL(`./assets/${pic}`, import.meta.url).href;
+    },
+    toggleLangs() {
+      console.log(this.langsOpen);
+      this.langsOpen = !this.langsOpen;
+    },
+    selectLang(lang) {
+      this.$i18n.locale = lang.name;
+      this.actLang = lang;
+      this.toggleLangs();
+    },
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -23,6 +85,45 @@ import NavigationBar from "./components/NavigationBar.vue";
  width 100%
  max-width 750px
  padding 100px 60px
+
+.act-lang
+ position fixed
+ bottom 0
+ right 0
+
+.act-lang:hover
+ opacity .7
+
+.langs
+ position fixed
+ display none
+ flex-direction row
+ flex-wrap wrap
+ align-items center
+ justify-content center
+ top 50%
+ left calc(50% - 150px)
+ width 300px
+ height 130px
+ padding 30px
+ border-radius 15px
+ background-color #3498db
+ z-index 99999
+
+.langs-open
+ display flex
+
+.flag
+ width 50px
+ height auto
+ cursor pointer
+
+.langs_flag
+ margin 0 10px
+ transition-duration 1s
+
+.langs_flag:hover
+ margin-bottom 15px
 
 @media screen and (max-width 500px)
   .router-view

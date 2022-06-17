@@ -17,8 +17,8 @@
         class="project_subcontainer_button open-button"
         @click="openDetails(project)"
       >
-        <span v-if="!project.toggle">Show details</span>
-        <span v-else>Close details</span>
+        <span v-if="!project.toggle">{{ $t("portfolio.showDetails") }}</span>
+        <span v-else>{{ $t("portfolio.closeDetails") }}</span>
       </button>
       <div
         class="project_subcontainer_details"

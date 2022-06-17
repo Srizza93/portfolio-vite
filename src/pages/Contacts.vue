@@ -1,11 +1,11 @@
 <template>
   <div class="contacts">
     <div class="headers">
-      <span class="headers_header">I am open to work!</span>
-      <span class="headers_header">Feel free to contact me.</span>
+      <span class="headers_header">{{ $t("contacts.header1") }}</span>
+      <span class="headers_header">{{ $t("contacts.header2") }}</span>
     </div>
     <div class="contact-details">
-      <span class="contact-details_title">Contacts</span>
+      <span class="contact-details_title">{{ $t("navigation.contacts") }}</span>
       <ul class="contact-details_list">
         <li
           class="contact-details_list_item"
@@ -110,7 +110,7 @@ export default {
   }
 }
 
-@media screen and (max-width 300px)
+@media screen and (max-width 500px)
  .headers_header
   font-size 35px
  .contact-details_title

@@ -30,27 +30,27 @@ import Hamburger from "./Hamburger.vue";
 export default {
   name: "NavigationBar",
   components: { Hamburger },
-  data() {
+  data: function () {
     return {
       pages: [
         {
           id: 1,
-          name: "Home",
+          name: this.$t("navigation.home"),
           path: "./",
         },
         {
           id: 2,
-          name: "Portfolio",
+          name: this.$t("navigation.portfolio"),
           path: "./portfolio",
         },
         {
           id: 3,
-          name: "Contacts",
+          name: this.$t("navigation.contacts"),
           path: "./contacts",
         },
         {
           id: 4,
-          name: "Resume",
+          name: this.$t("navigation.resume"),
           path: "./resume",
         },
       ],

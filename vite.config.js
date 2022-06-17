@@ -1,10 +1,18 @@
+import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import vueI18n from "@intlify/vite-plugin-vue-i18n";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: "/portfolio-vite/",
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    vueI18n({
+      locale: "eng",
+      globalInjection: true,
+      include: path.resolve(__dirname, "./src/locales/**"),
+    }),
+  ],
 });
 
 // GH PAGES

@@ -2,22 +2,17 @@
   <div class="home">
     <div class="content">
       <div class="content_text">
-        <span class="home_first-line">Hi, my name is</span>
+        <span class="home_first-line">{{ $t("home.greatings") }}</span>
         <span class="home_name">Simone Rizza</span>
         <p class="home_parag">
-          Since my childhood I've been passionate about software development and
-          IT, I fell in love with these disciplines which I would like to orient
-          myself professionally. My constant desire for growth, with the skills
-          acquired during my experiences in multiple European countries, and my
-          tenacity, make me a person today experienced and determined to achieve
-          his goals.
+          {{ $t("home.pitch") }}
         </p>
       </div>
       <img class="content_img" alt="pencil" src="../assets/pencil.jpg" />
     </div>
-    <router-link class="open-button" to="/portfolio"
-      >Check out my projects</router-link
-    >
+    <router-link class="open-button" to="/portfolio">{{
+      $t("home.button")
+    }}</router-link>
   </div>
 </template>
 
