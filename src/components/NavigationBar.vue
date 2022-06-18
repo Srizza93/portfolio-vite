@@ -13,7 +13,7 @@
         <div class="sides-container">
           <span class="top-border link-border"></span>
           <router-link class="navigation_links_link_text" :to="page.path">{{
-            page.name
+            $t(`navigation.${page.name}`)
           }}</router-link>
           <span class="bottom-border link-border"></span>
         </div>
@@ -35,22 +35,22 @@ export default {
       pages: [
         {
           id: 1,
-          name: this.$t("navigation.home"),
+          name: "home",
           path: "./",
         },
         {
           id: 2,
-          name: this.$t("navigation.portfolio"),
+          name: "portfolio",
           path: "./portfolio",
         },
         {
           id: 3,
-          name: this.$t("navigation.contacts"),
+          name: "contacts",
           path: "./contacts",
         },
         {
           id: 4,
-          name: this.$t("navigation.resume"),
+          name: "resume",
           path: "./resume",
         },
       ],

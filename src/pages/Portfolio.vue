@@ -24,7 +24,7 @@ export default {
         {
           id: 1,
           name: "E-commerce 2",
-          date: "May 2022",
+          date: ["4", "2022"],
           image: "e-commerce-2.png",
           link: "https://srizza93.github.io/sales/",
           description:
@@ -45,7 +45,7 @@ export default {
         {
           id: 2,
           name: "Advent Challenges",
-          date: "Feb 2022",
+          date: ["1", "2022"],
           image: "advent.png",
           link: "https://srizza93.github.io/advent-challenges/deploy/index.html#/",
           description: "Collection of 24 Coding Challenges - Responsive",
@@ -55,7 +55,7 @@ export default {
         {
           id: 3,
           name: "Social Network",
-          date: "Nov 2021",
+          date: ["10", "2021"],
           image: "social.png",
           link: "https://srizza93.github.io/social/deploy/index.html",
           description:
@@ -84,7 +84,7 @@ export default {
         {
           id: 4,
           name: "Movie Streaming",
-          date: "Sep 2021",
+          date: ["8", "2021"],
           image: "streaming.png",
           link: "https://srizza93.github.io/streaming/deploy/index.html",
           description: "Movie Streaming website - Purely Frontend - Responsive",
@@ -112,7 +112,7 @@ export default {
         {
           id: 5,
           name: "E-commerce",
-          date: "Jul 2021",
+          date: ["6", "2021"],
           image: "e-commerce.png",
           link: "https://srizza93.github.io/e-commerce/deploy/index.html",
           description: "E-commerce website - Purely Frontend - Responsive",
@@ -143,7 +143,7 @@ export default {
         {
           id: 6,
           name: "HTML Email layout",
-          date: "Jul 2021",
+          date: ["6", "2021"],
           image: "email-layout.png",
           link: "https://srizza93.github.io/cv-email-html/",
           description: "Personal CV in HTML-email format - Responsive",
@@ -153,7 +153,7 @@ export default {
         {
           id: 7,
           name: "Tooltip plugin",
-          date: "Jun 2021",
+          date: ["5", "2021"],
           image: "tooltip.png",
           link: "https://srizza93.github.io/tooltip/",
           description:
@@ -173,6 +173,7 @@ export default {
           id: 8,
           name: "Square task",
           date: "Feb 2021",
+          date: ["1", "2021"],
           image: "square-task.png",
           link: "https://srizza93.github.io/square_task/",
           description: "Square following mouse",

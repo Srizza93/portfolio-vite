@@ -15,7 +15,7 @@
         :key="'lang-' + lang.key"
         :src="getImageUrl(lang.img)"
         alt="flag"
-        @click="selectLang(lang)"
+        @click="selectLang($event, lang.name)"
       />
     </div>
   </div>
@@ -32,13 +32,13 @@ export default {
       langsOpen: false,
       actLang: {
         id: 1,
-        name: "eng",
+        name: "en",
         img: "uk-flag.png",
       },
       langs: [
         {
           id: 1,
-          name: "eng",
+          name: "en",
           img: "uk-flag.png",
         },
         {
@@ -59,14 +59,24 @@ export default {
       return new URL(`./assets/${pic}`, import.meta.url).href;
     },
     toggleLangs() {
-      console.log(this.langsOpen);
       this.langsOpen = !this.langsOpen;
     },
-    selectLang(lang) {
-      this.$i18n.locale = lang.name;
-      this.actLang = lang;
-      this.toggleLangs();
+    selectLang(event, lang) {
+      this.$i18n.locale = lang;
+      this.actLang = this.langs.find((option) => option.name === lang);
+      if (event) {
+        this.toggleLangs();
+      }
     },
+  },
+  mounted() {
+    const lang = navigator.language.substring(
+      0,
+      navigator.language.includes("-")
+        ? navigator.language.indexOf("-")
+        : navigator.language.length
+    );
+    this.selectLang(null, lang);
   },
 };
 </script>

@@ -1,5 +1,5 @@
 const messages = {
-  eng: {
+  en: {
     navigation: {
       home: "Home",
       portfolio: "Portfolio",
@@ -15,6 +15,20 @@ const messages = {
     portfolio: {
       showDetails: "Show details",
       closeDetails: "Close details",
+      months: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
     },
     contacts: {
       header1: "I am open to work!",
@@ -36,18 +50,32 @@ const messages = {
       greatings: "Bonjour, mon prénom est",
       pitch:
         "Toujours passionné par le développement de logiciels et l’informatique, je suis tombé amoureux de ces disciplines vers lesquelles je souhaiterais m’orienter professionnellement. Mon constant désir de croissance, avec les compétences acquises au cours de mes expériences dans plusieurs pays européens, font de moi aujourd’hui une personne expérimenté et déterminé pour atteindre les objectifs.",
-      button: "Regarde mes projets",
+      button: "Découvre mes projets",
     },
     portfolio: {
       showDetails: "Afficher les détails",
       closeDetails: "Cacher les détails",
+      months: [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai",
+        "Jui",
+        "Jul",
+        "Aou",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Déc",
+      ],
     },
     contacts: {
       header1: "Je suis ouvert à toute opportunité d'emploi!",
       header2: "N'hésite pas à me contacter.",
     },
     resume: {
-      header: "Télécharger mon CV dans la langue de votre choix",
+      header: "Télécharge mon CV dans la langue de ton choix",
       download: "Télécharger",
     },
   },
@@ -62,11 +90,25 @@ const messages = {
       greatings: "Ciao, il mio nome é",
       pitch:
         "Sono sempre stato appassionato della tecnologia e l'informatica, sin da bambino. Mi sono innamorato di queste discipline, le quali desidero orientarmi professionalmente. Il mio costante desiderio di crescita, insieme alle competenze acquisite nel corso delle mie esperienze in vari paesi europei, fanno di me oggi una persona qualificata e determinata nel raggiungere gli obiettivi.",
-      button: "Guarda i miei progetti",
+      button: "Scopri i miei progetti",
     },
     portfolio: {
-      showDetails: "Visualizza i dettagli",
+      showDetails: "Scopri i dettagli",
       closeDetails: "Chiudi i dettagli",
+      months: [
+        "Gen",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Mag",
+        "Giu",
+        "Lug",
+        "Ago",
+        "Set",
+        "Ott",
+        "Nov",
+        "Dic",
+      ],
     },
     contacts: {
       header1: "Sono alla ricerca attiva di un lavoro!",

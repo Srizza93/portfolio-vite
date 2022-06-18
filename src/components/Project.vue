@@ -2,7 +2,10 @@
   <div>
     <div class="time-circle">
       <div class="time-circle_sub">
-        <span class="time-circle_sub_date">{{ project.date }}</span>
+        <span class="time-circle_sub_date"
+          >{{ $t(`portfolio.months[${project.date[0]}]`) }}
+          {{ project.date[1] }}</span
+        >
       </div>
     </div>
     <div class="project_subcontainer">

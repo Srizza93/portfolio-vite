@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueI18n({
-      locale: "eng",
+      locale: "en",
       globalInjection: true,
       include: path.resolve(__dirname, "./src/locales/**"),
     }),
