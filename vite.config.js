@@ -5,8 +5,10 @@ import vueI18n from "@intlify/vite-plugin-vue-i18n";
 
 export default defineConfig({
   base: "/portfolio-vite/",
-  alias: {
-    "vue-i18n": "vue-i18n/dist/vue-i18n.runtime.esm-bundler.js",
+  resolve: {
+    alias: {
+      "vue-i18n": "vue-i18n/dist/vue-i18n.runtime.esm-bundler.js",
+    },
   },
   plugins: [
     vue(),

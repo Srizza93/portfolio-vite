@@ -16,7 +16,7 @@
         :key="link.id + link.name + '-humburger'"
         :to="link.path"
         @click="toggleMenu"
-        >{{ link.name }}</router-link
+        >{{ $t(`navigation.${link.name}`) }}</router-link
       >
     </div>
   </div>
