@@ -27,8 +27,7 @@ export default {
           date: ["4", "2022"],
           image: "e-commerce-2.png",
           link: "https://srizza93.github.io/sales/",
-          description:
-            "E-commerce website - Complete Mocked Customer Experience - Responsive",
+          description: "ecommerce2Descr",
           functionalities: [
             "Products filtering and sort system",
             "Product details page",
@@ -48,7 +47,7 @@ export default {
           date: ["1", "2022"],
           image: "advent.png",
           link: "https://srizza93.github.io/advent-challenges/deploy/index.html#/",
-          description: "Collection of 24 Coding Challenges - Responsive",
+          description: "adventDescr",
           techs: ["HTML", "CSS", "JS", "Vue", "Vue-router"],
           toggle: false,
         },
@@ -58,8 +57,7 @@ export default {
           date: ["10", "2021"],
           image: "social.png",
           link: "https://srizza93.github.io/social/deploy/index.html",
-          description:
-            "Social Network - Purely Frontend - Responsive - Mocked functions",
+          description: "socialDescr",
           functionalities: [
             "API data rendering",
             "Navigation bar filtering",
@@ -87,7 +85,7 @@ export default {
           date: ["8", "2021"],
           image: "streaming.png",
           link: "https://srizza93.github.io/streaming/deploy/index.html",
-          description: "Movie Streaming website - Purely Frontend - Responsive",
+          description: "moviesDescr",
           functionalities: [
             "API data rendering",
             "Search bar filtering",
@@ -115,7 +113,7 @@ export default {
           date: ["6", "2021"],
           image: "e-commerce.png",
           link: "https://srizza93.github.io/e-commerce/deploy/index.html",
-          description: "E-commerce website - Purely Frontend - Responsive",
+          description: "ecommerceDescr",
           functionalities: [
             "Navigation bar filtering",
             "Gallery playing",
@@ -146,7 +144,7 @@ export default {
           date: ["6", "2021"],
           image: "email-layout.png",
           link: "https://srizza93.github.io/cv-email-html/",
-          description: "Personal CV in HTML-email format - Responsive",
+          description: "htmlLayoutDescr",
           techs: ["HTML"],
           toggle: false,
         },
@@ -156,8 +154,7 @@ export default {
           date: ["5", "2021"],
           image: "tooltip.png",
           link: "https://srizza93.github.io/tooltip/",
-          description:
-            "A tool tip plugin with specific conditions and optional tasks - Responsive",
+          description: "tooltipDescr",
           functionalities: [
             "Custom content re-usability",
             "Unlimited size",
@@ -176,7 +173,7 @@ export default {
           date: ["1", "2021"],
           image: "square-task.png",
           link: "https://srizza93.github.io/square_task/",
-          description: "Square following mouse",
+          description: "squareDescr",
           functionalities: [
             "Square catching mouse",
             "Square increase its size when it comes closer",

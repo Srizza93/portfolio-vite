@@ -26,7 +26,17 @@
       "Oct",
       "Nov",
       "Déc"
-    ]
+    ],
+    "functionalities": "Fonctionnalités",
+    "ecommerce2Descr": "Site de e-commerce - Expérience client complètement moquée - Responsive Design",
+    "adventDescr": "Collection de 24 défis de codage - Responsive Design",
+    "socialDescr": "Social Network - Expérience client partiellement moquée - Responsive Design",
+    "moviesDescr": "Site de Film en Streaming - Responsive Design",
+    "ecommerceDescr": "Site de e-commerce - Responsive Design",
+    "htmlLayoutDescr": "CV personnel en format HTML-email - Responsive Design",
+    "tooltipDescr": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design",
+    "squareDescr": "Carré qu'il suit la souris avec caractéristiques supplémentaires",
+    "technologies": "Technologies"
   },
   "contacts": {
     "header1": "Je suis ouvert à toute opportunité d'emploi!",

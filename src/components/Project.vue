@@ -30,24 +30,26 @@
         <span class="project_subcontainer_details_title">{{
           project.name
         }}</span>
-        <p>{{ project.description }}</p>
+        <p>{{ $t(`portfolio.${project.description}`) }}</p>
         <span
           class="project_subcontainer_details_title"
           v-if="project.functionalities"
-          >Functionalities</span
+          >{{ $t("portfolio.functionalities") }}</span
         >
         <ul
           class="project_subcontainer_details_list"
           v-if="project.functionalities"
         >
           <li
-            v-for="(functionality, index) in project.functionalities"
-            :key="functionality + index"
+            v-for="(func, index) in project.functionalities"
+            :key="func + index"
           >
-            {{ functionality }}
+            {{ func }}
           </li>
         </ul>
-        <span class="project_subcontainer_details_title">Technologies</span>
+        <span class="project_subcontainer_details_title">{{
+          $t("portfolio.technologies")
+        }}</span>
         <ul class="project_subcontainer_details_list">
           <li v-for="(tech, index) in project.techs" :key="tech + index">
             {{ tech }}

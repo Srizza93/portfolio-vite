@@ -4,13 +4,13 @@
     <div class="cvs">
       <a
         class="cvs_cv"
-        :href="cv.path"
+        :href="getUrl(cv.path)"
         :download="cv.name"
         v-for="cv in cvs"
         :key="cv.id"
         :style="'background-color: ' + cv.col"
       >
-        <img class="cvs_cv_flag" :src="getImageUrl(cv.img)" :alt="cv.alt" />
+        <img class="cvs_cv_flag" :src="getUrl(cv.img)" :alt="cv.alt" />
         <div class="cvs_cv_download">
           <span>{{ $t("resume.download") }}</span>
         </div>
@@ -30,7 +30,7 @@ export default {
           name: "cv-fr",
           alt: "french-flag",
           img: "fr-flag.jpg",
-          path: "https://srizza93.github.io/portfolio-vite/src/assets/cv-fr.pdf",
+          path: "cv-fr.pdf",
           col: "#002654",
         },
         {
@@ -38,7 +38,7 @@ export default {
           name: "cv-eng",
           alt: "uk-flag",
           img: "uk-flag.jpg",
-          path: "https://srizza93.github.io/portfolio-vite/src/assets/cv-eng.pdf",
+          path: "cv-eng.pdf",
           col: "#C8102E",
         },
         {
@@ -46,15 +46,15 @@ export default {
           name: "cv-ita",
           alt: "ita-flag",
           img: "ita-flag.jpg",
-          path: "https://srizza93.github.io/portfolio-vite/src/assets/cv-ita.pdf",
+          path: "cv-ita.pdf",
           col: "#008C45",
         },
       ],
     };
   },
   methods: {
-    getImageUrl(pic) {
-      return new URL(`../assets/${pic}`, import.meta.url).href;
+    getUrl(obj) {
+      return new URL(`../assets/${obj}`, import.meta.url).href;
     },
   },
 };

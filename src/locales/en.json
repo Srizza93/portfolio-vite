@@ -26,7 +26,17 @@
       "Oct",
       "Nov",
       "Dec"
-    ]
+    ],
+    "functionalities": "Functionalities",
+    "ecommerce2Descr": "E-commerce website - Completely Mocked Customer Experience - Responsive Design",
+    "adventDescr": "Collection of 24 Coding Challenges - Responsive Design",
+    "socialDescr": "Social Network - Purely Frontend - Partially Mocked Customer Experience - Responsive Design",
+    "moviesDescr": "Movie Streaming website - Purely Frontend - Responsive Design",
+    "ecommerceDescr": "E-commerce website - Purely Frontend - Responsive Design",
+    "htmlLayoutDescr": "Personal CV in HTML-email format - Responsive Design",
+    "tooltipDescr": "A tool tip plugin with specific conditions and optional tasks - Responsive Design",
+    "squareDescr": "Square following mouse with extra features",
+    "technologies": "Technologies"
   },
   "contacts": {
     "header1": "I am open to work!",
