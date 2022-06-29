@@ -23,6 +23,16 @@ export default {
       projects: [
         {
           id: 1,
+          name: "New Portfolio",
+          date: ["6", "2022"],
+          image: "portfolio2.png",
+          link: "https://srizza93.github.io/portfolio-vite/",
+          description: "portfolio2Descr",
+          techs: ["HTML", "CSS", "JS", "Vue", "Vue-router", "Vite", "i18n"],
+          toggle: false,
+        },
+        {
+          id: 2,
           name: "E-commerce 2",
           date: ["4", "2022"],
           image: "e-commerce-2.png",
@@ -42,7 +52,7 @@ export default {
           toggle: false,
         },
         {
-          id: 2,
+          id: 3,
           name: "Advent Challenges",
           date: ["1", "2022"],
           image: "advent.png",
@@ -52,7 +62,7 @@ export default {
           toggle: false,
         },
         {
-          id: 3,
+          id: 4,
           name: "Social Network",
           date: ["10", "2021"],
           image: "social.png",
@@ -80,7 +90,17 @@ export default {
           toggle: false,
         },
         {
-          id: 4,
+          id: 5,
+          name: "Portfolio",
+          date: ["10", "2021"],
+          image: "portfolio.png",
+          link: "https://srizza93.github.io/portfolio/deploy/index.html",
+          description: "portfolioDescr",
+          techs: ["Webpack", "HTML", "CSS", "JS", "Vue"],
+          toggle: false,
+        },
+        {
+          id: 6,
           name: "Movie Streaming",
           date: ["8", "2021"],
           image: "streaming.png",
@@ -108,7 +128,7 @@ export default {
           toggle: false,
         },
         {
-          id: 5,
+          id: 7,
           name: "E-commerce",
           date: ["6", "2021"],
           image: "e-commerce.png",
@@ -139,7 +159,7 @@ export default {
           toggle: false,
         },
         {
-          id: 6,
+          id: 8,
           name: "HTML Email layout",
           date: ["6", "2021"],
           image: "email-layout.png",
@@ -149,7 +169,7 @@ export default {
           toggle: false,
         },
         {
-          id: 7,
+          id: 9,
           name: "Tooltip plugin",
           date: ["5", "2021"],
           image: "tooltip.png",
@@ -167,7 +187,7 @@ export default {
           toggle: false,
         },
         {
-          id: 8,
+          id: 10,
           name: "Square task",
           date: "Feb 2021",
           date: ["1", "2021"],

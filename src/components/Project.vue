@@ -128,6 +128,7 @@ export default {
  overflow hidden
  transition 1s ease-in
  text-align left
+ line-height 30px
 
 .open-details
  max-height 800px
@@ -136,8 +137,8 @@ export default {
  font-weight bold
 
 .project_subcontainer_details_list
- padding 0
- list-style-type none
+ padding-left 20px
+ list-style-type decimal
 
 @media screen and (max-width 400px)
  .project_subcontainer_button
