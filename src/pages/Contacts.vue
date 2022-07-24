@@ -72,6 +72,7 @@ export default {
  display flex
  flex-direction column
  align-items center
+ width 100%
 .headers_header
  margin-bottom 50px
  font-size 75px

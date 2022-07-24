@@ -10,6 +10,10 @@ const routeOptions = [
     name: "Portfolio",
   },
   {
+    path: "/skills",
+    name: "Skills",
+  },
+  {
     path: "/contacts",
     name: "Contacts",
   },

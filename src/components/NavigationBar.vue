@@ -45,11 +45,16 @@ export default {
         },
         {
           id: 3,
+          name: "skills",
+          path: "./skills",
+        },
+        {
+          id: 4,
           name: "contacts",
           path: "./contacts",
         },
         {
-          id: 4,
+          id: 5,
           name: "resume",
           path: "./resume",
         },

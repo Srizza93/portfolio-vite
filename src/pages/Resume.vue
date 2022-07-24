@@ -103,7 +103,7 @@ export default {
 .cvs_cv:hover .cvs_cv_download
  opacity 1
 
-@media screen and (max-width 350px)
+@media screen and (max-width 380px)
  .header
   font-size 35px
  .cvs_cv_flag
