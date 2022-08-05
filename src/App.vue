@@ -1,7 +1,11 @@
 <template>
   <div class="app-sub">
     <navigation-bar />
-    <router-view class="router-view"></router-view>
+      <router-view class="router-view" v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component"></component>
+        </transition>
+      </router-view>
     <img
       class="act-lang flag"
       :src="getImageUrl(actLang.img)"
@@ -82,6 +86,15 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.fade-enter-active,
+.fade-leave-active
+  transition-duration .3s
+  transition-property opacity
+  transition-timing-function ease
+
+.fade-enter,
+.fade-leave-active
+  opacity 0
 .app-sub
  display flex
  flex-direction column

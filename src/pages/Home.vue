@@ -4,6 +4,7 @@
       <div class="content_text">
         <span class="home_first-line">{{ $t("home.greatings") }}</span>
         <span class="home_name">Simone Rizza</span>
+        <span>{{ $t("home.position") }}</span>
         <p class="home_parag">
           {{ $t("home.pitch") }}
         </p>

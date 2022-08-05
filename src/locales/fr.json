@@ -2,14 +2,15 @@
   "navigation": {
     "home": "Acceuil",
     "portfolio": "Portfeuille",
-    "skills": "Compétences",
+    "techs": "Techs",
     "contacts": "Contacts",
     "resume": "Résumé"
   },
   "home": {
     "greatings": "Bonjour, mon prénom est",
     "pitch": "Toujours passionné par le développement de logiciels et l’informatique, je suis tombé amoureux de ces disciplines vers lesquelles je souhaiterais m’orienter professionnellement. Mon constant désir de croissance, avec les compétences acquises au cours de mes expériences dans plusieurs pays européens, font de moi aujourd’hui une personne expérimenté et déterminé pour atteindre les objectifs.",
-    "button": "Découvre mes projets"
+    "button": "Découvre mes projets",
+    "position": "Frontend Développeur"
   },
   "portfolio": {
     "showDetails": "Afficher les détails",

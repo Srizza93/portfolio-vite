@@ -45,8 +45,8 @@ export default {
         },
         {
           id: 3,
-          name: "skills",
-          path: "./skills",
+          name: "techs",
+          path: "./techs",
         },
         {
           id: 4,

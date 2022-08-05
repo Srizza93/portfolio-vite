@@ -1,17 +1,17 @@
 <template>
-  <div class="skills">
+  <div class="techs">
     <div
-      class="skills_skill"
-      v-for="skill in skills"
-      :key="'skill-' + skill.id"
+      class="techs_tech"
+      v-for="tech in techs"
+      :key="'tech-' + tech.id"
     >
-      <a class="skills_skill_sub-container" :href="skill.link">
+      <a class="techs_tech_sub-container" :href="tech.link">
         <img
-          class="skills_skill_sub-container_logo"
-          :src="getImageUrl(skill.logo)"
-          :alt="skill.name + '-logo'"
+          class="techs_tech_sub-container_logo"
+          :src="getImageUrl(tech.logo)"
+          :alt="tech.name + '-logo'"
         />
-        <span class="skills_skill_sub-container_text">{{ skill.name }}</span>
+        <span class="techs_tech_sub-container_text">{{ tech.name }}</span>
       </a>
     </div>
   </div>
@@ -22,7 +22,7 @@ export default {
   name: "Skills",
   data() {
     return {
-      skills: [
+      techs: [
         {
           id: 1,
           name: "HTML",
@@ -107,14 +107,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.skills
+.techs
  display flex
  flex-direction column
-.skills_skill
+.techs_tech
  display flex
  margin-bottom 30px
  justify-content center
-.skills_skill_sub-container
+.techs_tech_sub-container
  display flex
  flex-direction row
  align-items center
@@ -124,17 +124,17 @@ export default {
  font-weight bold
  text-decoration none
  cursor pointer
-.skills_skill_sub-container_logo
+.techs_tech_sub-container_logo
  width 40px
  height 40px
  margin-right 30px
 
-.skills_skill_sub-container_text
+.techs_tech_sub-container_text
  white-space nowrap
 
-.skills_skill_sub-container:hover .skills_skill_sub-container_text
+.techs_tech_sub-container:hover .techs_tech_sub-container_text
  animation text-grow .5s forwards
-.skills_skill_sub-container:hover .skills_skill_sub-container_logo
+.techs_tech_sub-container:hover .techs_tech_sub-container_logo
  animation icon-grow .5s forwards
 
 @keyframes text-grow

@@ -3,6 +3,10 @@ import { createWebHistory, createRouter } from "vue-router";
 const routeOptions = [
   {
     path: "/",
+    name: "Welcome",
+  },
+  {
+    path: "/home",
     name: "Home",
   },
   {
@@ -10,8 +14,8 @@ const routeOptions = [
     name: "Portfolio",
   },
   {
-    path: "/skills",
-    name: "Skills",
+    path: "/techs",
+    name: "Techs",
   },
   {
     path: "/contacts",

@@ -2,14 +2,15 @@
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
-    "skills": "Competenze",
+    "techs": "Techs",
     "contacts": "Contatti",
     "resume": "Cv"
   },
   "home": {
     "greatings": "Ciao, il mio nome é",
     "pitch": "Sono sempre stato appassionato della tecnologia e l'informatica, sin da bambino. Mi sono innamorato di queste discipline, le quali desidero orientarmi professionalmente. Il mio costante desiderio di crescita, insieme alle competenze acquisite nel corso delle mie esperienze in vari paesi europei, fanno di me oggi una persona qualificata e determinata nel raggiungere gli obiettivi.",
-    "button": "Scopri i miei progetti"
+    "button": "Scopri i miei progetti",
+    "position": "Frontend Developer"
   },
   "portfolio": {
     "showDetails": "Scopri i dettagli",
