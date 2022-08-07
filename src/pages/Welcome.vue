@@ -6,7 +6,11 @@
     </div>
     <div class="button-box">
       <div class="button-box_button">Access</div>
-      <img class="button-box_mouse" src="../assets/arrow-mouse.png" alt="arrow-mouse" />
+      <img
+        class="button-box_mouse"
+        src="../assets/arrow-mouse.png"
+        alt="arrow-mouse"
+      />
     </div>
   </div>
 </template>
@@ -21,7 +25,7 @@ export default {
       const flag = document.querySelector(".flag");
       navigationBar.classList.add("hide-element");
       flag.classList.add("hide-element");
-      setTimeout(function() {
+      setTimeout(function () {
         self.showApp(navigationBar, flag);
       }, 7000);
     },
@@ -31,12 +35,12 @@ export default {
       navigationBar.classList.remove("hide-element");
       flag.classList.remove("hide-element");
       this.$router.push("/home");
-    }
+    },
   },
   mounted() {
     this.hideApp();
-  }
-}
+  },
+};
 </script>
 
 <style lang="stylus">
@@ -108,7 +112,7 @@ export default {
  animation mouse .5s steps(15) 6s
  animation-fill-mode both
 
-@keyframes mouse 
+@keyframes mouse
  from {
   top -50px
   left -50px

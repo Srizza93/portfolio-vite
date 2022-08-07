@@ -81,19 +81,19 @@ export default {
           id: 10,
           name: "Vite",
           logo: "vite.png",
-          link: "",
+          link: "https://vitejs.dev/",
         },
         {
           id: 11,
           name: "Jest",
           logo: "jest.png",
-          link: "",
+          link: "https://jestjs.io/",
         },
         {
           id: 12,
           name: "Git",
           logo: "git.png",
-          link: "",
+          link: "https://git-scm.com/",
         },
       ],
     };

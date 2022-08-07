@@ -25,6 +25,10 @@ const routeOptions = [
     path: "/resume",
     name: "Resume",
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "Welcome",
+  },
 ];
 
 const routes = routeOptions.map((route) => {

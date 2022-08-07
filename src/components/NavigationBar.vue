@@ -36,7 +36,7 @@ export default {
         {
           id: 1,
           name: "home",
-          path: "./",
+          path: "./home",
         },
         {
           id: 2,
