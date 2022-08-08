@@ -1,4 +1,4 @@
-import { createWebHashHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 
 const routeOptions = [
   {
@@ -40,7 +40,7 @@ const routes = routeOptions.map((route) => {
 });
 
 const router = createRouter({
-  history: createWebHashHistory("/portfolio-vite/"),
+  history: createWebHistory("/portfolio-vite/"),
   base: "/portfolio-vite/",
   routes,
 });
