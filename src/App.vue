@@ -1,11 +1,11 @@
 <template>
   <div class="app-sub">
     <navigation-bar />
-      <router-view class="router-view" v-slot="{ Component }">
-        <transition name="fade">
-          <component :is="Component"></component>
-        </transition>
-      </router-view>
+    <router-view class="router-view" v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
     <img
       class="act-lang flag"
       :src="getImageUrl(actLang.img)"
@@ -167,31 +167,4 @@ body
   -moz-osx-font-smoothing grayscale
   text-align center
   color #003
-
-.open-button
- max-width 250px
- padding 15px 30px
- border-radius 15px
- background-color #3498db
- color white
- text-align center
- text-decoration none
- white-space nowrap
- font-weight bold
- cursor pointer
-
-.open-button:hover
- animation blink 1s linear infinite
-
-@keyframes blink
- 0% {
-   outline none
- }
- 50% {
-   outline 3px solid #3498db
- }
- 100% {
-   outline-offset 5px
-   outline transparent
- }
 </style>

@@ -11,17 +11,21 @@
       </div>
       <img class="content_img" alt="pencil" src="../assets/pencil.jpg" />
     </div>
-    <router-link class="open-button" to="/portfolio">{{
-      $t("home.button")
-    }}</router-link>
+    <router-link to="/portfolio"
+      ><folio-button>
+        {{ $t("home.button") }}
+      </folio-button></router-link
+    >
   </div>
 </template>
 
 <script>
 import { useI18n } from "vue-i18n";
+import FolioButton from "../components/FolioButton.vue";
 
 export default {
   name: "Home",
+  components: { FolioButton },
 };
 </script>
 

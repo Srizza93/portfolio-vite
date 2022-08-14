@@ -5,7 +5,7 @@
       <span class="messages_text message2">Simone Rizza's portfolio</span>
     </div>
     <div class="button-box">
-      <div class="button-box_button">Access</div>
+      <folio-button class="button-box_button">Access</folio-button>
       <img
         class="button-box_mouse"
         src="../assets/arrow-mouse.png"
@@ -16,8 +16,11 @@
 </template>
 
 <script>
+import FolioButton from "../components/FolioButton.vue";
+
 export default {
   name: "Welcome",
+  components: { FolioButton },
   methods: {
     hideApp() {
       const self = this;
@@ -100,12 +103,10 @@ export default {
  display flex
  margin-top 60px
 .button-box_button
- padding 15px 30px
- border-radius 15px
  background-color #0f52ba
  color white
- font-weight bold
  animation button-click .6s linear 6.5s
+ pointer-events none
 
 .button-box_mouse
  position absolute

@@ -16,13 +16,13 @@
           :alt="project.name"
         />
       </a>
-      <button
-        class="project_subcontainer_button open-button"
+      <folio-button
+        class="project_subcontainer_button"
         @click="openDetails(project)"
       >
         <span v-if="!project.toggle">{{ $t("portfolio.showDetails") }}</span>
         <span v-else>{{ $t("portfolio.closeDetails") }}</span>
-      </button>
+      </folio-button>
       <div
         class="project_subcontainer_details"
         v-bind:class="{ 'open-details': project.toggle }"
@@ -61,8 +61,11 @@
 </template>
 
 <script>
+import FolioButton from "./FolioButton.vue";
+
 export default {
   name: "Project",
+  components: { FolioButton },
   props: {
     project: {
       type: Object,
@@ -120,7 +123,6 @@ export default {
 
 .project_subcontainer_button
  margin 30px
- border none
 
 .project_subcontainer_details
  max-height 0
