@@ -106,6 +106,7 @@ export default {
 .project_subcontainer
  display flex
  flex-direction column
+ align-items center
  width 100%
  max-width 500px
  border 1px solid #dedede
@@ -122,9 +123,11 @@ export default {
  border-radius 15px 15px 0 0
 
 .project_subcontainer_button
+ width 90%
  margin 30px
 
 .project_subcontainer_details
+ width 100%
  max-height 0
  padding 0 30px
  overflow hidden
