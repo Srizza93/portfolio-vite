@@ -1,112 +1,121 @@
 <template>
   <div class="resume">
-    <span class="header">{{ $t("resume.header") }}</span>
+    <span class="header">{{ $t('resume.header') }}</span>
     <div class="cvs">
       <a
-        class="cvs_cv"
-        :href="getUrl(cv.path)"
-        :download="cv.name"
         v-for="cv in cvs"
-        :key="cv.id"
-        :style="'background-color: ' + cv.col"
+        :key="cv.name"
+        :href="getUrl(cv.filePath)"
+        :download="cv.name"
+        class="cv"
       >
-        <img class="cvs_cv_flag" :src="getUrl(cv.img)" :alt="cv.alt" />
-        <div class="cvs_cv_download">
-          <span>{{ $t("resume.download") }}</span>
+        <img class="cv__flag" :src="getUrl(cv.img)" :alt="cv.alt" />
+        <div class="cv__download">
+          <span>{{ $t('resume.download') }}</span>
         </div>
       </a>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "Resume",
-  data() {
-    return {
-      cvs: [
-        {
-          id: 1,
-          name: "cv-fr",
-          alt: "french-flag",
-          img: "fr-flag.jpg",
-          path: "cv-fr.pdf",
-          col: "#002654",
-        },
-        {
-          id: 2,
-          name: "cv-eng",
-          alt: "uk-flag",
-          img: "uk-flag.jpg",
-          path: "cv-eng.pdf",
-          col: "#C8102E",
-        },
-        {
-          id: 3,
-          name: "cv-ita",
-          alt: "ita-flag",
-          img: "ita-flag.jpg",
-          path: "cv-ita.pdf",
-          col: "#008C45",
-        },
-      ],
-    };
-  },
-  methods: {
-    getUrl(obj) {
-      return new URL(`../assets/${obj}`, import.meta.url).href;
-    },
-  },
+<script lang="ts" setup>
+import { ref, type Ref } from 'vue';
+
+type Cv = {
+  name: string;
+  alt: string;
+  img: string;
+  filePath: string;
 };
+
+const cvs: Ref<Cv[]> = ref([
+  {
+    name: 'cv-fr',
+    alt: 'french-flag',
+    img: 'fr-flag.jpg',
+    filePath: 'cv-fr.pdf',
+  },
+  {
+    name: 'cv-eng',
+    alt: 'uk-flag',
+    img: 'uk-flag.jpg',
+    filePath: 'cv-eng.pdf',
+  },
+  {
+    name: 'cv-ita',
+    alt: 'ita-flag',
+    img: 'ita-flag.jpg',
+    filePath: 'cv-ita.pdf',
+  },
+]);
+
+function getUrl(sourcePath: string): string {
+  return new URL(`../assets/${sourcePath}`, import.meta.url).href;
+}
 </script>
 
-<style lang="stylus" scoped>
-.resume
- display flex
- flex-direction column
-.header
- margin-bottom 50px
- font-size 75px
- font-weight bold
-.cvs
- display flex
- flex-direction column
- align-items center
-.cvs_cv
- position relative
- display flex
- flex-direction column
- align-items center
- padding 0 20px
- margin 30px 0
- border-radius 15px
- color white
- text-decoration none
- font-weight bold
- font-size 25px
-.cvs_cv_flag
- width 250px
- height 160px
+<style lang="scss" scoped>
+.resume {
+  display: flex;
+  flex-direction: column;
+}
 
-.cvs_cv_download
- position absolute
- top 5%
- display flex
- justify-content center
- align-items center
- width 90%
- height 90%
- background-color rgba(0,0,0,.7)
- opacity 0
- transition-duration 1s
+.header {
+  margin-bottom: 50px;
+  font-size: 75px;
+  font-weight: bold;
+}
 
-.cvs_cv:hover .cvs_cv_download
- opacity 1
+.cvs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-@media screen and (max-width 380px)
- .header
-  font-size 35px
- .cvs_cv_flag
-  width 150px
-  height 95px
+.cv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 15px;
+
+  &:hover .cv__download {
+    opacity: 1;
+  }
+
+  &__flag {
+    width: 250px;
+    height: 160px;
+    border-radius: 15px;
+  }
+
+  &__download {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    border-radius: 15px;
+    transition-duration: 1s;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header {
+    font-size: 35px;
+  }
+  .cv__flag {
+    width: 150px;
+    height: 95px;
+  }
+}
 </style>
