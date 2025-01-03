@@ -5,7 +5,7 @@
       <span class="messages__text message2">Simone Rizza's portfolio</span>
     </div>
     <div class="button-box">
-      <folio-button>Access</folio-button>
+      <folio-button theme="dark">Access</folio-button>
       <img
         class="button-box_mouse"
         src="../assets/arrow-mouse.png"
@@ -102,8 +102,6 @@ onMounted(() => {
 }
 
 .folio-button {
-  background-color: #0f52ba;
-  color: white;
   animation: button-click 0.6s linear 6.5s;
   pointer-events: none;
 }

@@ -1,8 +1,31 @@
 <template>
-  <button class="folio-button" @click="$emit('folio-button-click')">
+  <button
+    class="folio-button"
+    :class="themeClass"
+    @click="$emit('folio-button-click')"
+  >
     <slot>Open</slot>
   </button>
 </template>
+
+<script lang="ts" setup>
+import { computed } from 'vue';
+
+const props = defineProps<{
+  theme?: string;
+}>();
+
+const themeClass = computed(() => {
+  switch (props.theme) {
+    case 'dark':
+      return 'folio-dark';
+    case 'light':
+      return 'folio-light';
+    default:
+      return 'folio-light';
+  }
+});
+</script>
 
 <style lang="scss" scoped>
 .folio-button {
@@ -11,7 +34,6 @@
   padding: 15px 30px;
   border-radius: 15px;
   border: none;
-  background-color: #3498db;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -22,6 +44,14 @@
 
 .folio-button:hover {
   animation: blink 1s linear infinite;
+}
+
+.folio-dark {
+  background-color: #0f52ba;
+}
+
+.folio-light {
+  background-color: #3498db;
 }
 
 @keyframes blink {

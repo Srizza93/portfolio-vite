@@ -1,36 +1,34 @@
 <template>
   <div class="app-sub">
-    <navigation-bar v-if="isNotWelcomePage" />
+    <navigation-bar v-if="!isWelcomePage" />
     <router-view class="router-view" v-slot="{ Component }">
       <transition name="fade">
         <component :is="Component"></component>
       </transition>
     </router-view>
-    <img
-      class="act-lang flag"
-      :src="getImageUrl(actLang.img)"
-      alt="flag"
-      @click="toggleLangs"
-    />
-    <div
-      v-if="isNotWelcomePage"
-      class="langs"
-      v-bind:class="{ 'langs-open': langsOpen }"
-    >
+    <template v-if="!isWelcomePage">
       <img
-        class="langs_flag flag"
-        v-for="lang in langs"
-        :key="'lang-' + lang.key"
-        :src="getImageUrl(lang.img)"
+        class="act-lang flag"
+        :src="getImageUrl(actLang.img)"
         alt="flag"
-        @click="selectLang($event, lang.name)"
+        @click="toggleLangs"
       />
-    </div>
+      <div class="langs" v-bind:class="{ 'langs-open': langsOpen }">
+        <img
+          class="langs_flag flag"
+          v-for="lang in langs"
+          :key="'lang-' + lang.key"
+          :src="getImageUrl(lang.img)"
+          alt="flag"
+          @click="selectLang($event, lang.name)"
+        />
+      </div>
+    </template>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import i18n from './i18n';
 import { useRoute } from 'vue-router';
 import NavigationBar from './components/NavigationBar.vue';
@@ -75,7 +73,7 @@ const selectLang = (event: Event, lang: string) => {
   toggleLangs();
 };
 
-const isNotWelcomePage = computed(() => route.name !== 'Welcome');
+const isWelcomePage = computed(() => route.name === 'Welcome');
 </script>
 
 <style lang="scss">
