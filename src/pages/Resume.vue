@@ -62,7 +62,7 @@ function getUrl(sourcePath: string): string {
 
 .header {
   margin-bottom: 50px;
-  font-size: 75px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -81,7 +81,7 @@ function getUrl(sourcePath: string): string {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   border-radius: 15px;
 
   &:hover .cv__download {
