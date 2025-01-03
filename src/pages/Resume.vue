@@ -4,8 +4,8 @@
     <div class="cvs">
       <a
         v-for="cv in cvs"
-        :key="cv.id"
-        :href="getUrl(cv.path)"
+        :key="cv.name"
+        :href="getUrl(cv.filePath)"
         :download="cv.name"
         class="cv"
       >
@@ -19,29 +19,33 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, type Ref } from 'vue';
 
-const cvs = ref([
+type Cv = {
+  name: string;
+  alt: string;
+  img: string;
+  filePath: string;
+};
+
+const cvs: Ref<Cv[]> = ref([
   {
-    id: 1,
     name: 'cv-fr',
     alt: 'french-flag',
     img: 'fr-flag.jpg',
-    path: 'cv-fr.pdf',
+    filePath: 'cv-fr.pdf',
   },
   {
-    id: 2,
     name: 'cv-eng',
     alt: 'uk-flag',
     img: 'uk-flag.jpg',
-    path: 'cv-eng.pdf',
+    filePath: 'cv-eng.pdf',
   },
   {
-    id: 3,
     name: 'cv-ita',
     alt: 'ita-flag',
     img: 'ita-flag.jpg',
-    path: 'cv-ita.pdf',
+    filePath: 'cv-ita.pdf',
   },
 ]);
 
