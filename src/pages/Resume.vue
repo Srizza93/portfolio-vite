@@ -49,8 +49,8 @@ const cvs: Ref<Cv[]> = ref([
   },
 ]);
 
-function getUrl(obj) {
-  return new URL(`../assets/${obj}`, import.meta.url).href;
+function getUrl(sourcePath: string): string {
+  return new URL(`../assets/${sourcePath}`, import.meta.url).href;
 }
 </script>
 
