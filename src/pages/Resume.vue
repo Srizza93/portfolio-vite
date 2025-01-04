@@ -5,11 +5,11 @@
       <a
         v-for="cv in cvs"
         :key="cv.name"
-        :href="getUrl(cv.filePath)"
+        :href="getFilePath(cv.filePath)"
         :download="cv.name"
         class="cv"
       >
-        <img class="cv__flag" :src="getUrl(cv.img)" :alt="cv.alt" />
+        <img class="cv__flag" :src="getFilePath(cv.img)" :alt="cv.alt" />
         <div class="cv__download">
           <span>{{ $t('resume.download') }}</span>
         </div>
@@ -20,6 +20,8 @@
 
 <script lang="ts" setup>
 import { ref, type Ref } from 'vue';
+
+import { getFilePath } from '../services/fileService';
 
 type Cv = {
   name: string;
@@ -48,10 +50,6 @@ const cvs: Ref<Cv[]> = ref([
     filePath: 'cv-ita.pdf',
   },
 ]);
-
-function getUrl(sourcePath: string): string {
-  return new URL(`../assets/${sourcePath}`, import.meta.url).href;
-}
 </script>
 
 <style lang="scss" scoped>
