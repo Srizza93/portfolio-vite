@@ -11,7 +11,7 @@
           {{ contact.text }}
           <img
             v-if="contact.image"
-            class="contact__linkw__icon"
+            class="contact__link__icon"
             :src="getFilePath(contact.image.link)"
             :alt="contact.image.name"
           />
