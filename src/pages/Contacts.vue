@@ -3,15 +3,15 @@
     <span class="contact-details__title">{{ $t('navigation.contacts') }}</span>
     <ul class="contact-details__list">
       <li
-        class="contact"
         v-for="contact in contacts"
         :key="'contact-' + contact.id"
+        class="contact"
       >
         <a class="contact__link" :href="contact.link">
           {{ contact.text }}
           <img
-            class="contact__link__icon"
             v-if="contact.image"
+            class="contact__linkw__icon"
             :src="getFilePath(contact.image.link)"
             :alt="contact.image.name"
           />
