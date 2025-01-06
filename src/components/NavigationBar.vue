@@ -1,155 +1,147 @@
 <template>
   <div class="navigation">
     <router-link :to="WELCOME_PATH">
-      <img class="logo" alt="logo" src="../assets/s-icon.png" />
+      <img class="navigation__logo" alt="logo" src="../assets/s-icon.png" />
     </router-link>
-    <div class="navigation_links">
-      <div
-        class="navigation_links_link"
-        v-for="page in pages"
-        :key="page.id + page.name"
-      >
-        <span class="left-border link-border"></span>
-        <div class="sides-container">
-          <span class="top-border link-border"></span>
-          <router-link class="navigation_links_link_text" :to="page.path">{{
+    <div class="navigation__links">
+      <div class="navigation__link" v-for="page in pages" :key="page.name">
+        <span
+          class="navigation__link-border navigation__link-border--left"
+        ></span>
+        <div class="navigation__sides-container">
+          <span
+            class="navigation__link-border navigation__link-border--top"
+          ></span>
+          <router-link class="navigation__link-text" :to="page.path">{{
             $t(`navigation.${page.name}`)
           }}</router-link>
-          <span class="bottom-border link-border"></span>
+          <span
+            class="navigation__link-border navigation__link-border--bottom"
+          ></span>
         </div>
-        <span class="right-border link-border"></span>
+        <span
+          class="navigation__link-border navigation__link-border--right"
+        ></span>
       </div>
     </div>
     <hamburger :links="pages" />
   </div>
 </template>
 
-<script>
-import Hamburger from './Hamburger.vue';
-import { WELCOME_PATH } from '../constants/pageEndpoints';
+<script lang="ts" setup>
+import { computed } from 'vue';
 
-export default {
-  name: 'NavigationBar',
-  components: { Hamburger },
-  setup() {
-    return { WELCOME_PATH };
-  },
-  data: function () {
-    return {
-      pages: [
-        {
-          id: 1,
-          name: 'home',
-          path: './home',
-        },
-        {
-          id: 2,
-          name: 'portfolio',
-          path: './portfolio',
-        },
-        {
-          id: 3,
-          name: 'techs',
-          path: './techs',
-        },
-        {
-          id: 4,
-          name: 'contacts',
-          path: './contacts',
-        },
-        {
-          id: 5,
-          name: 'resume',
-          path: './resume',
-        },
-      ],
-    };
-  },
-};
+import Hamburger from './Hamburger.vue';
+
+import { WELCOME_PATH } from '../constants/pageEndpoints';
+import { routeOptions } from '../router/routeOptions';
+import { WELCOME_PAGE_NAME } from '../constants/pageNames';
+
+const pages = computed(() =>
+  routeOptions.filter((page) => page.name !== WELCOME_PAGE_NAME)
+);
 </script>
 
-<style lang="stylus" scoped>
-.navigation
- display flex
- flex-direction row
- align-items center
- justify-content space-between
- width 100%
- padding 5px
- background-color #3498DB
+<style lang="scss" scoped>
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  background-color: #3498db;
 
-.navigation_links
- display flex
- flex-direction row
- gap 40px
- margin-right 60px
+  &__logo {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    margin-left: 30px;
 
-.navigation_links_link
- display flex
- flex-direction row
- align-items center
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-.sides-container
- display flex
- flex-direction column
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-right: 60px;
+  }
 
-.link-border
- background-color white
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-.top-border
- transition-duration 250ms
- width 0%
- height 3px
+  &__sides-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.navigation_links_link:hover .top-border
- width 100%
+  &__link-border {
+    background-color: white;
 
-.right-border
- width 3px
- height 0%
+    &--top,
+    &--bottom {
+      transition-duration: 250ms;
+      width: 0%;
+      height: 3px;
+    }
 
-.navigation_links_link:hover .right-border
- transition-delay 250ms
- transition-duration 250ms
- margin-bottom auto
- height 100%
+    &--left,
+    &--right {
+      width: 3px;
+      height: 0%;
+    }
 
-.bottom-border
- height 3px
- width 0%
+    &--top {
+      .navigation__link:hover & {
+        width: 100%;
+      }
+    }
 
-.navigation_links_link:hover .bottom-border
- transition-delay 500ms
- transition-duration 250ms
- margin-left auto
- width 100%
+    &--right {
+      .navigation__link:hover & {
+        transition-delay: 250ms;
+        transition-duration: 250ms;
+        margin-bottom: auto;
+        height: 100%;
+      }
+    }
 
-.left-border
- width 3px
- height 0%
+    &--bottom {
+      .navigation__link:hover & {
+        transition-delay: 500ms;
+        transition-duration: 250ms;
+        margin-left: auto;
+        width: 100%;
+      }
+    }
 
-.navigation_links_link:hover .left-border
- transition-delay 750ms
- transition-duration 250ms
- margin-top auto
- height 100%
+    &--left {
+      .navigation__link:hover & {
+        transition-delay: 750ms;
+        transition-duration: 250ms;
+        margin-top: auto;
+        height: 100%;
+      }
+    }
+  }
 
-.navigation_links_link_text
- padding 5px 10px
- color white
- text-decoration none
- font-weight bold
+  &__link-text {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
 
-.logo
- width 100%
- max-width 60px
- height auto
- margin-left 30px
-
-.logo:hover
- opacity .7
-
-@media screen and (max-width 750px)
- .navigation_links
-  display none
+@media screen and (max-width: 750px) {
+  .navigation__links {
+    display: none;
+  }
+}
 </style>
