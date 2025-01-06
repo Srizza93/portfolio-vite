@@ -1,25 +1,36 @@
-type TODO_ANY = any;
+import { getCookie, setCookie, LANGUAGE_COOKIE } from '../helpers/cookieHelper';
+import i18n from '../i18n';
+import { useLanguageStore } from '../store/language';
+import AppLocaleService from './appLocaleService';
+import { getFilePath } from './fileService';
+import { PossibleLanguage } from '../types/language';
 
-const fallbackLocale = 'en-EN';
+export const possibleLanguages: PossibleLanguage[] = ['en', 'fr', 'it'];
 
-export default class LanguageService {
-  static getAppLocale() {
-    if ((window as TODO_ANY).Cypress) {
-      return window.navigator?.language || fallbackLocale;
-    }
-    if ((window as TODO_ANY).test || !import.meta.env.PROD) {
-      return fallbackLocale;
-    }
-    return (
-      document.querySelector('html')!.getAttribute('lang') || fallbackLocale
-    );
+export function initLanguage() {
+  const language = getCookie(LANGUAGE_COOKIE) as PossibleLanguage;
+
+  if (!language) {
+    const appLocale = getLanguageId(AppLocaleService.getAppLocale());
+    setCookie(LANGUAGE_COOKIE, appLocale);
+    return appLocale;
+  } else {
+    i18n.global.locale = language;
+    useLanguageStore().setSelectedLanguage(language);
   }
+}
 
-  static getAppLanguage() {
-    return this.getAppLocale().split('-')[0];
-  }
+export function selectLanguage(language: PossibleLanguage) {
+  i18n.global.locale = language;
+  setCookie(LANGUAGE_COOKIE, language);
+  useLanguageStore().setSelectedLanguage(language);
+  useLanguageStore().closeLanguageModal();
+}
 
-  static getCountryCodeFromLocal(local: string) {
-    return local.split('-')[1];
-  }
+export function getLanguageId(local: string) {
+  return local.split('-')[0];
+}
+
+export function getLanguageFlag(language: string): string {
+  return getFilePath(getLanguageId(language) + '-flag.png');
 }
