@@ -1,86 +1,85 @@
 <template>
   <div class="home">
-    <div class="content">
-      <div class="content_text">
-        <span class="home_first-line">{{ $t("home.greatings") }}</span>
-        <span class="home_name">Simone Rizza</span>
-        <span>{{ $t("home.position") }}</span>
-        <p class="home_parag">
-          {{ $t("home.pitch") }}
+    <div class="home__content">
+      <div class="home__description">
+        <span class="home__description-first-line">{{
+          $t('home.greatings')
+        }}</span>
+        <span class="home__description-name">Simone Rizza</span>
+        <span>{{ $t('home.position') }}</span>
+        <p class="home__description-parag">
+          {{ $t('home.pitch') }}
         </p>
       </div>
-      <img class="content_img" alt="pencil" src="../assets/pencil.jpg" />
+      <img
+        class="home__content-image"
+        alt="A pencil illustration"
+        src="../assets/pencil.jpg"
+      />
     </div>
-    <router-link to="/portfolio"
-      ><folio-button>
-        {{ $t("home.button") }}
-      </folio-button></router-link
-    >
+    <router-link to="/portfolio">
+      <folio-button>
+        {{ $t('home.button') }}
+      </folio-button>
+    </router-link>
   </div>
 </template>
 
-<script>
-import { useI18n } from "vue-i18n";
-import FolioButton from "../components/FolioButton.vue";
-
-export default {
-  name: "Home",
-  components: { FolioButton },
-};
+<script lang="ts" setup>
+import FolioButton from '../components/FolioButton.vue';
 </script>
 
-<style lang="stylus" scoped>
-.home
- display flex
- flex-direction column
- text-align left
+<style lang="scss" scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 
-.content
- display flex
- flex-direction row
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
 
-.content_img, .content_text
- width 50%
- margin-bottom 50px
+  &__content-image {
+    max-width: 315px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50%;
+    margin-bottom: 50px;
+  }
 
-.content_text
- display flex
- flex-direction column
- padding-right 50px
- color #0f52ba
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    color: #0f52ba;
+    width: 50%;
+    margin-bottom: 50px;
 
-.content_img
- max-width 315px
- border-radius 50%
- object-fit cover
+    &-first-line {
+      margin-bottom: 30px;
+    }
 
-.home_first-line
- margin-bottom 30px
+    &-name {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
 
-.home_name
- font-size 65px
- font-weight bold
+    &-parag {
+      color: #000033;
+      font-size: 18px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+  }
+}
 
-.home_parag
- color #000033
- font-size 20px
-
-@media screen and (max-width 750px)
- .home
-  align-items center
-
- .content
-  flex-direction column
-  align-items center
-
- .content_img, .content_text
-  width 90%
-  padding 0
-
-@media screen and (max-width 400px)
- .home_name
-   font-size 35px
-
- .home_parag
-   font-size 16px
+@media screen and (max-width: 400px) {
+  .description {
+    &__name {
+      font-size: 35px;
+    }
+  }
+}
 </style>
