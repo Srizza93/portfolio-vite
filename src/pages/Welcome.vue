@@ -8,7 +8,7 @@
       <folio-button theme="dark">Access</folio-button>
       <img
         class="button-box_mouse"
-        src="../assets/arrow-mouse.png"
+        src="@/assets/arrow-mouse.png"
         alt="arrow-mouse"
       />
     </div>
@@ -18,8 +18,8 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import FolioButton from '../components/FolioButton.vue';
-import { HOME_PATH } from '../constants/pageEndpoints';
+import FolioButton from '@/components/FolioButton.vue';
+import { HOME_PATH } from '@/constants/pageEndpoints';
 
 const router = useRouter();
 

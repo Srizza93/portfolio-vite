@@ -61,15 +61,26 @@
 </template>
 
 <script lang="ts" setup>
-import FolioButton from './FolioButton.vue';
+import FolioButton from '@/components/FolioButton.vue';
 
-import { getFilePath } from '../services/fileService';
+import { getFilePath } from '@/services/fileService';
+
+type Project = {
+  name: string;
+  date: number[];
+  link: string;
+  image: string;
+  description: string;
+  functionalities?: string[];
+  techs: string[];
+  toggle: boolean;
+};
 
 defineProps<{
   project: any;
 }>();
 
-function openDetails(project) {
+function openDetails(project: Project) {
   project.toggle = !project.toggle;
 }
 </script>

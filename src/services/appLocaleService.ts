@@ -1,13 +1,26 @@
-type TODO_ANY = any;
+interface ImportMetaEnv {
+  PROD: boolean;
+}
+
+declare global {
+  interface ImportMeta {
+    env: ImportMetaEnv;
+  }
+
+  interface Window {
+    Cypress?: any;
+    test?: any;
+  }
+}
 
 const fallbackLocale = 'en-EN';
 
 export default class AppLocaleService {
   static getAppLocale() {
-    if ((window as TODO_ANY).Cypress) {
+    if (window.Cypress as Window) {
       return window.navigator?.language || fallbackLocale;
     }
-    if ((window as TODO_ANY).test || !import.meta.env.PROD) {
+    if ((window as Window).test || !import.meta.env.PROD) {
       return fallbackLocale;
     }
     return (

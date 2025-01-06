@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <router-link :to="WELCOME_PATH">
-      <img class="navigation__logo" alt="logo" src="../assets/s-icon.png" />
+      <img class="navigation__logo" alt="logo" src="@/assets/s-icon.png" />
     </router-link>
     <div class="navigation__links">
       <div class="navigation__link" v-for="page in pages" :key="page.name">
@@ -31,11 +31,11 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import Hamburger from './Hamburger.vue';
+import Hamburger from '@/components/Hamburger.vue';
 
-import { WELCOME_PATH } from '../constants/pageEndpoints';
-import { routeOptions } from '../router/routeOptions';
-import { WELCOME_PAGE_NAME } from '../constants/pageNames';
+import { WELCOME_PATH } from '@/constants/pageEndpoints';
+import { routeOptions } from '@/router/routeOptions';
+import { WELCOME_PAGE_NAME } from '@/constants/pageNames';
 
 const pages = computed(() =>
   routeOptions.filter((page) => page.name !== WELCOME_PAGE_NAME)

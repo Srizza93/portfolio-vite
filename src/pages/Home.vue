@@ -14,7 +14,7 @@
       <img
         class="home__content-image"
         alt="A pencil illustration"
-        src="../assets/pencil.jpg"
+        src="@/assets/pencil.jpg"
       />
     </div>
     <router-link :to="PORTFOLIO_PATH">
@@ -26,9 +26,9 @@
 </template>
 
 <script lang="ts" setup>
-import FolioButton from '../components/FolioButton.vue';
+import FolioButton from '@/components/FolioButton.vue';
 
-import { PORTFOLIO_PATH } from '../constants/pageEndpoints';
+import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
 </script>
 
 <style lang="scss" scoped>

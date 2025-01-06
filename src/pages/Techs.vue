@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 import { ref, type Ref } from 'vue';
 
-import { getFilePath } from '../services/fileService';
+import { getFilePath } from '@/services/fileService';
 
 type Tech = {
   id: number;
