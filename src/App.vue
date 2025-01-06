@@ -31,12 +31,12 @@
 import { onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 
-import NavigationBar from './components/NavigationBar.vue';
+import NavigationBar from '@/components/NavigationBar.vue';
 
-import { selectLanguage, initLanguage } from './services/languageService';
-import { useLanguageStore } from './store/language';
-import { languages, selectedLanguage } from './composables/languageComposable';
-import { usePortfolioRouter } from './composables/routerComposable';
+import { selectLanguage, initLanguage } from '@/services/languageService';
+import { useLanguageStore } from '@/store/language';
+import { languages, selectedLanguage } from '@/composables/languageComposable';
+import { usePortfolioRouter } from '@/composables/routerComposable';
 
 const languageStore = useLanguageStore();
 const { openLanguageModal } = languageStore;

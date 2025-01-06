@@ -1,9 +1,9 @@
-import { getCookie, setCookie, LANGUAGE_COOKIE } from '../helpers/cookieHelper';
-import i18n from '../i18n';
-import { useLanguageStore } from '../store/language';
-import AppLocaleService from './appLocaleService';
-import { getFilePath } from './fileService';
-import { PossibleLanguage } from '../types/language';
+import { getCookie, setCookie, LANGUAGE_COOKIE } from '@/helpers/cookieHelper';
+import i18n from '@/i18n';
+import { useLanguageStore } from '@/store/language';
+import AppLocaleService from '@/services/appLocaleService';
+import { getFilePath } from '@/services/fileService';
+import { PossibleLanguage } from '@/types/language';
 
 export const possibleLanguages: PossibleLanguage[] = ['en', 'fr', 'it'];
 

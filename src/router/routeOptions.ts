@@ -5,7 +5,7 @@ import {
   TECHS_PAGE_NAME,
   CONTACTS_PAGE_NAME,
   RESUME_PAGE_NAME,
-} from '../constants/pageNames';
+} from '@/constants/pageNames';
 import {
   WELCOME_PATH,
   HOME_PATH,
@@ -13,7 +13,7 @@ import {
   TECHS_PATH,
   CONTACTS_PATH,
   RESUME_PATH,
-} from '../constants/pageEndpoints';
+} from '@/constants/pageEndpoints';
 
 export const routeOptions = [
   {

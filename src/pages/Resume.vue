@@ -21,8 +21,8 @@
 <script lang="ts" setup>
 import { computed, ref, type Ref } from 'vue';
 
-import i18n from '../i18n';
-import { getFilePath } from '../services/fileService';
+import i18n from '@/i18n';
+import { getFilePath } from '@/services/fileService';
 
 type Cv = {
   id: string;

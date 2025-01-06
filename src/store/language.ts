@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import { PossibleLanguage } from '../types/language';
+import { PossibleLanguage } from '@/types/language';
 
 type State = {
   selectedLanguage: PossibleLanguage;

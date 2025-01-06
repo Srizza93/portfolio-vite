@@ -1,6 +1,6 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
-import { routeOptions } from './routeOptions';
-import { WELCOME_PAGE_NAME } from '../constants/pageNames';
+import { routeOptions } from '@/router/routeOptions';
+import { WELCOME_PAGE_NAME } from '@/constants/pageNames';
 
 routeOptions.push({
   path: '/:pathMatch(.*)*',
