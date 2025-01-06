@@ -13,7 +13,7 @@
             class="navigation__link-border navigation__link-border--top"
           ></span>
           <router-link class="navigation__link-text" :to="page.path">{{
-            $t(`navigation.${page.name}`)
+            getTranslationFromPageName(page.name)
           }}</router-link>
           <span
             class="navigation__link-border navigation__link-border--bottom"
@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed, ComputedRef } from 'vue';
 
 import Hamburger from '@/components/Hamburger.vue';
 
@@ -37,7 +37,10 @@ import { WELCOME_PATH } from '@/constants/pageEndpoints';
 import { routeOptions } from '@/router/routeOptions';
 import { WELCOME_PAGE_NAME } from '@/constants/pageNames';
 
-const pages = computed(() =>
+import { getTranslationFromPageName } from '@/services/translationService';
+import { RouteOption } from '@/types/route';
+
+const pages: ComputedRef<RouteOption[]> = computed(() =>
   routeOptions.filter((page) => page.name !== WELCOME_PAGE_NAME)
 );
 </script>
