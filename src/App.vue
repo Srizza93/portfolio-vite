@@ -99,7 +99,7 @@ onMounted(() => initLanguage());
   height: 130px;
   padding: 30px;
   border-radius: 15px;
-  background-color: #3498db;
+  background-color: #0474b3;
   z-index: 99999;
 }
 
