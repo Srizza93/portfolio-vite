@@ -9,18 +9,18 @@
     <template v-if="!isWelcomePage">
       <img
         class="act-lang flag"
-        :src="getImageUrl(actLang.img)"
+        :src="selectedLanguage?.img"
         alt="flag"
-        @click="toggleLangs"
+        @click="openLanguageModal"
       />
-      <div class="langs" v-bind:class="{ 'langs-open': langsOpen }">
+      <div class="langs" v-bind:class="{ 'langs-open': isLanguageModalOpen }">
         <img
+          v-for="lang in languages"
           class="langs_flag flag"
-          v-for="lang in langs"
-          :key="'lang-' + lang.key"
-          :src="getImageUrl(lang.img)"
+          :key="'lang-' + lang.name"
+          :src="lang.img"
           alt="flag"
-          @click="selectLang($event, lang.name)"
+          @click="selectLanguage(lang.name)"
         />
       </div>
     </template>
@@ -28,52 +28,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-import i18n from './i18n';
-import { useRoute } from 'vue-router';
+import { onMounted } from 'vue';
+import { storeToRefs } from 'pinia';
+
 import NavigationBar from './components/NavigationBar.vue';
-import { computed } from 'vue';
 
-const route = useRoute();
-const langsOpen = ref(false);
-const actLang = ref({
-  id: 1,
-  name: 'en-EN',
-  img: 'uk-flag.png',
-});
-const langs = ref([
-  {
-    id: 1,
-    name: 'en-EN',
-    img: 'uk-flag.png',
-  },
-  {
-    id: 2,
-    name: 'fr-FR',
-    img: 'fr-flag.png',
-  },
-  {
-    id: 3,
-    name: 'it-IT',
-    img: 'ita-flag.png',
-  },
-]);
+import { selectLanguage, initLanguage } from './services/languageService';
+import { useLanguageStore } from './store/language';
+import { languages, selectedLanguage } from './composables/languageComposable';
+import { usePortfolioRouter } from './composables/routerComposable';
 
-const getImageUrl = (pic: string) => {
-  return new URL(`./assets/${pic}`, import.meta.url).href;
-};
+const languageStore = useLanguageStore();
+const { openLanguageModal } = languageStore;
+const { isLanguageModalOpen } = storeToRefs(languageStore);
+const { isWelcomePage } = usePortfolioRouter();
 
-const toggleLangs = () => {
-  langsOpen.value = !langsOpen.value;
-};
-
-const selectLang = (event: Event, lang: string) => {
-  i18n.global.locale = lang;
-  actLang.value = langs.value.find((option) => option.name === lang);
-  toggleLangs();
-};
-
-const isWelcomePage = computed(() => route.name === 'Welcome');
+onMounted(() => initLanguage());
 </script>
 
 <style lang="scss">

@@ -3,10 +3,10 @@ import { createI18n } from 'vue-i18n';
 import enEN from './en_EN.json';
 import frFR from './fr_FR.json';
 import itIT from './it_IT.json';
-import languageService from '../services/languageService';
+import AppLocaleService from '../services/appLocaleService';
 
 export default createI18n({
-  locale: languageService.getAppLocale(),
+  locale: AppLocaleService.getAppLocale(),
   fallbackLocale: 'en',
   silentTranslationWarn: true,
   messages: {
