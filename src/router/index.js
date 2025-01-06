@@ -1,33 +1,33 @@
-import { createWebHashHistory, createRouter } from "vue-router";
+import { createWebHashHistory, createRouter } from 'vue-router';
 
 const routeOptions = [
   {
-    path: "/",
-    name: "Welcome",
+    path: '/welcome',
+    name: 'Welcome',
   },
   {
-    path: "/home",
-    name: "Home",
+    path: '/home',
+    name: 'Home',
   },
   {
-    path: "/portfolio",
-    name: "Portfolio",
+    path: '/portfolio',
+    name: 'Portfolio',
   },
   {
-    path: "/techs",
-    name: "Techs",
+    path: '/techs',
+    name: 'Techs',
   },
   {
-    path: "/contacts",
-    name: "Contacts",
+    path: '/contacts',
+    name: 'Contacts',
   },
   {
-    path: "/resume",
-    name: "Resume",
+    path: '/resume',
+    name: 'Resume',
   },
   {
-    path: "/:pathMatch(.*)*",
-    name: "Welcome",
+    path: '/:pathMatch(.*)*',
+    name: 'Welcome',
   },
 ];
 
@@ -40,8 +40,8 @@ const routes = routeOptions.map((route) => {
 });
 
 const router = createRouter({
-  history: createWebHashHistory("/portfolio-vite/"),
-  base: "/portfolio-vite/",
+  history: createWebHashHistory('/portfolio-vite/'),
+  base: '/portfolio-vite/',
   routes,
 });
 

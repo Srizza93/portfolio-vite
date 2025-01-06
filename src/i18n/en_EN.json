@@ -2,15 +2,15 @@
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
-    "techs": "Techs",
+    "techs": "Stack",
     "contacts": "Contacts",
     "resume": "Resume"
   },
   "home": {
     "greatings": "Hi, my name is",
-    "pitch": "Since my childhood I've been passionate about software development and IT, I fell in love with these disciplines which I would like to orient myself professionally. My constant desire for growth, with the skills acquired during my experiences in multiple European countries, and my tenacity, make me a person today experienced and determined to achieve his goals.",
+    "pitch": "I am a passionate and versatile Full Stack Developer with over three years of experience, specialising in both front-end and back-end technologies.\n\nI have solid expertise in the Vue.js and JavaScript ecosystems, honed over two years in front-end development.\n\nDuring my last experience, I have expanded my skill set further by contributing to key projects at Symbol-It, particularly with Adeo Leroy Merlin, where I’ve played a pivotal role in optimizing transaction tunnels and enhancing supplier performance systems.\n\nMy curiosity and dedication drive me to continually grow, and I thrive in collaborative environments where I can contribute innovative solutions. Fluent in English, Italian, and French, I am eager to bring my diverse skill set to a forward-thinking development team.",
     "button": "Check out my projects",
-    "position": "Frontend Developer"
+    "position": "Full Stack Developer"
   },
   "portfolio": {
     "showDetails": "Show details",

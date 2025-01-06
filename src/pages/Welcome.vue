@@ -19,12 +19,13 @@
 import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import FolioButton from '../components/FolioButton.vue';
+import { HOME_PATH } from '../constants/pageEndpoints';
 
 const router = useRouter();
 
 function goToHome() {
   setTimeout(() => {
-    router.push('/home');
+    router.push(HOME_PATH);
   }, 7000);
 }
 

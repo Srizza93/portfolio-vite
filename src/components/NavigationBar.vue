@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <router-link to="/">
+    <router-link :to="WELCOME_PATH">
       <img class="logo" alt="logo" src="../assets/s-icon.png" />
     </router-link>
     <div class="navigation_links">
@@ -25,38 +25,42 @@
 </template>
 
 <script>
-import Hamburger from "./Hamburger.vue";
+import Hamburger from './Hamburger.vue';
+import { WELCOME_PATH } from '../constants/pageEndpoints';
 
 export default {
-  name: "NavigationBar",
+  name: 'NavigationBar',
   components: { Hamburger },
+  setup() {
+    return { WELCOME_PATH };
+  },
   data: function () {
     return {
       pages: [
         {
           id: 1,
-          name: "home",
-          path: "./home",
+          name: 'home',
+          path: './home',
         },
         {
           id: 2,
-          name: "portfolio",
-          path: "./portfolio",
+          name: 'portfolio',
+          path: './portfolio',
         },
         {
           id: 3,
-          name: "techs",
-          path: "./techs",
+          name: 'techs',
+          path: './techs',
         },
         {
           id: 4,
-          name: "contacts",
-          path: "./contacts",
+          name: 'contacts',
+          path: './contacts',
         },
         {
           id: 5,
-          name: "resume",
-          path: "./resume",
+          name: 'resume',
+          path: './resume',
         },
       ],
     };
