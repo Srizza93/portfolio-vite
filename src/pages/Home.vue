@@ -17,7 +17,7 @@
         src="../assets/pencil.jpg"
       />
     </div>
-    <router-link to="/portfolio">
+    <router-link :to="PORTFOLIO_PATH">
       <folio-button>
         {{ $t('home.button') }}
       </folio-button>
@@ -27,6 +27,8 @@
 
 <script lang="ts" setup>
 import FolioButton from '../components/FolioButton.vue';
+
+import { PORTFOLIO_PATH } from '../constants/pageEndpoints';
 </script>
 
 <style lang="scss" scoped>
