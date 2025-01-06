@@ -1,35 +1,11 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
+import { routeOptions } from './routeOptions';
+import { WELCOME_PAGE_NAME } from '../constants/pageNames';
 
-const routeOptions = [
-  {
-    path: '/welcome',
-    name: 'Welcome',
-  },
-  {
-    path: '/home',
-    name: 'Home',
-  },
-  {
-    path: '/portfolio',
-    name: 'Portfolio',
-  },
-  {
-    path: '/techs',
-    name: 'Techs',
-  },
-  {
-    path: '/contacts',
-    name: 'Contacts',
-  },
-  {
-    path: '/resume',
-    name: 'Resume',
-  },
-  {
-    path: '/:pathMatch(.*)*',
-    name: 'Welcome',
-  },
-];
+routeOptions.push({
+  path: '/:pathMatch(.*)*',
+  name: WELCOME_PAGE_NAME,
+});
 
 const routes = routeOptions.map((route) => {
   return {
