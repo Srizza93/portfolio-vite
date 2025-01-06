@@ -53,7 +53,7 @@ const pages: ComputedRef<RouteOption[]> = computed(() =>
   justify-content: space-between;
   width: 100%;
   padding: 5px;
-  background-color: #3498db;
+  background-color: #0474b3;
 
   &__logo {
     width: 100%;

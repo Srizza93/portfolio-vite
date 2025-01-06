@@ -103,8 +103,9 @@ const techs: Ref<Tech[]> = ref([
 
 <style lang="scss" scoped>
 .techs {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
 }
 
 .techs_tech {
@@ -118,9 +119,8 @@ const techs: Ref<Tech[]> = ref([
   flex-direction: row;
   align-items: center;
   width: 170px;
-  height: 60px;
+  height: 40px;
   color: inherit;
-  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
@@ -145,12 +145,11 @@ const techs: Ref<Tech[]> = ref([
 
 @keyframes text-grow {
   0% {
-    font-size: 16px;
     color: #003;
   }
   100% {
-    font-size: 22px;
-    color: #3498db;
+    font-size: 18px;
+    color: #0474b3;
   }
 }
 

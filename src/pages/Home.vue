@@ -70,17 +70,26 @@ import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
 
     &-parag {
       color: #000033;
-      font-size: 18px;
       white-space: pre-wrap;
       line-height: 1.6;
     }
   }
 }
 
-@media screen and (max-width: 400px) {
-  .description {
-    &__name {
-      font-size: 35px;
+@media screen and (max-width: 500px) {
+  .router-view {
+    align-items: center;
+  }
+
+  .home {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__description {
+      width: 100%;
+      padding-right: 0;
     }
   }
 }

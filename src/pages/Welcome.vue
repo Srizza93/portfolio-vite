@@ -49,7 +49,7 @@ onMounted(() => {
   position: absolute;
   min-width: 100%;
   height: 100%;
-  background-color: #3498db;
+  background-color: #0474b3;
   transition-duration: 2s;
 }
 

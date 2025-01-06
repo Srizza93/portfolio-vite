@@ -107,7 +107,6 @@ function toggleMenu() {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    text-transform: uppercase;
 
     &:first-child {
       border-radius: 15px 15px 0 0;

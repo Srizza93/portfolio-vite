@@ -51,7 +51,7 @@ const themeClass = computed(() => {
 }
 
 .folio-light {
-  background-color: #3498db;
+  background-color: #0474b3;
 }
 
 @keyframes blink {
@@ -59,7 +59,7 @@ const themeClass = computed(() => {
     outline: none;
   }
   50% {
-    outline: 3px solid #3498db;
+    outline: 3px solid #0474b3;
   }
   100% {
     outline-offset: 5px;

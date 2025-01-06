@@ -1,6 +1,6 @@
 <template>
   <div class="contact-details">
-    <span class="contact-details__title">{{ $t('navigation.contacts') }}</span>
+    <h3 class="contact-details__title">{{ $t('navigation.contacts') }}</h3>
     <ul class="contact-details__list">
       <li
         v-for="contact in contacts"
@@ -64,11 +64,9 @@ const contacts: Ref<Contact[]> = ref([
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  margin-top: 30px;
 
   &__title {
-    font-size: 21px;
-    font-weight: bold;
+    margin: 0;
   }
 
   &__list {
@@ -84,9 +82,7 @@ const contacts: Ref<Contact[]> = ref([
     display: block;
     width: 100%;
     padding: 15px;
-    color: #3498db;
-    font-size: 18px;
-    font-weight: bold;
+    color: #0474b3;
     text-decoration: none;
 
     &__icon {
@@ -105,18 +101,6 @@ const contacts: Ref<Contact[]> = ref([
   }
   100% {
     padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .contact-details {
-    &__title {
-      font-size: 25px;
-    }
-
-    &__list {
-      padding: 0;
-    }
   }
 }
 </style>

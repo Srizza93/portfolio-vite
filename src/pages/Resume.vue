@@ -1,6 +1,6 @@
 <template>
   <div class="resume">
-    <h2 class="resume__title">{{ $t('resume.header') }}</h2>
+    <h3 class="resume__title">{{ $t('resume.header') }}</h3>
     <div class="cvs">
       <a
         v-for="cv in orderedCvs"
@@ -73,8 +73,6 @@ const orderedCvs = computed(() =>
 
   &__title {
     margin: 0 0 50px 0;
-    font-size: 21px;
-    font-weight: bold;
   }
 }
 
@@ -92,8 +90,6 @@ const orderedCvs = computed(() =>
   margin: 30px 0;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
   border-radius: 15px;
 
   &:hover .cv__download {
