@@ -51,7 +51,7 @@
           $t('portfolio.technologies')
         }}</span>
         <ul class="project_subcontainer_details_list">
-          <li v-for="(tech, index) in project.techs" :key="tech + index">
+          <li v-for="(tech, index) in project.stack" :key="tech + index">
             {{ tech }}
           </li>
         </ul>
@@ -72,7 +72,7 @@ type Project = {
   image: string;
   description: string;
   functionalities?: string[];
-  techs: string[];
+  stack: string[];
   toggle: boolean;
 };
 
