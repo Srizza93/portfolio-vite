@@ -2,7 +2,7 @@ import {
   WELCOME_PAGE_NAME,
   HOME_PAGE_NAME,
   PORTFOLIO_PAGE_NAME,
-  TECHS_PAGE_NAME,
+  STACK_PAGE_NAME,
   CONTACTS_PAGE_NAME,
   RESUME_PAGE_NAME,
 } from '@/constants/pageNames';
@@ -10,7 +10,7 @@ import {
   WELCOME_PATH,
   HOME_PATH,
   PORTFOLIO_PATH,
-  TECHS_PATH,
+  STACK_PATH,
   CONTACTS_PATH,
   RESUME_PATH,
 } from '@/constants/pageEndpoints';
@@ -29,8 +29,8 @@ export const routeOptions = [
     path: PORTFOLIO_PATH,
   },
   {
-    name: TECHS_PAGE_NAME,
-    path: TECHS_PATH,
+    name: STACK_PAGE_NAME,
+    path: STACK_PATH,
   },
   {
     name: CONTACTS_PAGE_NAME,

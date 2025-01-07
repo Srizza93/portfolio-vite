@@ -28,7 +28,7 @@ export default {
           image: 'todo.png',
           link: 'https://srizza93.github.io/todo-app/',
           description: 'tododescr',
-          techs: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Nuxt', 'Jest'],
+          stack: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Nuxt', 'Jest'],
           toggle: false,
         },
         {
@@ -38,7 +38,7 @@ export default {
           image: 'weather.png',
           link: 'https://srizza93.github.io/weather-app/#/',
           description: 'weatherdescr',
-          techs: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Vue-router', 'Vite'],
+          stack: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Vue-router', 'Vite'],
           toggle: false,
         },
         {
@@ -48,7 +48,7 @@ export default {
           image: 'portfolio2.png',
           link: 'https://srizza93.github.io/portfolio-vite/',
           description: 'portfolio2Descr',
-          techs: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router', 'Vite', 'i18n'],
+          stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router', 'Vite', 'i18n'],
           toggle: false,
         },
         {
@@ -68,7 +68,7 @@ export default {
             'Loading page',
             'Purchase confirmation',
           ],
-          techs: ['HTML', 'CSS', 'JS', 'Vue', 'Vuex', 'Vue-router', 'Webpack'],
+          stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vuex', 'Vue-router', 'Webpack'],
           toggle: false,
         },
         {
@@ -78,7 +78,7 @@ export default {
           image: 'advent.png',
           link: 'https://srizza93.github.io/advent-challenges/deploy/index.html#/',
           description: 'adventDescr',
-          techs: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router'],
+          stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router'],
           toggle: false,
         },
         {
@@ -97,7 +97,7 @@ export default {
             'Chat system',
             'Chat storing',
           ],
-          techs: [
+          stack: [
             'Webpack',
             'HTML',
             'CSS',
@@ -116,7 +116,7 @@ export default {
           image: 'portfolio.png',
           link: 'https://srizza93.github.io/portfolio/deploy/index.html',
           description: 'portfolioDescr',
-          techs: ['Webpack', 'HTML', 'CSS', 'JS', 'Vue'],
+          stack: ['Webpack', 'HTML', 'CSS', 'JS', 'Vue'],
           toggle: false,
         },
         {
@@ -135,7 +135,7 @@ export default {
             'Movie details access',
             'Movie player access',
           ],
-          techs: [
+          stack: [
             'Webpack',
             'HTML',
             'CSS',
@@ -166,7 +166,7 @@ export default {
             'Loading page',
             'Purchase confirmation',
           ],
-          techs: [
+          stack: [
             'Webpack',
             'HTML',
             'CSS',
@@ -185,7 +185,7 @@ export default {
           image: 'email-layout.png',
           link: 'https://srizza93.github.io/cv-email-html/',
           description: 'htmlLayoutDescr',
-          techs: ['HTML'],
+          stack: ['HTML'],
           toggle: false,
         },
         {
@@ -203,7 +203,7 @@ export default {
             'Possible to select the inner text',
             'Centering',
           ],
-          techs: ['HTML', 'CSS', 'JS'],
+          stack: ['HTML', 'CSS', 'JS'],
           toggle: false,
         },
         {
@@ -221,7 +221,7 @@ export default {
             'Speed increase on mouse in the outer square',
             'Speed decrease on mouse out the outer square',
           ],
-          techs: ['HTML', 'CSS', 'JS'],
+          stack: ['HTML', 'CSS', 'JS'],
           toggle: false,
         },
       ],
