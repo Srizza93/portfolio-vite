@@ -72,6 +72,7 @@ const contacts: Ref<Contact[]> = ref([
   &__list {
     list-style-type: none;
     text-align: left;
+    padding: 0;
   }
 }
 
@@ -81,7 +82,7 @@ const contacts: Ref<Contact[]> = ref([
   &__link {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     color: #0474b3;
     text-decoration: none;
 
