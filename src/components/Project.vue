@@ -89,7 +89,7 @@ function openDetails(project: Project) {
 .time-circle {
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -9px;
   width: 15px;
   height: 15px;
   border-radius: 50%;

@@ -230,24 +230,41 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.portfolio
- padding-top 0
+<style lang="scss" scoped>
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
 
-.portfolio-subcontainer
-  border-left 4px solid #dedede
-  display flex
-  flex-direction column
+.portfolio-subcontainer {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid #dedede;
 
-.project
- position relative
- padding 0 60px
- margin 100px 0
+  &--dot {
+    width: 100%;
+    height: 5px;
+    border-left: 4px solid #dedede;
+    background-color: #dedede;
+    margin: 0px 10px 10px auto;
+  }
+}
 
-.project:first-child
- margin-top 100px
+.project {
+  position: relative;
+  padding: 0 60px;
+  margin: 100px 0;
 
-@media screen and (max-width 400px)
- .project
-  padding-right 10px
+  &:first-child {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project {
+    padding-right: 10px;
+  }
+}
 </style>

@@ -1,3 +1,4 @@
+export const PORTFOLIO_APP_NAME = 'portfolio-default';
 export const WELCOME_PAGE_NAME = 'Welcome';
 export const HOME_PAGE_NAME = 'Home';
 export const PORTFOLIO_PAGE_NAME = 'Portfolio';

@@ -11,10 +11,9 @@ export const languages: ComputedRef<Language[]> = computed(() =>
     };
   })
 );
-export const selectedLanguage: ComputedRef<Language | undefined> = computed(
-  () =>
-    languages.value.find(
-      (lang: Language): boolean =>
-        lang.name === useLanguageStore().selectedLanguage
-    )
-);
+export const selectedLanguage = computed(() =>
+  languages.value.find(
+    (lang: Language): boolean =>
+      lang.name === useLanguageStore().selectedLanguage
+  )
+) as ComputedRef<Language>;
