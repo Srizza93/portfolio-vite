@@ -1,7 +1,8 @@
 import { createWebHashHistory, createRouter } from 'vue-router';
 import { routeOptions } from '@/router/routeOptions';
+import { Component } from 'vue';
 
-function loadComponent(component?: any, view?: string) {
+function loadComponent(component?: Component | null, view?: string) {
   if (!!component) {
     return component;
   }
