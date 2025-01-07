@@ -35,13 +35,28 @@ import Hamburger from '@/components/Hamburger.vue';
 
 import { WELCOME_PATH } from '@/constants/pageEndpoints';
 import { routeOptions } from '@/router/routeOptions';
-import { WELCOME_PAGE_NAME } from '@/constants/pageNames';
+import {
+  HOME_PAGE_NAME,
+  PORTFOLIO_PAGE_NAME,
+  STACK_PAGE_NAME,
+  CONTACTS_PAGE_NAME,
+  RESUME_PAGE_NAME,
+} from '@/constants/pageNames';
 
 import { getTranslationFromPageName } from '@/services/translationService';
 import { RouteOption } from '@/types/route';
 
-const pages: ComputedRef<RouteOption[]> = computed(() =>
-  routeOptions.filter((page) => page.name !== WELCOME_PAGE_NAME)
+const pages: ComputedRef<RouteOption[]> = computed(
+  () =>
+    routeOptions[0].children?.filter((page) =>
+      [
+        HOME_PAGE_NAME,
+        PORTFOLIO_PAGE_NAME,
+        STACK_PAGE_NAME,
+        CONTACTS_PAGE_NAME,
+        RESUME_PAGE_NAME,
+      ].includes(page.name)
+    ) || []
 );
 </script>
 

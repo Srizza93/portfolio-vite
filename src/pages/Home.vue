@@ -46,7 +46,6 @@ import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
     max-width: 315px;
     border-radius: 50%;
     object-fit: cover;
-    width: 50%;
     margin-bottom: 50px;
   }
 
@@ -55,7 +54,7 @@ import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
     flex-direction: column;
     padding-right: 50px;
     color: #0f52ba;
-    width: 50%;
+    width: 70%;
     margin-bottom: 50px;
 
     &-first-line {
@@ -76,12 +75,10 @@ import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
   }
 }
 
-@media screen and (max-width: 500px) {
-  .router-view {
-    align-items: center;
-  }
-
+@media screen and (max-width: 800px) {
   .home {
+    align-items: center;
+
     &__content {
       flex-direction: column;
       align-items: center;

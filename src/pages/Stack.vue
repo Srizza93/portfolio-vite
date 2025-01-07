@@ -119,6 +119,7 @@ const stack: Ref<Tech[]> = ref([
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
   margin: 0;
+  padding: 0;
 }
 
 .tech {
