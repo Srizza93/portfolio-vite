@@ -36,6 +36,11 @@ const stack: Ref<Tech[]> = ref([
     link: 'https://spring.io/',
   },
   {
+    name: 'Project Reactor',
+    logo: 'project-reactor.png',
+    link: 'https://projectreactor.io/',
+  },
+  {
     name: 'Vue.js',
     logo: 'vuejs.png',
     link: 'https://vuejs.org/',
@@ -96,9 +101,34 @@ const stack: Ref<Tech[]> = ref([
     link: 'https://vitejs.dev/',
   },
   {
+    name: 'Pinia',
+    logo: 'pinia.png',
+    link: 'https://pinia.vuejs.org/',
+  },
+  {
+    name: 'Node.js',
+    logo: 'node.png',
+    link: 'https://nodejs.org/',
+  },
+  {
+    name: 'Express.js',
+    logo: 'express.png',
+    link: 'https://expressjs.com/',
+  },
+  {
     name: 'Jest',
     logo: 'jest.png',
     link: 'https://jestjs.io/',
+  },
+  {
+    name: 'Vitest',
+    logo: 'vitest.png',
+    link: 'https://vitest.dev/',
+  },
+  {
+    name: 'JUnit',
+    logo: 'junit.png',
+    link: 'https://junit.org/',
   },
   {
     name: 'Git',
@@ -109,6 +139,26 @@ const stack: Ref<Tech[]> = ref([
     name: 'Github',
     logo: 'github.png',
     link: 'https://github.com/',
+  },
+  {
+    name: 'MongoDB',
+    logo: 'mongodb.png',
+    link: 'https://www.mongodb.com/',
+  },
+  {
+    name: 'PostgresSQL',
+    logo: 'postgressql.png',
+    link: 'https://www.postgresql.org/',
+  },
+  {
+    name: 'Docker',
+    logo: 'docker.png',
+    link: 'https://www.docker.com/',
+  },
+  {
+    name: 'Figma',
+    logo: 'figma.png',
+    link: 'https://www.figma.com/',
   },
 ]);
 </script>
@@ -150,6 +200,7 @@ const stack: Ref<Tech[]> = ref([
     width: 40px;
     height: 40px;
     margin-right: 30px;
+    object-fit: contain;
   }
 
   &__text {
