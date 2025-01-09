@@ -130,18 +130,10 @@ function openDetails(project: Project) {
   margin: 0 auto 15px auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .project-image {
     height: 200px;
-  }
-
-  .project-button {
-    padding: 15px;
-    white-space: normal;
-  }
-
-  .open-details {
-    padding: 10px;
+    object-fit: cover;
   }
 }
 </style>
