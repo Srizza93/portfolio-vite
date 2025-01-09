@@ -36,12 +36,12 @@ const { isWelcomePage } = usePortfolioRouter();
 <style lang="scss" scoped>
 .portfolio-layout {
   width: 100%;
-  padding: 100px 60px;
+  padding: 60px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .portfolio-layout {
-    padding: 100px 15px;
+    padding: 60px 15px;
   }
 }
 </style>
