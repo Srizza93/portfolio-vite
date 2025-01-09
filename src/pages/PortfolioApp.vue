@@ -11,7 +11,7 @@
     @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
     @open-modal="openLanguageModal"
   />
-  <toaster />
+  <toaster v-if="toasterMessage" />
 </template>
 
 <script lang="ts" setup>
@@ -25,13 +25,18 @@ import { languages, selectedLanguage } from '@/composables/languageComposable';
 import { usePortfolioRouter } from '@/composables/routerComposable';
 
 import { selectLanguage } from '@/services/languageService';
+
 import { useLanguageStore } from '@/store/language';
+import { useToasterStore } from '@/store/toaster';
+
 import { PossibleLanguage } from '@/types/language';
 
 const languageStore = useLanguageStore();
+const toasterStore = useToasterStore();
 
 const { openLanguageModal } = languageStore;
 const { isLanguageModalOpen } = storeToRefs(languageStore);
+const { toasterMessage } = storeToRefs(toasterStore);
 const { isWelcomePage } = usePortfolioRouter();
 </script>
 

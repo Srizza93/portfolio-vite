@@ -30,8 +30,14 @@
 
 <script lang="ts" setup>
 import { ref, type Ref } from 'vue';
+import i18n from '@/i18n';
 
 import { getFilePath } from '@/services/fileService';
+
+import { useToasterStore } from '@/store/toaster';
+import { MessageTypeEnum } from '@/types/toaster';
+
+const toasterStore = useToasterStore();
 
 type Contact = {
   id: string;
@@ -47,7 +53,7 @@ const contacts: Ref<Contact[]> = ref([
   {
     id: 'phone',
     link: 'tel:+33772233271',
-    text: '+33772233271',
+    text: '+33 772233271',
   },
   {
     id: 'email',
@@ -72,8 +78,15 @@ function showText(textId: string) {
 async function copyToClipboard(text: string) {
   try {
     await navigator.clipboard.writeText(text);
+    toasterStore.setMessage(
+      i18n.global.t('contacts.copy-clipboard-success'),
+      MessageTypeEnum.SUCCESS
+    );
   } catch (error) {
-    console.error('Failed to copy: ', error);
+    toasterStore.setMessage(
+      i18n.global.t('contacts.copy-clipboard-error'),
+      MessageTypeEnum.ERROR
+    );
   }
 }
 </script>
