@@ -39,9 +39,9 @@ const { isWelcomePage } = usePortfolioRouter();
   padding: 100px 60px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .portfolio-layout {
-    padding: 100px 30px;
+    padding: 100px 15px;
   }
 }
 </style>

@@ -1,28 +1,114 @@
 <template>
   <div class="portfolio">
     <div class="portfolio-subcontainer">
-      <div
-        class="project"
-        v-for="project in projects"
-        :key="project.id + '-project'"
-      >
-        <project :project="project" />
-      </div>
+      <projects :projects="projects" />
     </div>
   </div>
 </template>
 
 <script>
-import Project from '@/components/Project.vue';
+import Projects from '@/components/Projects.vue';
 
 export default {
   name: 'Portfolio',
-  components: { Project },
+  components: { Projects },
   data() {
     return {
       projects: [
         {
-          id: 1,
+          name: 'Checkout Tunnel',
+          date: ['1', '2024'],
+          image: 'leroy-merlin.png',
+          description: 'checkout-store',
+          stack: [
+            'Java 17',
+            'SpringBoot',
+            'Project Reactor',
+            'HTML',
+            'CSS',
+            'Vue',
+            'Vuex',
+            'Pinia',
+            'Typescript',
+            'Vue router',
+            'Vite',
+            'Vitest',
+            'Vue test utils',
+            'JUnit',
+            'Figma',
+            'Jira',
+            'Github, Github Actions',
+            'Méthodologie Agile Scrum',
+          ],
+          toggle: false,
+        },
+        {
+          name: 'Stocky',
+          date: ['9', '2023'],
+          image: 'symbol-it.png',
+          description: 'stocky',
+          stack: [
+            'Java 17',
+            'SpringBoot',
+            'HTML',
+            'CSS',
+            'Vue',
+            'Typescript',
+            'Vue router',
+            'Vite',
+            'Vitest',
+            'Vue test utils',
+            'Figma',
+            'Jira',
+            'JUnit',
+            'Fly.io',
+            'CockroachDB',
+            'PostgresSQL',
+            'Github, Github Actions',
+            'Méthodologie Agile Scrum',
+          ],
+          toggle: false,
+        },
+        {
+          name: 'Scpt 360',
+          date: ['1', '2023'],
+          image: 'leroy-merlin.png',
+          description: 'scpt-360',
+          stack: [
+            'HTML',
+            'CSS',
+            'Vue',
+            'Typescript',
+            'Vue router',
+            'Vite',
+            'Vitest',
+            'Vue test utils',
+            'Figma',
+            'Jira',
+            'Github, Github Actions',
+            'Méthodologie Agile Scrum',
+          ],
+          toggle: false,
+        },
+        {
+          name: 'Symbol-IT',
+          date: ['9', '2022'],
+          image: 'symbol-it.png',
+          description: 'symbol-it',
+          stack: [
+            'HTML',
+            'CSS',
+            'Vue',
+            'Strapi',
+            'Vuex',
+            'Vue Router',
+            'Github',
+            'Docker',
+            'NuxtJS',
+          ],
+          toggle: false,
+        },
+        {
           name: 'Todo App',
           date: ['10', '2022'],
           image: 'todo.png',
@@ -32,7 +118,6 @@ export default {
           toggle: false,
         },
         {
-          id: 2,
           name: 'Weather App',
           date: ['10', '2022'],
           image: 'weather.png',
@@ -42,7 +127,6 @@ export default {
           toggle: false,
         },
         {
-          id: 3,
           name: 'New Portfolio',
           date: ['6', '2022'],
           image: 'portfolio2.png',
@@ -52,7 +136,6 @@ export default {
           toggle: false,
         },
         {
-          id: 4,
           name: 'E-commerce 2',
           date: ['4', '2022'],
           image: 'e-commerce-2.png',
@@ -72,21 +155,19 @@ export default {
           toggle: false,
         },
         {
-          id: 5,
           name: 'Advent Challenges',
           date: ['1', '2022'],
           image: 'advent.png',
-          link: 'https://srizza93.github.io/advent-challenges/deploy/index.html#/',
+          link: 'https://srizza93.github.io/advent-challenges/',
           description: 'adventDescr',
           stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router'],
           toggle: false,
         },
         {
-          id: 6,
           name: 'Social Network',
           date: ['10', '2021'],
           image: 'social.png',
-          link: 'https://srizza93.github.io/social/deploy/index.html',
+          link: 'https://srizza93.github.io/social/',
           description: 'socialDescr',
           functionalities: [
             'API data rendering',
@@ -110,21 +191,19 @@ export default {
           toggle: false,
         },
         {
-          id: 7,
           name: 'Portfolio',
           date: ['10', '2021'],
           image: 'portfolio.png',
-          link: 'https://srizza93.github.io/portfolio/deploy/index.html',
+          link: 'https://srizza93.github.io/portfolio/',
           description: 'portfolioDescr',
           stack: ['Webpack', 'HTML', 'CSS', 'JS', 'Vue'],
           toggle: false,
         },
         {
-          id: 8,
           name: 'Movie Streaming',
           date: ['8', '2021'],
           image: 'streaming.png',
-          link: 'https://srizza93.github.io/streaming/deploy/index.html',
+          link: 'https://srizza93.github.io/streaming/',
           description: 'moviesDescr',
           functionalities: [
             'API data rendering',
@@ -148,11 +227,10 @@ export default {
           toggle: false,
         },
         {
-          id: 9,
           name: 'E-commerce',
           date: ['6', '2021'],
           image: 'e-commerce.png',
-          link: 'https://srizza93.github.io/e-commerce/deploy/index.html',
+          link: 'https://srizza93.github.io/e-commerce/',
           description: 'ecommerceDescr',
           functionalities: [
             'Navigation bar filtering',
@@ -179,7 +257,6 @@ export default {
           toggle: false,
         },
         {
-          id: 10,
           name: 'HTML Email layout',
           date: ['6', '2021'],
           image: 'email-layout.png',
@@ -189,7 +266,6 @@ export default {
           toggle: false,
         },
         {
-          id: 11,
           name: 'Tooltip plugin',
           date: ['5', '2021'],
           image: 'tooltip.png',
@@ -207,7 +283,6 @@ export default {
           toggle: false,
         },
         {
-          id: 12,
           name: 'Square task',
           date: 'Feb 2021',
           date: ['1', '2021'],
@@ -249,22 +324,6 @@ export default {
     border-left: 4px solid #dedede;
     background-color: #dedede;
     margin: 0px 10px 10px auto;
-  }
-}
-
-.project {
-  position: relative;
-  padding: 0 60px;
-  margin: 100px 0;
-
-  &:first-child {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .project {
-    padding-right: 10px;
   }
 }
 </style>

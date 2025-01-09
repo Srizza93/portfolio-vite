@@ -13,6 +13,7 @@
     "position": "Full Stack Developer"
   },
   "portfolio": {
+    "visit": "Scopri il Progetto",
     "showDetails": "Scopri i dettagli",
     "closeDetails": "Chiudi i dettagli",
     "months": [
@@ -42,7 +43,11 @@
     "htmlLayoutDescr": "CV personale in formato HTML-email - Responsive Design",
     "tooltipDescr": "Un tooltip plugin con delle condizioni specifiche e compiti facoltativi - Responsive Design",
     "squareDescr": "Quadrato che segue il mouse con caratteristiche extra",
-    "technologies": "Tecnologie"
+    "stack": "Stack",
+    "checkout-store": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
+    "stocky": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
+    "scpt-360": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione.",
+    "symbol-it": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
   },
   "resume": {
     "header": "Scarica il mio CV nella lingua che preferisci",
