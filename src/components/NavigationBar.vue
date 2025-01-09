@@ -1,8 +1,13 @@
 <template>
   <div class="navigation">
-    <router-link :to="WELCOME_PATH">
-      <img class="navigation__logo" alt="logo" src="@/assets/s-icon.png" />
-    </router-link>
+    <img
+      class="navigation__logo"
+      alt="logo"
+      src="@/assets/s-icon.png"
+      tabindex="0"
+      @keydown.enter="navigateToWelcome"
+      @click="navigateToWelcome"
+    />
     <div class="navigation__links">
       <div class="navigation__link" v-for="page in pages" :key="page.name">
         <span
@@ -30,6 +35,7 @@
 
 <script lang="ts" setup>
 import { computed, ComputedRef } from 'vue';
+import { useRouter } from 'vue-router';
 
 import Hamburger from '@/components/Hamburger.vue';
 
@@ -46,6 +52,8 @@ import {
 import { getTranslationFromPageName } from '@/services/translationService';
 import { RouteOption } from '@/types/route';
 
+const router = useRouter();
+
 const pages: ComputedRef<RouteOption[]> = computed(
   () =>
     routeOptions[0].children?.filter((page) =>
@@ -58,6 +66,10 @@ const pages: ComputedRef<RouteOption[]> = computed(
       ].includes(page.name)
     ) || []
 );
+
+function navigateToWelcome() {
+  router.push(WELCOME_PATH);
+}
 </script>
 
 <style lang="scss" scoped>
