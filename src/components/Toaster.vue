@@ -24,9 +24,7 @@ const toasterStore = useToasterStore();
 const { toasterMessage, messageType } = storeToRefs(toasterStore);
 
 onMounted(() => {
-  setTimeout(() => {
-    toasterStore.clearMessage();
-  }, 7000);
+  toasterStore.closeToaster();
 });
 </script>
 
@@ -36,18 +34,17 @@ onMounted(() => {
   top: -100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
-  background-color: white;
   color: #fff;
   padding: 15px 30px;
   border-radius: 5px;
-  margin: 10px;
+  margin: 30px auto;
   font-size: 14px;
   font-weight: bold;
   text-align: left;
+  white-space: nowrap;
 
   &--visible {
-    animation: slideInAndOut 6.5s ease-in-out forwards;
+    animation: slideIn 0.5s ease-out forwards;
   }
 
   &--error {
@@ -67,18 +64,12 @@ onMounted(() => {
   }
 }
 
-@keyframes slideInAndOut {
+@keyframes slideIn {
   0% {
     top: -100%;
   }
-  15% {
-    top: 0;
-  }
-  85% {
-    top: 0;
-  }
   100% {
-    top: -100%;
+    top: 0;
   }
 }
 </style>
