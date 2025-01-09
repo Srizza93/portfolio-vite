@@ -8,7 +8,7 @@
         class="contact"
       >
         <a class="contact__link" :href="contact.link">
-          {{ contact.text }}
+          <span v-if="showText(contact.id)">{{ contact.text }}</span>
           <img
             v-if="contact.image"
             class="contact__link__icon"
@@ -16,6 +16,13 @@
             :alt="contact.image.name"
           />
         </a>
+        <img
+          v-if="contact.text"
+          :src="getFilePath('copy-clipboard.png')"
+          alt="copy-clipboard"
+          class="contact__copy"
+          @click="copyToClipboard(contact.text)"
+        />
       </li>
     </ul>
   </div>
@@ -23,11 +30,17 @@
 
 <script lang="ts" setup>
 import { ref, type Ref } from 'vue';
+import i18n from '@/i18n';
 
 import { getFilePath } from '@/services/fileService';
 
+import { useToasterStore } from '@/store/toaster';
+import { MessageTypeEnum } from '@/types/toaster';
+
+const toasterStore = useToasterStore();
+
 type Contact = {
-  id: number;
+  id: string;
   link: string;
   text: string;
   image?: {
@@ -38,25 +51,44 @@ type Contact = {
 
 const contacts: Ref<Contact[]> = ref([
   {
-    id: 1,
+    id: 'phone',
     link: 'tel:+33772233271',
-    text: '+33772233271',
+    text: '+33 772233271',
   },
   {
-    id: 2,
+    id: 'email',
     link: 'mailto:simonerizzanl@gmail.com',
     text: 'simonerizzanl@gmail.com',
   },
   {
-    id: 3,
+    id: 'linkedin',
     link: 'https://www.linkedin.com/in/simonerizza1993',
-    text: '',
+    text: 'https://www.linkedin.com/in/simonerizza1993',
     image: {
       link: 'linkedin.png',
       name: 'linkedin',
     },
   },
 ]);
+
+function showText(textId: string) {
+  return textId === 'phone' || textId === 'email';
+}
+
+async function copyToClipboard(text: string) {
+  try {
+    await navigator.clipboard.writeText(text);
+    toasterStore.setMessage(
+      i18n.global.t('contacts.copy-clipboard-success'),
+      MessageTypeEnum.SUCCESS
+    );
+  } catch (error) {
+    toasterStore.setMessage(
+      i18n.global.t('contacts.copy-clipboard-error'),
+      MessageTypeEnum.ERROR
+    );
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -77,12 +109,12 @@ const contacts: Ref<Contact[]> = ref([
 }
 
 .contact {
+  display: flex;
+  align-items: center;
   margin: 30px 0;
 
   &__link {
     display: block;
-    width: 100%;
-    padding: 15px 0;
     color: #0474b3;
     text-decoration: none;
 
@@ -91,17 +123,16 @@ const contacts: Ref<Contact[]> = ref([
     }
   }
 
-  &__link:hover {
-    animation: push-text 0.2s linear forwards;
+  &__link:hover,
+  &__copy:hover {
+    opacity: 0.7;
   }
-}
 
-@keyframes push-text {
-  0% {
-    padding-left: 15px;
-  }
-  100% {
-    padding-left: 50px;
+  &__copy {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
   }
 }
 </style>

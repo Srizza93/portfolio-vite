@@ -1,4 +1,7 @@
 {
+  "global": {
+    "error": "Si è verificato un errore. Riprova più tardi."
+  },
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -49,6 +52,10 @@
     "stocky": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
     "scpt-360": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione.",
     "symbol-it": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
+  },
+  "contacts": {
+    "copy-clipboard-success": "Copiato nella clipboard.",
+    "copy-clipboard-error": "Copia nella clipboard fallita."
   },
   "resume": {
     "header": "Scarica il mio CV nella lingua che preferisci",
