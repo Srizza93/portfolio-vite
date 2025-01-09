@@ -182,7 +182,7 @@ const stack: Ref<Tech[]> = ref([
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 170px;
+  width: 200px;
   height: 40px;
   color: inherit;
   text-decoration: none;
