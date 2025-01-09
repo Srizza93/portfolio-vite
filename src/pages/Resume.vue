@@ -97,9 +97,11 @@ const orderedCvs = computed(() =>
   }
 
   &__flag {
-    width: 250px;
-    height: 160px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   &__download {
@@ -114,14 +116,7 @@ const orderedCvs = computed(() =>
     opacity: 0;
     margin: 0;
     border-radius: 15px;
-    transition-duration: 1s;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .cv__flag {
-    width: 150px;
-    height: 95px;
+    transition-duration: 0.4s;
   }
 }
 </style>

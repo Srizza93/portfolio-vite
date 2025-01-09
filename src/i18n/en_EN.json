@@ -13,8 +13,10 @@
     "position": "Full Stack Developer"
   },
   "portfolio": {
+    "visit": "Check out the project",
     "showDetails": "Show details",
     "closeDetails": "Close details",
+    "github": "Checkout out the code",
     "months": [
       "Jan",
       "Feb",
@@ -42,7 +44,11 @@
     "htmlLayoutDescr": "Personal CV in HTML-email format - Responsive Design",
     "tooltipDescr": "A tool tip plugin with specific conditions and optional tasks - Responsive Design",
     "squareDescr": "Square following mouse with extra features",
-    "technologies": "Technologies"
+    "stack": "Stack",
+    "checkout-store": "As a full-stack developer at Leroy Merlin, I worked within the ELO team on the Checkout Store project, a multichannel solution aimed at transforming the in-store customer experience. I have also contributed to several other projects within the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
+    "stocky": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing for the equipment.",
+    "scpt-360": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators.",
+    "symbol-it": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects:\n\n- Colexpress: Order and billing solution for a logistics company\n- Proch’Orientation (Hauts de France Region): Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application\n- For Each Academy: Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)\n- For Each Academy: Creation of an application for the management of students' progress"
   },
   "resume": {
     "header": "Download my cv in your preferred language",

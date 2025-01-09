@@ -1,4 +1,8 @@
-import { createWebHashHistory, createRouter } from 'vue-router';
+import {
+  createWebHashHistory,
+  createRouter,
+  type RouteRecordRaw,
+} from 'vue-router';
 import { routeOptions } from '@/router/routeOptions';
 import { Component } from 'vue';
 
@@ -13,10 +17,10 @@ const routes = routeOptions.map((route) => ({
   ...route,
   component: loadComponent(route.component, route.name),
   children: route.children
-    ? route.children.map((child) => ({
+    ? (route.children.map((child) => ({
         ...child,
         component: loadComponent(null, child.name),
-      }))
+      })) as RouteRecordRaw[])
     : [],
 }));
 
