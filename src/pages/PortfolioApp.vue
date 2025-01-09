@@ -11,6 +11,7 @@
     @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
     @open-modal="openLanguageModal"
   />
+  <toaster />
 </template>
 
 <script lang="ts" setup>
@@ -18,6 +19,7 @@ import { storeToRefs } from 'pinia';
 
 import NavigationBar from '@/components/NavigationBar.vue';
 import OptionsModal from '@/components/OptionsModal.vue';
+import Toaster from '@/components/Toaster.vue';
 
 import { languages, selectedLanguage } from '@/composables/languageComposable';
 import { usePortfolioRouter } from '@/composables/routerComposable';
