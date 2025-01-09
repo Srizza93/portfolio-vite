@@ -2,15 +2,15 @@
   <navigation-bar v-if="!isWelcomePage" />
   <div class="portfolio-layout">
     <router-view></router-view>
-    <options-modal
-      v-if="!isWelcomePage"
-      :selected-language="selectedLanguage"
-      :options="languages"
-      :is-modal-open="isLanguageModalOpen"
-      @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
-      @open-modal="openLanguageModal"
-    />
   </div>
+  <options-modal
+    v-if="!isWelcomePage"
+    :selected-language="selectedLanguage"
+    :options="languages"
+    :is-modal-open="isLanguageModalOpen"
+    @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
+    @open-modal="openLanguageModal"
+  />
 </template>
 
 <script lang="ts" setup>
