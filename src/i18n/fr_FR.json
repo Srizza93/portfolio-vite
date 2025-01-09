@@ -13,9 +13,10 @@
     "position": "Développeur Full Stack"
   },
   "portfolio": {
-    "visit": "Découvrez le Projet",
+    "visit": "Découvrez le projet",
     "showDetails": "Afficher les détails",
     "closeDetails": "Cacher les détails",
+    "github": "Découvrez le code",
     "months": [
       "Jan",
       "Fév",

@@ -7,11 +7,12 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, type Ref } from 'vue';
 
 import Projects from '@/components/Projects.vue';
+import { Project } from '@/types/project';
 
-const projects = ref([
+const projects: Ref<Project[]> = ref([
   {
     name: 'Checkout Tunnel',
     date: ['1', '2024'],
@@ -111,6 +112,7 @@ const projects = ref([
     image: 'todo.png',
     link: 'https://srizza93.github.io/todo-app/',
     description: 'tododescr',
+    github: 'https://github.com/Srizza93/todo-app',
     stack: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Nuxt', 'Jest'],
     toggle: false,
   },
@@ -120,6 +122,7 @@ const projects = ref([
     image: 'weather.png',
     link: 'https://srizza93.github.io/weather-app/#/',
     description: 'weatherdescr',
+    github: 'https://github.com/Srizza93/weather-app',
     stack: ['HTML', 'CSS', 'SASS', 'JS', 'Vue', 'Vue-router', 'Vite'],
     toggle: false,
   },
@@ -129,6 +132,7 @@ const projects = ref([
     image: 'portfolio2.png',
     link: 'https://srizza93.github.io/portfolio-vite/',
     description: 'portfolio2Descr',
+    github: 'https://github.com/Srizza93/portfolio-vite',
     stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router', 'Vite', 'i18n'],
     toggle: false,
   },
@@ -138,6 +142,7 @@ const projects = ref([
     image: 'e-commerce-2.png',
     link: 'https://srizza93.github.io/sales/',
     description: 'ecommerce2Descr',
+    github: 'https://github.com/Srizza93/sales',
     functionalities: [
       'Products filtering and sort system',
       'Product details page',
@@ -157,6 +162,7 @@ const projects = ref([
     image: 'advent.png',
     link: 'https://srizza93.github.io/advent-challenges/',
     description: 'adventDescr',
+    github: 'https://github.com/Srizza93/advent-challenges',
     stack: ['HTML', 'CSS', 'JS', 'Vue', 'Vue-router'],
     toggle: false,
   },
@@ -166,6 +172,7 @@ const projects = ref([
     image: 'social.png',
     link: 'https://srizza93.github.io/social/',
     description: 'socialDescr',
+    github: 'https://github.com/Srizza93/social',
     functionalities: [
       'API data rendering',
       'Navigation bar filtering',
@@ -193,6 +200,7 @@ const projects = ref([
     image: 'portfolio.png',
     link: 'https://srizza93.github.io/portfolio/',
     description: 'portfolioDescr',
+    github: 'https://github.com/Srizza93/portfolio',
     stack: ['Webpack', 'HTML', 'CSS', 'JS', 'Vue'],
     toggle: false,
   },
@@ -202,6 +210,7 @@ const projects = ref([
     image: 'streaming.png',
     link: 'https://srizza93.github.io/streaming/',
     description: 'moviesDescr',
+    github: 'https://github.com/Srizza93/streaming',
     functionalities: [
       'API data rendering',
       'Search bar filtering',
@@ -229,6 +238,7 @@ const projects = ref([
     image: 'e-commerce.png',
     link: 'https://srizza93.github.io/e-commerce/',
     description: 'ecommerceDescr',
+    github: 'https://github.com/Srizza93/e-commerce',
     functionalities: [
       'Navigation bar filtering',
       'Gallery playing',
@@ -259,6 +269,7 @@ const projects = ref([
     image: 'email-layout.png',
     link: 'https://srizza93.github.io/cv-email-html/',
     description: 'htmlLayoutDescr',
+    github: 'https://github.com/Srizza93/cv-email-html',
     stack: ['HTML'],
     toggle: false,
   },
@@ -268,6 +279,7 @@ const projects = ref([
     image: 'tooltip.png',
     link: 'https://srizza93.github.io/tooltip/',
     description: 'tooltipDescr',
+    github: 'https://github.com/Srizza93/tooltip',
     functionalities: [
       'Custom content re-usability',
       'Unlimited size',
@@ -285,6 +297,7 @@ const projects = ref([
     image: 'square-task.png',
     link: 'https://srizza93.github.io/square_task/',
     description: 'squareDescr',
+    github: 'https://github.com/Srizza93/square_task',
     functionalities: [
       'Square catching mouse',
       'Square increase its size when it comes closer',

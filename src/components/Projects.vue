@@ -18,11 +18,13 @@
         :src="getFilePath(project.image)"
         :alt="project.name"
       />
-      <a v-if="project.link" :href="project.link">
-        <folio-button class="project-button">
-          {{ $t('portfolio.visit') }}
-        </folio-button>
+      <a v-if="project.link" :href="project.link" class="project-link">
+        {{ $t('portfolio.visit') }}
       </a>
+      <a v-if="project.github" :href="project.github" class="project-link">
+        {{ $t('portfolio.github') }}
+      </a>
+
       <folio-button
         class="project-button"
         @folio-button-click="openDetails(project)"
@@ -56,10 +58,10 @@ function openDetails(project: Project) {
 .project-container {
   position: relative;
   padding: 0 30px 0 60px;
-  margin: 100px 0;
+  margin-top: 30px;
 
   &:first-child {
-    margin-top: 100px;
+    margin-top: 0;
   }
 }
 
@@ -92,6 +94,7 @@ function openDetails(project: Project) {
   max-width: 500px;
   border: 1px solid #dedede;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &--open {
     height: 100%;
@@ -107,6 +110,19 @@ function openDetails(project: Project) {
   padding: 5px;
   object-fit: contain;
   border-bottom: 1px solid #dedede;
+}
+
+.project-link {
+  color: #0474b3;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+    color: #035a91;
+  }
 }
 
 .project-button {

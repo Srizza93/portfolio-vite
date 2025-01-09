@@ -100,6 +100,7 @@ const orderedCvs = computed(() =>
     width: 250px;
     height: 160px;
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   &__download {
@@ -114,7 +115,7 @@ const orderedCvs = computed(() =>
     opacity: 0;
     margin: 0;
     border-radius: 15px;
-    transition-duration: 1s;
+    transition-duration: 0.4s;
   }
 }
 

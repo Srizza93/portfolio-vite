@@ -13,9 +13,10 @@
     "position": "Full Stack Developer"
   },
   "portfolio": {
-    "visit": "Scopri il Progetto",
+    "visit": "Scopri il progetto",
     "showDetails": "Scopri i dettagli",
     "closeDetails": "Chiudi i dettagli",
+    "github": "Scopri il codice",
     "months": [
       "Gen",
       "Feb",

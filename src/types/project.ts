@@ -4,6 +4,7 @@ export type Project = {
   link?: string;
   image: string;
   description: string;
+  github?: string;
   functionalities?: string[];
   stack: string[];
   toggle: boolean;

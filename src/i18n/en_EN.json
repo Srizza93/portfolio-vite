@@ -13,9 +13,10 @@
     "position": "Full Stack Developer"
   },
   "portfolio": {
-    "visit": "Check Out the Project",
+    "visit": "Check out the project",
     "showDetails": "Show details",
     "closeDetails": "Close details",
+    "github": "Checkout out the code",
     "months": [
       "Jan",
       "Feb",
