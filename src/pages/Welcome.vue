@@ -1,11 +1,9 @@
 <template>
   <div class="welcome">
-    <div class="introduction">
-      <p class="introduction__message">
-        <span ref="messageRef"></span>
-        <span class="caret"></span>
-      </p>
-    </div>
+    <p class="introduction">
+      <span ref="messageRef"></span>
+      <span class="caret"></span>
+    </p>
     <div class="button-box">
       <folio-button
         theme="x-light"
@@ -123,14 +121,10 @@ onMounted(() => {
 }
 
 .introduction {
-  display: flex;
-
-  &__message {
-    margin: 0 auto;
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
-  }
+  margin: 0 auto;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .caret {
