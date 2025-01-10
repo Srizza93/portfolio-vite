@@ -1,8 +1,9 @@
 <template>
   <div class="welcome">
     <div class="introduction">
-      <p class="introduction__message">
+      <p ref="messageRef" class="introduction__message">
         {{ $t('welcome.introduction', { name: 'Simone Rizza' }) }}
+        <span class="caret"></span>
       </p>
     </div>
     <div class="button-box">
@@ -17,12 +18,11 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from 'vue';
-import { useRouter } from 'vue-router';
-import FolioButton from '@/components/FolioButton.vue';
-import { HOME_PATH } from '@/constants/pageEndpoints';
+import { ref, onMounted } from 'vue';
 
-const router = useRouter();
+import FolioButton from '@/components/FolioButton.vue';
+
+const messageRef = ref<HTMLParagraphElement | null>(null);
 
 function goToHome() {
   // setTimeout(() => {
@@ -71,20 +71,20 @@ onMounted(() => {
 
 .introduction {
   display: flex;
-  flex-direction: column;
-  width: min-content;
 
   &__message {
-    width: 0;
     margin: 0 auto;
-    overflow: hidden;
     color: white;
-    font-size: 6vw;
+    font-size: 32px;
     font-weight: bold;
-    white-space: nowrap;
-    animation: coding-introduction 2s steps(20, end) forwards,
-      blink-caret 1s 2.5;
   }
+}
+
+.caret {
+  height: 100%;
+  width: 3px;
+  border-left: 1px solid white;
+  animation: blink-caret 1.1s infinite steps(1, start);
 }
 
 .button-box {
@@ -109,11 +109,17 @@ onMounted(() => {
 }
 
 @keyframes blink-caret {
-  from {
-    border-right: 3px solid white;
+  0% {
+    visibility: visible;
+    opacity: 1;
   }
-  to {
-    border-right: 3px solid transparent;
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden; // Completely hides at the end of the cycle
+    opacity: 0; // Fade out
   }
 }
 
