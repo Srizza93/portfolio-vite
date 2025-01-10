@@ -11,7 +11,7 @@
         theme="x-light"
         @animationend="goToHome"
         @click="goToHomeWithoutAnimation"
-        >Access</folio-button
+        >{{ $t('welcome.access-home') }}</folio-button
       >
       <img
         class="button-box__mouse"

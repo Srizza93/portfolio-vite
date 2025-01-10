@@ -10,7 +10,8 @@
     "resume": "Resume"
   },
   "welcome": {
-    "introduction": "Welcome to {name}'s portfolio"
+    "introduction": "Welcome to {name}'s portfolio",
+    "access-home": "Access Home"
   },
   "home": {
     "greatings": "Hi, my name is",

@@ -10,7 +10,8 @@
     "resume": "Cv"
   },
   "welcome": {
-    "introduction": "Benvenuti nel portfolio di {name}"
+    "introduction": "Benvenuti nel portfolio di {name}",
+    "access-home": "Accedi alla Home"
   },
   "home": {
     "greatings": "Ciao, il mio nome é",
