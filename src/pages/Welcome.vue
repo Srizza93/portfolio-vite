@@ -1,14 +1,15 @@
 <template>
   <div class="welcome">
-    <div class="messages">
-      <span class="messages__text message1">Welcome to</span>
-      <span class="messages__text message2">Simone Rizza's portfolio</span>
+    <div class="introduction">
+      <p class="introduction__message">
+        {{ $t('welcome.introduction', { name: 'Simone Rizza' }) }}
+      </p>
     </div>
     <div class="button-box">
-      <folio-button theme="dark">Access</folio-button>
+      <folio-button theme="x-light">Access</folio-button>
       <img
-        class="button-box_mouse"
-        src="@/assets/arrow-mouse.png"
+        class="button-box__mouse"
+        src="@/assets/cursor.png"
         alt="arrow-mouse"
       />
     </div>
@@ -24,9 +25,9 @@ import { HOME_PATH } from '@/constants/pageEndpoints';
 const router = useRouter();
 
 function goToHome() {
-  setTimeout(() => {
-    router.push(HOME_PATH);
-  }, 7000);
+  // setTimeout(() => {
+  //   router.push(HOME_PATH);
+  // }, 7000);
 }
 
 onMounted(() => {
@@ -35,8 +36,22 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.folio-button {
+  animation: button-click 0.6s linear 3.5s;
+  pointer-events: none;
+}
+
 .hide-element {
   opacity: 0;
+}
+
+@keyframes button-click {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
 </style>
 
@@ -49,16 +64,17 @@ onMounted(() => {
   position: absolute;
   min-width: 100%;
   height: 100%;
+  padding: 30px 15px;
   background-color: #0474b3;
   transition-duration: 2s;
 }
 
-.messages {
+.introduction {
   display: flex;
   flex-direction: column;
   width: min-content;
 
-  &__text {
+  &__message {
     width: 0;
     margin: 0 auto;
     overflow: hidden;
@@ -66,19 +82,24 @@ onMounted(() => {
     font-size: 6vw;
     font-weight: bold;
     white-space: nowrap;
+    animation: coding-introduction 2s steps(20, end) forwards,
+      blink-caret 1s 2.5;
   }
 }
 
-.message1 {
-  animation: message-animation 2s steps(20, end) forwards, blink-caret 1s 2.5;
+.button-box {
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+
+  &__mouse {
+    position: absolute;
+    animation: mouse 0.5s steps(15) 3s;
+    animation-fill-mode: both;
+  }
 }
 
-.message2 {
-  animation: message-animation 3s steps(25, end) 2.5s forwards,
-    blink-caret 1s infinite 2.5s;
-}
-
-@keyframes message-animation {
+@keyframes coding-introduction {
   from {
     width: 0%;
   }
@@ -96,37 +117,14 @@ onMounted(() => {
   }
 }
 
-.button-box {
-  position: relative;
-  display: flex;
-  margin-top: 60px;
-}
-
-.folio-button {
-  animation: button-click 0.6s linear 6.5s;
-  pointer-events: none;
-}
-
-.button-box_mouse {
-  position: absolute;
-  animation: mouse 0.5s steps(15) 6s;
-  animation-fill-mode: both;
-}
-
 @keyframes mouse {
   from {
-    top: -50px;
-    left: -50px;
+    top: -50%;
+    left: -50%;
   }
   to {
-    top: 35px;
-    left: 10px;
-  }
-}
-
-@keyframes button-click {
-  to {
-    opacity: 0.5;
+    top: 10%;
+    left: 10%;
   }
 }
 </style>

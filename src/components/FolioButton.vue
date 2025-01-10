@@ -21,6 +21,8 @@ const themeClass = computed(() => {
       return 'folio-dark';
     case 'light':
       return 'folio-light';
+    case 'x-light':
+      return 'folio-x-light';
     default:
       return 'folio-light';
   }
@@ -31,8 +33,8 @@ const themeClass = computed(() => {
 .folio-button {
   width: 100%;
   max-width: 250px;
-  padding: 15px 30px;
-  border-radius: 15px;
+  padding: 8px 30px;
+  border-radius: 5px;
   border: none;
   color: white;
   text-align: center;
@@ -52,6 +54,11 @@ const themeClass = computed(() => {
 
 .folio-light {
   background-color: #0474b3;
+}
+
+.folio-x-light {
+  background-color: white;
+  color: #0a6b9d;
 }
 
 @keyframes blink {
