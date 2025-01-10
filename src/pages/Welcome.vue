@@ -2,7 +2,6 @@
   <div class="welcome">
     <div class="introduction">
       <p ref="messageRef" class="introduction__message">
-        {{ $t('welcome.introduction', { name: 'Simone Rizza' }) }}
         <span class="caret"></span>
       </p>
     </div>
@@ -19,19 +18,33 @@
 
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+import i18n from '@/i18n';
 
 import FolioButton from '@/components/FolioButton.vue';
+import { HOME_PATH } from '@/constants/pageEndpoints';
 
+const router = useRouter();
 const messageRef = ref<HTMLParagraphElement | null>(null);
 
-function goToHome() {
-  // setTimeout(() => {
-  //   router.push(HOME_PATH);
-  // }, 7000);
+function playAnimation() {
+  const message = i18n.global.t('welcome.introduction', {
+    name: 'Simone Rizza',
+  });
+  let index = 0;
+  const interval = setInterval(() => {
+    if (index === message.length) {
+      clearInterval(interval);
+      // router.push(HOME_PATH);
+      return;
+    }
+    messageRef.value!.textContent += message[index];
+    index++;
+  }, 100);
 }
 
 onMounted(() => {
-  goToHome();
+  playAnimation();
 });
 </script>
 
