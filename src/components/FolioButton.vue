@@ -44,16 +44,20 @@ const themeClass = computed(() => {
   cursor: pointer;
 }
 
-.folio-button:hover {
-  animation: blink 1s linear infinite;
-}
-
 .folio-dark {
   background-color: #0f52ba;
 }
 
+.folio-dark:hover {
+  animation: blink-dark 1s linear infinite;
+}
+
 .folio-light {
   background-color: #0474b3;
+}
+
+.folio-light:hover {
+  animation: blink-dark 1s linear infinite;
 }
 
 .folio-x-light {
@@ -61,12 +65,29 @@ const themeClass = computed(() => {
   color: #0a6b9d;
 }
 
-@keyframes blink {
+.folio-x-light:hover {
+  animation: blink-light 1s linear infinite;
+}
+
+@keyframes blink-dark {
   0% {
     outline: none;
   }
   50% {
     outline: 3px solid #0474b3;
+  }
+  100% {
+    outline-offset: 5px;
+    outline: transparent;
+  }
+}
+
+@keyframes blink-light {
+  0% {
+    outline: none;
+  }
+  50% {
+    outline: 3px solid white;
   }
   100% {
     outline-offset: 5px;

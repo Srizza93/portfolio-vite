@@ -7,13 +7,16 @@
       </p>
     </div>
     <div class="button-box">
-      <folio-button theme="x-light" @click="goToHomeWithoutAnimation"
+      <folio-button
+        theme="x-light"
+        @animationend="goToHome"
+        @click="goToHomeWithoutAnimation"
         >Access</folio-button
       >
       <img
         class="button-box__mouse"
         src="@/assets/cursor.png"
-        alt="arrow-mouse"
+        alt="Mouse cursor animation"
       />
     </div>
   </div>
@@ -31,24 +34,19 @@ const router = useRouter();
 const messageRef = ref<HTMLParagraphElement | null>(null);
 const intervalId = ref<number | null>(null);
 const messageIndex = ref(0);
-const stopAnimation = ref(false);
 
 function playAnimation() {
   const message = i18n.global.t('welcome.introduction', {
     name: 'Simone Rizza',
   });
   intervalId.value = setInterval(() => {
-    console.log(messageIndex.value);
-    if (stopAnimation.value) {
-      clearAnimation();
-    }
     if (messageIndex.value === message.length) {
       playMouseAnimation();
       return;
     }
 
     if (messageRef.value) {
-      messageRef.value!.textContent += message[messageIndex.value];
+      messageRef.value.textContent += message[messageIndex.value];
     }
     messageIndex.value++;
   }, 100);
@@ -61,27 +59,22 @@ function playMouseAnimation() {
   mouse.style.animation = 'mouse-animation 0.5s steps(15) forwards';
   button.style.animation = 'button-click 0.6s linear .5s';
 
-  goToHome();
+  clearAnimationInterval();
 }
 
-function clearAnimation() {
+function clearAnimationInterval() {
   if (intervalId.value !== null) {
     clearInterval(intervalId.value);
-    intervalId.value = 0;
   }
 }
 
 function goToHomeWithoutAnimation() {
-  stopAnimation.value = true;
+  clearAnimationInterval();
   goToHome();
 }
 
 function goToHome() {
-  if (intervalId.value !== null) {
-    clearInterval(intervalId.value);
-    intervalId.value = 0;
-  }
-  // router.push(HOME_PATH);
+  router.push(HOME_PATH);
 }
 
 onMounted(() => {
