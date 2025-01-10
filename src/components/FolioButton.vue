@@ -29,6 +29,34 @@ const themeClass = computed(() => {
 });
 </script>
 
+<style lang="scss">
+@keyframes blink-dark {
+  0% {
+    outline: none;
+  }
+  50% {
+    outline: 3px solid #0474b3;
+  }
+  100% {
+    outline-offset: 5px;
+    outline: transparent;
+  }
+}
+
+@keyframes blink-light {
+  0% {
+    outline: none;
+  }
+  50% {
+    outline: 3px solid white;
+  }
+  100% {
+    outline-offset: 5px;
+    outline: transparent;
+  }
+}
+</style>
+
 <style lang="scss" scoped>
 .folio-button {
   width: 100%;
@@ -67,31 +95,5 @@ const themeClass = computed(() => {
 
 .folio-x-light:hover {
   animation: blink-light 1s linear infinite;
-}
-
-@keyframes blink-dark {
-  0% {
-    outline: none;
-  }
-  50% {
-    outline: 3px solid #0474b3;
-  }
-  100% {
-    outline-offset: 5px;
-    outline: transparent;
-  }
-}
-
-@keyframes blink-light {
-  0% {
-    outline: none;
-  }
-  50% {
-    outline: 3px solid white;
-  }
-  100% {
-    outline-offset: 5px;
-    outline: transparent;
-  }
 }
 </style>

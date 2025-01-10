@@ -57,7 +57,7 @@ function playMouseAnimation() {
   const button = document.querySelector('.folio-button') as HTMLElement;
 
   mouse.style.animation = 'mouse-animation 0.5s steps(15) forwards';
-  button.style.animation = 'button-click 0.6s linear .5s';
+  button.style.animation = 'blink-light 1s linear .2s';
 
   clearAnimationInterval();
 }
