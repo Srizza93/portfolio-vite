@@ -1,12 +1,15 @@
 <template>
   <div class="welcome">
     <div class="introduction">
-      <p ref="messageRef" class="introduction__message">
+      <p class="introduction__message">
+        <span ref="messageRef"></span>
         <span class="caret"></span>
       </p>
     </div>
     <div class="button-box">
-      <folio-button theme="x-light">Access</folio-button>
+      <folio-button theme="x-light" @click="goToHomeWithoutAnimation"
+        >Access</folio-button
+      >
       <img
         class="button-box__mouse"
         src="@/assets/cursor.png"
@@ -26,21 +29,59 @@ import { HOME_PATH } from '@/constants/pageEndpoints';
 
 const router = useRouter();
 const messageRef = ref<HTMLParagraphElement | null>(null);
+const intervalId = ref<number | null>(null);
+const messageIndex = ref(0);
+const stopAnimation = ref(false);
 
 function playAnimation() {
   const message = i18n.global.t('welcome.introduction', {
     name: 'Simone Rizza',
   });
-  let index = 0;
-  const interval = setInterval(() => {
-    if (index === message.length) {
-      clearInterval(interval);
-      // router.push(HOME_PATH);
+  intervalId.value = setInterval(() => {
+    console.log(messageIndex.value);
+    if (stopAnimation.value) {
+      clearAnimation();
+    }
+    if (messageIndex.value === message.length) {
+      playMouseAnimation();
       return;
     }
-    messageRef.value!.textContent += message[index];
-    index++;
+
+    if (messageRef.value) {
+      messageRef.value!.textContent += message[messageIndex.value];
+    }
+    messageIndex.value++;
   }, 100);
+}
+
+function playMouseAnimation() {
+  const mouse = document.querySelector('.button-box__mouse') as HTMLElement;
+  const button = document.querySelector('.folio-button') as HTMLElement;
+
+  mouse.style.animation = 'mouse-animation 0.5s steps(15) forwards';
+  button.style.animation = 'button-click 0.6s linear .5s';
+
+  goToHome();
+}
+
+function clearAnimation() {
+  if (intervalId.value !== null) {
+    clearInterval(intervalId.value);
+    intervalId.value = 0;
+  }
+}
+
+function goToHomeWithoutAnimation() {
+  stopAnimation.value = true;
+  goToHome();
+}
+
+function goToHome() {
+  if (intervalId.value !== null) {
+    clearInterval(intervalId.value);
+    intervalId.value = 0;
+  }
+  // router.push(HOME_PATH);
 }
 
 onMounted(() => {
@@ -49,11 +90,6 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.folio-button {
-  animation: button-click 0.6s linear 3.5s;
-  pointer-events: none;
-}
-
 .hide-element {
   opacity: 0;
 }
@@ -64,6 +100,17 @@ onMounted(() => {
   }
   to {
     opacity: 0.5;
+  }
+}
+
+@keyframes mouse-animation {
+  from {
+    top: -50%;
+    left: -50%;
+  }
+  to {
+    top: 10%;
+    left: 10%;
   }
 }
 </style>
@@ -107,7 +154,8 @@ onMounted(() => {
 
   &__mouse {
     position: absolute;
-    animation: mouse 0.5s steps(15) 3s;
+    top: -50%;
+    left: -50%;
     animation-fill-mode: both;
   }
 }
@@ -131,19 +179,8 @@ onMounted(() => {
     opacity: 1;
   }
   100% {
-    visibility: hidden; // Completely hides at the end of the cycle
-    opacity: 0; // Fade out
-  }
-}
-
-@keyframes mouse {
-  from {
-    top: -50%;
-    left: -50%;
-  }
-  to {
-    top: 10%;
-    left: 10%;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 </style>
