@@ -87,6 +87,7 @@ function navigateToWelcome() {
     max-width: 60px;
     height: auto;
     margin-left: 30px;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.7;

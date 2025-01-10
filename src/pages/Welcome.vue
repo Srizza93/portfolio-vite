@@ -1,42 +1,108 @@
 <template>
   <div class="welcome">
-    <div class="messages">
-      <span class="messages__text message1">Welcome to</span>
-      <span class="messages__text message2">Simone Rizza's portfolio</span>
-    </div>
+    <p class="introduction">
+      <span ref="messageRef"></span>
+      <span class="caret"></span>
+    </p>
     <div class="button-box">
-      <folio-button theme="dark">Access</folio-button>
+      <folio-button
+        theme="x-light"
+        @animationend="goToHome"
+        @click="goToHomeWithoutAnimation"
+        >{{ $t('welcome.access-home') }}</folio-button
+      >
       <img
-        class="button-box_mouse"
-        src="@/assets/arrow-mouse.png"
-        alt="arrow-mouse"
+        class="button-box__mouse"
+        src="@/assets/cursor.png"
+        alt="Mouse cursor animation"
       />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import i18n from '@/i18n';
+
 import FolioButton from '@/components/FolioButton.vue';
 import { HOME_PATH } from '@/constants/pageEndpoints';
 
 const router = useRouter();
+const messageRef = ref<HTMLParagraphElement | null>(null);
+const intervalId = ref<number | null>(null);
+const messageIndex = ref(0);
+
+function playAnimation() {
+  const message = i18n.global.t('welcome.introduction', {
+    name: 'Simone Rizza',
+  });
+  intervalId.value = setInterval(() => {
+    if (messageIndex.value === message.length) {
+      playMouseAnimation();
+      return;
+    }
+
+    if (messageRef.value) {
+      messageRef.value.textContent += message[messageIndex.value];
+    }
+    messageIndex.value++;
+  }, 100);
+}
+
+function playMouseAnimation() {
+  const mouse = document.querySelector('.button-box__mouse') as HTMLElement;
+  const button = document.querySelector('.folio-button') as HTMLElement;
+
+  mouse.style.animation = 'mouse-animation 0.5s steps(15) forwards';
+  button.style.animation = 'blink-light 1s linear .2s';
+
+  clearAnimationInterval();
+}
+
+function clearAnimationInterval() {
+  if (intervalId.value !== null) {
+    clearInterval(intervalId.value);
+  }
+}
+
+function goToHomeWithoutAnimation() {
+  clearAnimationInterval();
+  goToHome();
+}
 
 function goToHome() {
-  setTimeout(() => {
-    router.push(HOME_PATH);
-  }, 7000);
+  router.push(HOME_PATH);
 }
 
 onMounted(() => {
-  goToHome();
+  playAnimation();
 });
 </script>
 
 <style lang="scss">
 .hide-element {
   opacity: 0;
+}
+
+@keyframes button-click {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes mouse-animation {
+  from {
+    top: -50%;
+    left: -50%;
+  }
+  to {
+    top: 10%;
+    left: 10%;
+  }
 }
 </style>
 
@@ -49,36 +115,39 @@ onMounted(() => {
   position: absolute;
   min-width: 100%;
   height: 100%;
+  padding: 30px 15px;
   background-color: #0474b3;
   transition-duration: 2s;
 }
 
-.messages {
-  display: flex;
-  flex-direction: column;
-  width: min-content;
+.introduction {
+  margin: 0 auto;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
 
-  &__text {
-    width: 0;
-    margin: 0 auto;
-    overflow: hidden;
-    color: white;
-    font-size: 6vw;
-    font-weight: bold;
-    white-space: nowrap;
+.caret {
+  height: 100%;
+  width: 3px;
+  border-left: 1px solid white;
+  animation: blink-caret 1.1s infinite steps(1, start);
+}
+
+.button-box {
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+
+  &__mouse {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    animation-fill-mode: both;
   }
 }
 
-.message1 {
-  animation: message-animation 2s steps(20, end) forwards, blink-caret 1s 2.5;
-}
-
-.message2 {
-  animation: message-animation 3s steps(25, end) 2.5s forwards,
-    blink-caret 1s infinite 2.5s;
-}
-
-@keyframes message-animation {
+@keyframes coding-introduction {
   from {
     width: 0%;
   }
@@ -88,45 +157,17 @@ onMounted(() => {
 }
 
 @keyframes blink-caret {
-  from {
-    border-right: 3px solid white;
+  0% {
+    visibility: visible;
+    opacity: 1;
   }
-  to {
-    border-right: 3px solid transparent;
+  50% {
+    visibility: visible;
+    opacity: 1;
   }
-}
-
-.button-box {
-  position: relative;
-  display: flex;
-  margin-top: 60px;
-}
-
-.folio-button {
-  animation: button-click 0.6s linear 6.5s;
-  pointer-events: none;
-}
-
-.button-box_mouse {
-  position: absolute;
-  animation: mouse 0.5s steps(15) 6s;
-  animation-fill-mode: both;
-}
-
-@keyframes mouse {
-  from {
-    top: -50px;
-    left: -50px;
-  }
-  to {
-    top: 35px;
-    left: 10px;
-  }
-}
-
-@keyframes button-click {
-  to {
-    opacity: 0.5;
+  100% {
+    visibility: hidden;
+    opacity: 0;
   }
 }
 </style>
