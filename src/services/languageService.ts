@@ -5,18 +5,23 @@ import AppLocaleService from '@/services/appLocaleService';
 import { getFilePath } from '@/services/fileService';
 import { PossibleLanguage } from '@/types/language';
 
-export const possibleLanguages: PossibleLanguage[] = ['en', 'fr', 'it'];
-
 export function initLanguage() {
-  const language = getCookie(LANGUAGE_COOKIE) as PossibleLanguage;
+  const languageFromCookie = getCookie(LANGUAGE_COOKIE) as PossibleLanguage;
 
-  if (!language) {
+  if (!languageFromCookie) {
     const appLocale = getLanguageId(AppLocaleService.getAppLocale());
+    if (!i18n.global.availableLocales.includes(appLocale as PossibleLanguage)) {
+      const fallbackLocale = i18n.global.fallbackLocale as PossibleLanguage;
+      setCookie(LANGUAGE_COOKIE, fallbackLocale);
+      useLanguageStore().setSelectedLanguage(fallbackLocale);
+      return fallbackLocale;
+    }
     setCookie(LANGUAGE_COOKIE, appLocale);
+    useLanguageStore().setSelectedLanguage(appLocale as PossibleLanguage);
     return appLocale;
   } else {
-    i18n.global.locale = language;
-    useLanguageStore().setSelectedLanguage(language);
+    i18n.global.locale = languageFromCookie;
+    useLanguageStore().setSelectedLanguage(languageFromCookie);
   }
 }
 

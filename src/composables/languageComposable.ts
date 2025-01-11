@@ -1,10 +1,11 @@
 import { computed, ComputedRef } from 'vue';
-import { getLanguageFlag, possibleLanguages } from '@/services/languageService';
+import i18n from '@/i18n';
+import { getLanguageFlag } from '@/services/languageService';
 import { useLanguageStore } from '@/store/language';
 import type { Language, PossibleLanguage } from '@/types/language';
 
 export const languages: ComputedRef<Language[]> = computed(() =>
-  possibleLanguages.map((lang: PossibleLanguage): Language => {
+  i18n.global.availableLocales.map((lang: PossibleLanguage): Language => {
     return {
       name: lang,
       img: getLanguageFlag(lang),

@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import { PossibleLanguage } from '@/types/language';
+import AppLocaleService from '@/services/appLocaleService';
 
 type State = {
   selectedLanguage: PossibleLanguage;
@@ -8,7 +9,7 @@ type State = {
 
 export const useLanguageStore = defineStore('language', {
   state: (): State => ({
-    selectedLanguage: 'en',
+    selectedLanguage: AppLocaleService.getAppLocale() as PossibleLanguage,
     isLanguageModalOpen: false,
   }),
   actions: {
