@@ -10,6 +10,7 @@
     :is-modal-open="isLanguageModalOpen"
     @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
     @open-modal="openLanguageModal"
+    @close-modal="closeLanguageModal"
   />
   <toaster v-if="toasterMessage" />
 </template>
@@ -34,7 +35,7 @@ import { PossibleLanguage } from '@/types/language';
 const languageStore = useLanguageStore();
 const toasterStore = useToasterStore();
 
-const { openLanguageModal } = languageStore;
+const { openLanguageModal, closeLanguageModal } = languageStore;
 const { isLanguageModalOpen } = storeToRefs(languageStore);
 const { toasterMessage } = storeToRefs(toasterStore);
 const { isWelcomePage } = usePortfolioRouter();

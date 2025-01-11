@@ -1,6 +1,7 @@
 {
   "global": {
-    "error": "An error occurred. Please try again later."
+    "error": "An error occurred. Please try again later.",
+    "select-language": "Select a language"
   },
   "navigation": {
     "home": "Home",

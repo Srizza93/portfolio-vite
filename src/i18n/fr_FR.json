@@ -1,6 +1,7 @@
 {
   "global": {
-    "error": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "select-language": "Sélectionnez une langue"
   },
   "navigation": {
     "home": "Acceuil",

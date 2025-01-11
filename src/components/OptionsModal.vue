@@ -1,15 +1,15 @@
 <template>
   <img
-    class="options__option options__option--selected"
+    class="options__option options__option--selected modal-opener"
     :src="selectedLanguage.img"
     alt="Selected language option"
-    @click="$emit('open-modal')"
+    @click="openModal"
   />
   <div
     class="options-modal"
     v-bind:class="{ 'options-modal--open': isModalOpen }"
   >
-    <p class="modal-title">Select one language</p>
+    <p class="modal-title">{{ $t('global.select-language') }}</p>
     <ul class="options">
       <li
         v-for="option in options"
@@ -28,16 +28,33 @@ type Option = {
   img: string;
 };
 
-defineProps<{
+const props = defineProps<{
   selectedLanguage: Option;
   options: Option[];
   isModalOpen: boolean;
 }>();
 
-defineEmits<{
+const emit = defineEmits<{
   'open-modal': [];
+  'close-modal': [];
   'select-option': [string];
 }>();
+
+function openModal() {
+  emit('open-modal');
+  document.addEventListener('click', closeModal);
+}
+
+function closeModal(event: Event) {
+  if (
+    props.isModalOpen &&
+    !(event.target as HTMLElement).closest('.options-modal') &&
+    !(event.target as HTMLElement).classList.contains('modal-opener')
+  ) {
+    emit('close-modal');
+    document.removeEventListener('click', closeModal);
+  }
+}
 </script>
 
 <style lang="scss" scoped>
