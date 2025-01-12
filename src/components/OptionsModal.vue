@@ -1,20 +1,24 @@
 <template>
   <img
-    class="options__option options__option--selected"
-    :src="selectedLanguage.img"
+    class="options__option options__option--selected modal-opener"
+    :src="selectedLanguage?.img"
     alt="Selected language option"
-    @click="$emit('open-modal')"
+    tabindex="0"
+    @keydown.enter="openModal"
+    @click="openModal"
   />
   <div
     class="options-modal"
     v-bind:class="{ 'options-modal--open': isModalOpen }"
   >
-    <p class="modal-title">Select one language</p>
+    <p class="modal-title">{{ $t('global.select-language') }}</p>
     <ul class="options">
       <li
         v-for="option in options"
         :key="option.name"
-        @click="$emit('select-option', option.name)"
+        tabindex="0"
+        @keydown.enter="selectOption(option.name)"
+        @click="selectOption(option.name)"
       >
         <img class="options__option" :src="option.img" alt="Modal option" />
       </li>
@@ -28,16 +32,71 @@ type Option = {
   img: string;
 };
 
-defineProps<{
-  selectedLanguage: Option;
+const props = defineProps<{
+  selectedLanguage: Option | undefined;
   options: Option[];
   isModalOpen: boolean;
 }>();
 
-defineEmits<{
+const emit = defineEmits<{
   'open-modal': [];
+  'close-modal': [];
   'select-option': [string];
 }>();
+
+function openModal() {
+  emit('open-modal');
+  document.addEventListener('click', blurModal);
+  document.addEventListener('keydown', trapFocus);
+}
+
+function closeModal() {
+  document.removeEventListener('click', blurModal);
+  document.removeEventListener('keydown', trapFocus);
+  emit('close-modal');
+}
+
+function selectOption(option: string) {
+  emit('select-option', option);
+  closeModal();
+}
+
+function blurModal(event: Event) {
+  if (
+    props.isModalOpen &&
+    !(event.target as HTMLElement).closest('.options-modal') &&
+    !(event.target as HTMLElement).classList.contains('modal-opener')
+  ) {
+    closeModal();
+  }
+}
+
+function trapFocus(event: KeyboardEvent) {
+  if (event.key === 'Tab') {
+    const focusableElements = Array.from(
+      document.querySelectorAll('.options-modal li')
+    ) as HTMLElement[];
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (focusableElements.length === 0) return;
+
+    if (event.shiftKey) {
+      if (
+        document.activeElement === firstElement ||
+        !document.activeElement?.closest('.options-modal')
+      ) {
+        event.preventDefault();
+        lastElement.focus();
+      }
+    } else {
+      if (document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
