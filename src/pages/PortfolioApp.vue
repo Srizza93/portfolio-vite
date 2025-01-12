@@ -8,7 +8,7 @@
     :selected-language="selectedLanguage"
     :options="availableLanguages"
     :is-modal-open="isLanguageModalOpen"
-    @select-option="selectLanguageFromModal"
+    @select-option="selectLanguage"
     @open-modal="openLanguageModal"
     @close-modal="closeLanguageModal"
   />
@@ -42,11 +42,6 @@ const { isWelcomePage } = usePortfolioRouter();
 const selectedLanguage = computed(() =>
   availableLanguages.value.find((language) => language.selected)
 );
-
-function selectLanguageFromModal(selectedLanguage: string) {
-  selectLanguage(selectedLanguage);
-  closeLanguageModal();
-}
 </script>
 
 <style lang="scss" scoped>

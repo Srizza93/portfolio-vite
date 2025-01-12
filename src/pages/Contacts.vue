@@ -21,6 +21,8 @@
           :src="getFilePath('copy-clipboard.png')"
           alt="copy-clipboard"
           class="contact__copy"
+          tabindex="0"
+          @keydown.enter="copyToClipboard(contact.text)"
           @click="copyToClipboard(contact.text)"
         />
       </li>
@@ -114,7 +116,7 @@ async function copyToClipboard(text: string) {
   margin: 30px 0;
 
   &__link {
-    display: block;
+    display: flex;
     color: #0474b3;
     text-decoration: none;
 
