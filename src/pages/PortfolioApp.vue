@@ -4,11 +4,11 @@
     <router-view></router-view>
   </div>
   <options-modal
-    v-if="!isWelcomePage"
+    v-if="!isWelcomePage && availableLanguages"
     :selected-language="selectedLanguage"
-    :options="languages"
+    :options="availableLanguages"
     :is-modal-open="isLanguageModalOpen"
-    @select-option="(language: string) => selectLanguage(language as PossibleLanguage)"
+    @select-option="selectLanguageFromModal"
     @open-modal="openLanguageModal"
     @close-modal="closeLanguageModal"
   />
@@ -16,29 +16,37 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { storeToRefs } from 'pinia';
 
 import NavigationBar from '@/components/NavigationBar.vue';
 import OptionsModal from '@/components/OptionsModal.vue';
 import Toaster from '@/components/Toaster.vue';
 
-import { languages, selectedLanguage } from '@/composables/languageComposable';
+import { availableLanguages } from '@/composables/languageComposable';
 import { usePortfolioRouter } from '@/composables/routerComposable';
 
 import { selectLanguage } from '@/services/languageService';
 
-import { useLanguageStore } from '@/store/language';
+import { useLanguageModalStore } from '@/store/languageModal';
 import { useToasterStore } from '@/store/toaster';
 
-import { PossibleLanguage } from '@/types/language';
-
-const languageStore = useLanguageStore();
+const languageModalStore = useLanguageModalStore();
 const toasterStore = useToasterStore();
 
-const { openLanguageModal, closeLanguageModal } = languageStore;
-const { isLanguageModalOpen } = storeToRefs(languageStore);
+const { openLanguageModal, closeLanguageModal } = languageModalStore;
+const { isLanguageModalOpen } = storeToRefs(languageModalStore);
 const { toasterMessage } = storeToRefs(toasterStore);
 const { isWelcomePage } = usePortfolioRouter();
+
+const selectedLanguage = computed(() =>
+  availableLanguages.value.find((language) => language.selected)
+);
+
+function selectLanguageFromModal(selectedLanguage: string) {
+  selectLanguage(selectedLanguage);
+  closeLanguageModal();
+}
 </script>
 
 <style lang="scss" scoped>

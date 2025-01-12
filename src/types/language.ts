@@ -1,6 +1,5 @@
 export type Language = {
-  name: PossibleLanguage;
+  name: string;
   img: string;
+  selected: boolean;
 };
-
-export type PossibleLanguage = 'en' | 'fr' | 'it';

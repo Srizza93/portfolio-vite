@@ -1,7 +1,7 @@
 <template>
   <img
     class="options__option options__option--selected modal-opener"
-    :src="selectedLanguage.img"
+    :src="selectedLanguage?.img"
     alt="Selected language option"
     @click="openModal"
   />
@@ -29,7 +29,7 @@ type Option = {
 };
 
 const props = defineProps<{
-  selectedLanguage: Option;
+  selectedLanguage: Option | undefined;
   options: Option[];
   isModalOpen: boolean;
 }>();
