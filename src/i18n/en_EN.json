@@ -60,7 +60,10 @@
   },
   "contacts": {
     "copy-clipboard-success": "Copied to clipboard.",
-    "copy-clipboard-error": "Failed to copy to clipboard."
+    "copy-clipboard-error": "Failed to copy to clipboard.",
+    "copy-clipboard--alt": "Copy to clipboard",
+    "copy-clipboard-success--alt": "Copied successfully to clipboard",
+    "copy-clipboard-error--alt": "Failed to copy to clipboard"
   },
   "resume": {
     "header": "Download my cv in your preferred language",

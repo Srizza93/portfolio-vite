@@ -17,13 +17,25 @@
           />
         </a>
         <img
-          v-if="contact.text"
-          :src="getFilePath('copy-clipboard.png')"
-          alt="copy-clipboard"
-          class="contact__copy"
+          v-if="!contact.isCopying"
+          :src="getFilePath(copyIcons.copy)"
+          :alt="$t('contacts.copy-clipboard--alt')"
+          class="contact__copy contact__copy--to-copy"
           tabindex="0"
-          @keydown.enter="copyToClipboard(contact.text)"
-          @click="copyToClipboard(contact.text)"
+          @keydown.enter="copyToClipboard(contact)"
+          @click="copyToClipboard(contact)"
+        />
+        <img
+          v-else-if="contact.isCopying && contact.isCopySuccessful"
+          :src="getFilePath(copyIcons.check)"
+          :alt="$t('contacts.copy-clipboard-success--alt')"
+          class="contact__copy"
+        />
+        <img
+          v-else
+          :src="getFilePath(copyIcons.error)"
+          :alt="$t('contacts.copy-clipboard-error--alt')"
+          class="contact__copy"
         />
       </li>
     </ul>
@@ -49,6 +61,16 @@ type Contact = {
     link: string;
     name: string;
   };
+  isCopying: boolean;
+  isCopySuccessful: boolean;
+};
+
+const toasterDelay = 1500;
+
+const copyIcons = {
+  copy: 'copy-clipboard.png',
+  check: 'check.png',
+  error: 'cross.png',
 };
 
 const contacts: Ref<Contact[]> = ref([
@@ -56,11 +78,15 @@ const contacts: Ref<Contact[]> = ref([
     id: 'phone',
     link: 'tel:+33772233271',
     text: '+33 772233271',
+    isCopying: false,
+    isCopySuccessful: false,
   },
   {
     id: 'email',
     link: 'mailto:simonerizzanl@gmail.com',
     text: 'simonerizzanl@gmail.com',
+    isCopying: false,
+    isCopySuccessful: false,
   },
   {
     id: 'linkedin',
@@ -70,23 +96,37 @@ const contacts: Ref<Contact[]> = ref([
       link: 'linkedin.png',
       name: 'linkedin',
     },
+    isCopying: false,
+    isCopySuccessful: false,
   },
 ]);
 
-function showText(textId: string) {
-  return textId === 'phone' || textId === 'email';
+function showText(contactId: string) {
+  return contactId === 'phone' || contactId === 'email';
 }
 
-async function copyToClipboard(text: string) {
-  try {
-    await navigator.clipboard.writeText(text);
-    toasterStore.setMessage(
-      i18n.global.t('contacts.copy-clipboard-success'),
-      MessageTypeEnum.SUCCESS
-    );
-  } catch (error) {
-    toasterStore.setMessage(i18n.global.t('contacts.copy-clipboard-error'));
-  }
+async function copyToClipboard(contact: Contact) {
+  await navigator.clipboard
+    .writeText(contact.text)
+    .then(() => {
+      contact.isCopying = true;
+      contact.isCopySuccessful = true;
+      toasterStore.setMessage(
+        i18n.global.t('contacts.copy-clipboard-success'),
+        MessageTypeEnum.SUCCESS,
+        toasterDelay
+      );
+    })
+    .catch(() => {
+      contact.isCopying = true;
+      toasterStore.setMessage(i18n.global.t('contacts.copy-clipboard-error'));
+    })
+    .finally(() => {
+      setTimeout(() => {
+        contact.isCopying = false;
+        contact.isCopySuccessful = false;
+      }, toasterDelay);
+    });
 }
 </script>
 
@@ -122,8 +162,7 @@ async function copyToClipboard(text: string) {
     }
   }
 
-  &__link:hover,
-  &__copy:hover {
+  &__link:hover {
     opacity: 0.7;
   }
 
@@ -132,6 +171,10 @@ async function copyToClipboard(text: string) {
     height: 20px;
     margin-left: 10px;
     cursor: pointer;
+
+    &--to-copy:hover {
+      opacity: 0.7;
+    }
   }
 }
 </style>

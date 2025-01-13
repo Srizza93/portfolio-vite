@@ -39,7 +39,7 @@ const { toasterMessage, messageType } = storeToRefs(toasterStore);
   white-space: nowrap;
 
   &--visible {
-    animation: slideIn 0.2s ease-out forwards;
+    animation: slideIn 0.4s linear forwards;
   }
 
   &--error {
