@@ -61,8 +61,8 @@ type Contact = {
     link: string;
     name: string;
   };
-  isCopying?: boolean;
-  isCopySuccessful?: boolean;
+  isCopying: boolean;
+  isCopySuccessful: boolean;
 };
 
 const toasterDelay = 1500;
