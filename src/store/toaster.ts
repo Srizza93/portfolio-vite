@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 import { MessageType, MessageTypeEnum } from '@/types/toaster';
 
-const defaultDelay = 7000;
+const defaultDelay = 3000;
 
 type State = {
   toasterMessage: string;
@@ -23,7 +23,7 @@ export const useToasterStore = defineStore('toaster', {
   actions: {
     setMessage(toasterMessage: string, messageType: MessageType) {
       if (this.clickCount > 0) {
-        this.resetMessage();
+        this.resetMessage(50);
         return;
       }
 

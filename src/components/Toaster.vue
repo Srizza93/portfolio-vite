@@ -44,7 +44,7 @@ onMounted(() => {
   white-space: nowrap;
 
   &--visible {
-    animation: slideIn 0.5s ease-out forwards;
+    animation: slideIn 0.3s ease-out forwards;
   }
 
   &--error {
