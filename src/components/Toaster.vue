@@ -14,7 +14,6 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
 
 import { useToasterStore } from '@/store/toaster';
@@ -22,10 +21,6 @@ import { MessageTypeEnum } from '@/types/toaster';
 
 const toasterStore = useToasterStore();
 const { toasterMessage, messageType } = storeToRefs(toasterStore);
-
-onMounted(() => {
-  toasterStore.closeToaster();
-});
 </script>
 
 <style lang="scss" scoped>
@@ -44,7 +39,7 @@ onMounted(() => {
   white-space: nowrap;
 
   &--visible {
-    animation: slideIn 0.5s ease-out forwards;
+    animation: slideIn 0.2s ease-out forwards;
   }
 
   &--error {

@@ -85,10 +85,7 @@ async function copyToClipboard(text: string) {
       MessageTypeEnum.SUCCESS
     );
   } catch (error) {
-    toasterStore.setMessage(
-      i18n.global.t('contacts.copy-clipboard-error'),
-      MessageTypeEnum.ERROR
-    );
+    toasterStore.setMessage(i18n.global.t('contacts.copy-clipboard-error'));
   }
 }
 </script>
