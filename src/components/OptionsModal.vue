@@ -133,12 +133,13 @@ function trapFocus(event: KeyboardEvent) {
   padding: 0;
 
   & li {
+    display: flex;
     margin: 0 10px;
   }
 
   &__option {
-    width: 100%;
-    height: auto;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
 
     &:hover {
