@@ -19,7 +19,7 @@
         <img
           v-if="!contact.isCopying"
           :src="getFilePath(copyIcons.copy)"
-          alt="Copy to clipboard"
+          :alt="$t('contacts.copy-clipboard--alt')"
           class="contact__copy contact__copy--to-copy"
           tabindex="0"
           @keydown.enter="copyToClipboard(contact)"
@@ -28,14 +28,13 @@
         <img
           v-else-if="contact.isCopying && contact.isCopySuccessful"
           :src="getFilePath(copyIcons.check)"
-          alt="Copy to clipboard successful"
+          :alt="$t('contacts.copy-clipboard-success--alt')"
           class="contact__copy"
         />
         <img
           v-else
           :src="getFilePath(copyIcons.error)"
-          alt="Copy to clipboard
-        error"
+          :alt="$t('contacts.copy-clipboard-error--alt')"
           class="contact__copy"
         />
       </li>
