@@ -37,21 +37,21 @@ const cvs: Ref<Cv[]> = ref([
     id: 'fr',
     name: 'cv-fr',
     alt: 'french-flag',
-    img: 'fr-flag.jpg',
+    img: 'fr-flag.svg',
     filePath: 'cv-fr.pdf',
   },
   {
     id: 'en',
     name: 'cv-eng',
     alt: 'uk-flag',
-    img: 'uk-flag.jpg',
+    img: 'uk-flag.svg',
     filePath: 'cv-eng.pdf',
   },
   {
     id: 'it',
     name: 'cv-ita',
     alt: 'ita-flag',
-    img: 'ita-flag.jpg',
+    img: 'it-flag.svg',
     filePath: 'cv-ita.pdf',
   },
 ]);
@@ -87,20 +87,23 @@ const orderedCvs = computed(() =>
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
+  height: 200px;
   margin: 30px 0;
   color: white;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 50%;
+  overflow: hidden;
 
-  &:hover .cv__download {
+  &:hover .cv__download,
+  &:focus .cv__download {
     opacity: 1;
   }
 
   &__flag {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 300px;
-    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -115,7 +118,7 @@ const orderedCvs = computed(() =>
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     margin: 0;
-    border-radius: 15px;
+    border-radius: 50%;
     transition-duration: 0.4s;
   }
 }
