@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/><script xmlns=""/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 3 3">
+  <rect width="3" height="3" fill="#002395"/>
+  <rect width="2" height="3" x="1" fill="#fff"/>
+  <rect width="1" height="3" x="2" fill="#ED2939"/>
+  <script xmlns=""/>
+</svg>
