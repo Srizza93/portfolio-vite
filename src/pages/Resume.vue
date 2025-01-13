@@ -119,4 +119,12 @@ const orderedCvs = computed(() =>
     transition-duration: 0.4s;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .cv {
+    &__download {
+      opacity: 1;
+    }
+  }
+}
 </style>
