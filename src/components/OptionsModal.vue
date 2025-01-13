@@ -13,14 +13,15 @@
   >
     <p class="modal-title">{{ $t('global.select-language') }}</p>
     <ul class="options">
-      <li
-        v-for="option in options"
-        :key="option.name"
-        tabindex="0"
-        @keydown.enter="selectOption(option.name)"
-        @click="selectOption(option.name)"
-      >
-        <img class="options__option" :src="option.img" alt="Modal option" />
+      <li v-for="option in options" :key="option.name">
+        <img
+          class="options__option"
+          :src="option.img"
+          alt="Modal option"
+          tabindex="0"
+          @keydown.enter="selectOption(option.name)"
+          @click="selectOption(option.name)"
+        />
       </li>
     </ul>
   </div>
@@ -74,7 +75,7 @@ function blurModal(event: Event) {
 function trapFocus(event: KeyboardEvent) {
   if (event.key === 'Tab') {
     const focusableElements = Array.from(
-      document.querySelectorAll('.options-modal li')
+      document.querySelectorAll('.options-modal .options__option')
     ) as HTMLElement[];
     const firstElement = focusableElements[0];
     const lastElement = focusableElements[focusableElements.length - 1];
@@ -132,13 +133,11 @@ function trapFocus(event: KeyboardEvent) {
   margin: 15px 0 0 0;
   padding: 0;
 
-  & li {
-    margin: 0 10px;
-  }
-
   &__option {
-    width: 100%;
-    height: auto;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    border-radius: 50px;
     cursor: pointer;
 
     &:hover {
