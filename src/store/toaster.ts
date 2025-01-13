@@ -2,61 +2,43 @@ import { defineStore } from 'pinia';
 
 import { MessageType, MessageTypeEnum } from '@/types/toaster';
 
-const defaultDelay = 3000;
-
 type State = {
   toasterMessage: string;
   messageType: MessageType;
-  toasterDelay: number;
-  clickCount: number;
-  timeoutPointer: number | undefined;
+  timeoutId: number;
 };
+
+const toasterDelay = 4000;
 
 export const useToasterStore = defineStore('toaster', {
   state: (): State => ({
     toasterMessage: '',
     messageType: MessageTypeEnum.ERROR,
-    toasterDelay: defaultDelay,
-    clickCount: 0,
-    timeoutPointer: undefined,
+    timeoutId: 0,
   }),
   actions: {
-    setMessage(toasterMessage: string, messageType: MessageType) {
-      if (this.clickCount > 0) {
-        this.resetMessage(50);
-        return;
-      }
+    setMessage(
+      toasterMessage: string,
+      messageType?: MessageType,
+      delay?: number
+    ) {
+      clearTimeout(this.timeoutId);
 
       this.toasterMessage = toasterMessage;
-      this.messageType = messageType;
-      this.clickCount += 1;
+
+      if (messageType) {
+        this.messageType = messageType;
+      }
+
+      this.closeToaster(delay);
     },
     clearMessage() {
       this.toasterMessage = '';
-      this.messageType = MessageTypeEnum.ERROR;
-      this.clickCount = 0;
     },
     closeToaster(delay?: number) {
-      if (this.clickCount > 1) {
-        this.timeoutPointer = undefined;
+      this.timeoutId = setTimeout(() => {
         this.clearMessage();
-      } else {
-        this.timeoutPointer = setTimeout(() => {
-          this.clearMessage();
-        }, delay || this.toasterDelay);
-      }
-    },
-    resetMessage(delay?: number) {
-      clearTimeout(this.timeoutPointer);
-
-      const actualMessage = this.toasterMessage;
-      const actualMessageType = this.messageType;
-
-      this.clearMessage();
-
-      setTimeout(() => {
-        this.setMessage(actualMessage, actualMessageType);
-      }, delay || 500);
+      }, delay || toasterDelay);
     },
   },
 });
