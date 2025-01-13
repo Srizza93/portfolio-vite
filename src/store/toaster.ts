@@ -22,7 +22,7 @@ export const useToasterStore = defineStore('toaster', {
       messageType?: MessageType,
       delay?: number
     ) {
-      clearTimeout(this.timeoutId);
+      this.clearMessage();
 
       this.toasterMessage = toasterMessage;
 
@@ -33,7 +33,9 @@ export const useToasterStore = defineStore('toaster', {
       this.closeToaster(delay);
     },
     clearMessage() {
+      clearTimeout(this.timeoutId);
       this.toasterMessage = '';
+      this.messageType = MessageTypeEnum.ERROR;
     },
     closeToaster(delay?: number) {
       this.timeoutId = setTimeout(() => {
