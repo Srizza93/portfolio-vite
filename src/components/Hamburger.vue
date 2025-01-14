@@ -13,26 +13,20 @@
       <span></span>
     </div>
     <transition>
-      <ul v-if="isMenuOpen" class="hamburger-options">
-        <li
-          v-for="option in hamburgerOptions"
-          :key="option.name + '-humburger'"
-          tabindex="0"
-          @keydown.enter="selectOption(option)"
-          @click="selectOption(option)"
-          class="hamburger-options__option"
-        >
-          {{ getTranslationFromPageName(option.name) }}
-        </li>
-      </ul>
+      <navigation-options
+        v-if="isMenuOpen"
+        :pages="hamburgerOptions"
+        is-hamburger-menu
+        @option-clicked="selectOption($event)"
+      />
     </transition>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { RouteOption } from '@/types/route';
+import NavigationOptions from '@/components/NavigationOptions.vue';
 
-import { getTranslationFromPageName } from '@/services/translationService';
+import { RouteOption } from '@/types/route';
 
 const props = defineProps<{
   isMenuOpen: boolean;
@@ -99,39 +93,6 @@ function selectOption(option: RouteOption) {
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-}
-
-.hamburger-options {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 53px;
-  right: -45px;
-  padding: 0;
-  margin: 0;
-  border: 1px solid white;
-  border-radius: 0 0 0 15px;
-  background-color: white;
-  transition-duration: 1s;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 9999;
-  list-style: none;
-
-  &__option {
-    padding: 20px 40px;
-    color: #0f52ba;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:last-child {
-      border-radius: 0 0 0 15px;
-    }
-
-    &:hover {
-      background-color: #0f52ba;
-      color: white;
-    }
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-bar">
+  <nav class="navigation-bar">
     <img
       @keydown.enter="navigateToPage(WELCOME_PATH)"
       @click="navigateToPage(WELCOME_PATH)"
@@ -8,31 +8,24 @@
       src="@/assets/s-icon.png"
       tabindex="0"
     />
-    <ul class="pages">
-      <li
-        v-for="page in pages"
-        :key="page.name"
-        tabindex="0"
-        @click="navigateToPage(page.path)"
-        @keydown.enter="navigateToPage(page.path)"
-        class="pages__page"
-      >
-        {{ getTranslationFromPageName(page.name) }}
-      </li>
-    </ul>
+    <navigation-options
+      :pages="pages"
+      @option-clicked="navigateToPage($event.path)"
+    />
     <hamburger
       :is-menu-open="isHamburgerMenuOpen"
       :hamburger-options="pages"
       @toggle-menu="toggleHamburgerMenu"
       @option-clicked="navigateToPage($event.path)"
     />
-  </div>
+  </nav>
 </template>
 
 <script lang="ts" setup>
 import { computed, ComputedRef, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
+import NavigationOptions from '@/components/NavigationOptions.vue';
 import Hamburger from '@/components/Hamburger.vue';
 
 import { WELCOME_PATH } from '@/constants/pageEndpoints';
@@ -45,7 +38,6 @@ import {
   RESUME_PAGE_NAME,
 } from '@/constants/pageNames';
 
-import { getTranslationFromPageName } from '@/services/translationService';
 import { RouteOption } from '@/types/route';
 
 const router = useRouter();
@@ -93,28 +85,6 @@ function navigateToPage(page: string) {
     &:hover {
       opacity: 0.7;
     }
-  }
-}
-
-.pages {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  &__page {
-    padding: 5px 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .pages {
-    display: none;
   }
 }
 </style>
