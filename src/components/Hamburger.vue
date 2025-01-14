@@ -107,7 +107,7 @@ function selectOption(option: RouteOption) {
   flex-direction: column;
   position: absolute;
   top: 53px;
-  right: -19px;
+  right: -45px;
   padding: 0;
   margin: 0;
   border: 1px solid white;
@@ -143,7 +143,7 @@ function selectOption(option: RouteOption) {
 
 .v-enter-active,
 .v-leave-active {
-  right: -19px;
+  right: -45px;
 }
 
 .v-enter-from,

@@ -1,34 +1,25 @@
 <template>
-  <div class="navigation">
+  <div class="navigation-bar">
     <img
-      class="navigation__logo"
+      @keydown.enter="navigateToPage(WELCOME_PATH)"
+      @click="navigateToPage(WELCOME_PATH)"
+      class="navigation-bar__logo"
       alt="logo"
       src="@/assets/s-icon.png"
       tabindex="0"
-      @keydown.enter="navigateToPage(WELCOME_PATH)"
-      @click="navigateToPage(WELCOME_PATH)"
     />
-    <div class="navigation__links">
-      <div class="navigation__link" v-for="page in pages" :key="page.name">
-        <span
-          class="navigation__link-border navigation__link-border--left"
-        ></span>
-        <div class="navigation__sides-container">
-          <span
-            class="navigation__link-border navigation__link-border--top"
-          ></span>
-          <router-link class="navigation__link-text" :to="page.path">{{
-            getTranslationFromPageName(page.name)
-          }}</router-link>
-          <span
-            class="navigation__link-border navigation__link-border--bottom"
-          ></span>
-        </div>
-        <span
-          class="navigation__link-border navigation__link-border--right"
-        ></span>
-      </div>
-    </div>
+    <ul class="pages">
+      <li
+        v-for="page in pages"
+        :key="page.name"
+        tabindex="0"
+        @click="navigateToPage(page.path)"
+        @keydown.enter="navigateToPage(page.path)"
+        class="pages__page"
+      >
+        {{ getTranslationFromPageName(page.name) }}
+      </li>
+    </ul>
     <hamburger
       :is-menu-open="isHamburgerMenuOpen"
       :hamburger-options="pages"
@@ -84,96 +75,36 @@ function navigateToPage(page: string) {
 </script>
 
 <style lang="scss" scoped>
-.navigation {
+.navigation-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 5px;
+  padding: 5px 30px 5px 30px;
   background-color: #0474b3;
 
   &__logo {
     width: 100%;
     max-width: 60px;
     height: auto;
-    margin-left: 30px;
     cursor: pointer;
 
     &:hover {
       opacity: 0.7;
     }
   }
+}
 
-  &__links {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin-right: 60px;
-  }
+.pages {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-  &__link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  &__sides-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__link-border {
-    background-color: white;
-
-    &--top,
-    &--bottom {
-      transition-duration: 250ms;
-      width: 0%;
-      height: 3px;
-    }
-
-    &--left,
-    &--right {
-      width: 3px;
-      height: 0%;
-    }
-
-    &--top {
-      .navigation__link:hover & {
-        width: 100%;
-      }
-    }
-
-    &--right {
-      .navigation__link:hover & {
-        transition-delay: 250ms;
-        transition-duration: 250ms;
-        margin-bottom: auto;
-        height: 100%;
-      }
-    }
-
-    &--bottom {
-      .navigation__link:hover & {
-        transition-delay: 500ms;
-        transition-duration: 250ms;
-        margin-left: auto;
-        width: 100%;
-      }
-    }
-
-    &--left {
-      .navigation__link:hover & {
-        transition-delay: 750ms;
-        transition-duration: 250ms;
-        margin-top: auto;
-        height: 100%;
-      }
-    }
-  }
-
-  &__link-text {
+  &__page {
     padding: 5px 10px;
     color: white;
     text-decoration: none;
@@ -182,7 +113,7 @@ function navigateToPage(page: string) {
 }
 
 @media screen and (max-width: 750px) {
-  .navigation__links {
+  .pages {
     display: none;
   }
 }
