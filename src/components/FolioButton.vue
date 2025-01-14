@@ -35,7 +35,7 @@ const themeClass = computed(() => {
     outline: none;
   }
   50% {
-    outline: 3px solid #0474b3;
+    outline: 3px solid $secondary--color;
   }
   100% {
     outline-offset: 5px;
@@ -48,7 +48,7 @@ const themeClass = computed(() => {
     outline: none;
   }
   50% {
-    outline: 3px solid white;
+    outline: 3px solid $primary--color;
   }
   100% {
     outline-offset: 5px;
@@ -64,16 +64,21 @@ const themeClass = computed(() => {
   padding: 8px 30px;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: $primary--color;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   font-weight: bold;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $primary--color, 0 0 0 4px $secondary-dark--color;
+  }
 }
 
 .folio-dark {
-  background-color: #0f52ba;
+  background-color: $secondary-dark--color;
 }
 
 .folio-dark:hover {
@@ -81,7 +86,7 @@ const themeClass = computed(() => {
 }
 
 .folio-light {
-  background-color: #0474b3;
+  background-color: $secondary--color;
 }
 
 .folio-light:hover {
@@ -89,8 +94,8 @@ const themeClass = computed(() => {
 }
 
 .folio-x-light {
-  background-color: white;
-  color: #0a6b9d;
+  background-color: $primary--color;
+  color: $secondary-dark--color;
 }
 
 .folio-x-light:hover {

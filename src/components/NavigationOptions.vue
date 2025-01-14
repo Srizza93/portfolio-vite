@@ -45,7 +45,7 @@ defineEmits<{
   &__page {
     position: relative;
     padding: 5px 10px;
-    color: white;
+    color: $primary--color;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -55,7 +55,7 @@ defineEmits<{
       left: 0;
       bottom: 0;
       position: absolute;
-      border-bottom: 3px solid white;
+      border-bottom: 3px solid $primary--color;
       content: '';
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -88,9 +88,9 @@ defineEmits<{
   right: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid white;
+  border: 1px solid $primary--color;
   border-radius: 0 0 0 15px;
-  background-color: white;
+  background-color: $primary--color;
   transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 9999;
@@ -98,7 +98,7 @@ defineEmits<{
 
   &__option {
     padding: 20px 40px;
-    color: #0f52ba;
+    color: $secondary-dark--color;
     font-weight: bold;
     cursor: pointer;
 
@@ -107,8 +107,8 @@ defineEmits<{
     }
 
     &:hover {
-      background-color: #0f52ba;
-      color: white;
+      background-color: $secondary-dark--color;
+      color: $primary--color;
     }
   }
 }

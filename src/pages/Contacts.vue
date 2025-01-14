@@ -154,7 +154,7 @@ async function copyToClipboard(contact: Contact) {
 
   &__link {
     display: flex;
-    color: #0474b3;
+    color: $secondary--color;
     text-decoration: none;
 
     &__icon {

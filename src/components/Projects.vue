@@ -72,7 +72,7 @@ function openDetails(project: Project) {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #dedede;
+  background-color: $detail--color;
 
   &__relative {
     position: relative;
@@ -92,7 +92,7 @@ function openDetails(project: Project) {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  border: 1px solid #dedede;
+  border: 1px solid $detail--color;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -109,11 +109,11 @@ function openDetails(project: Project) {
   margin-bottom: 15px;
   padding: 5px;
   object-fit: contain;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $detail--color;
 }
 
 .project-link {
-  color: #0474b3;
+  color: $secondary--color;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 15px;
@@ -121,7 +121,7 @@ function openDetails(project: Project) {
 
   &:hover {
     text-decoration: underline;
-    color: #035a91;
+    color: $secondary-dark--color;
   }
 }
 

@@ -90,7 +90,7 @@ const orderedCvs = computed(() =>
   width: 200px;
   height: 200px;
   margin: 30px 0;
-  color: white;
+  color: $primary--color;
   text-decoration: none;
   border-radius: 50%;
   overflow: hidden;

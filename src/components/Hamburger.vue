@@ -88,7 +88,7 @@ function selectOption(option: RouteOption) {
     height: 4px;
     border-radius: 15px;
     margin-bottom: 5px;
-    background-color: white;
+    background-color: $primary--color;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;

@@ -214,7 +214,7 @@ const stack: Ref<Tech[]> = ref([
   }
   100% {
     font-size: 18px;
-    color: #0474b3;
+    color: $secondary--color;
   }
 }
 

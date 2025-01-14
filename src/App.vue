@@ -12,6 +12,7 @@ onMounted(() => initLanguage());
 
 <style lang="scss">
 body {
+  background-color: $primary--color;
   margin: 0;
   min-height: 100vh;
 }

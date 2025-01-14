@@ -76,7 +76,7 @@ function navigateToPage(page: string) {
   width: 100%;
   height: 70px;
   padding: 5px 30px 5px 30px;
-  background-color: #0474b3;
+  background-color: $secondary--color;
 
   &__logo {
     width: 100%;

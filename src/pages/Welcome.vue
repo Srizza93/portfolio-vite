@@ -116,13 +116,13 @@ onMounted(() => {
   min-width: 100%;
   height: 100%;
   padding: 30px 15px;
-  background-color: #0474b3;
+  background-color: $secondary--color;
   transition-duration: 2s;
 }
 
 .introduction {
   margin: 0 auto;
-  color: white;
+  color: $primary--color;
   font-size: 32px;
   font-weight: bold;
 }
@@ -130,7 +130,7 @@ onMounted(() => {
 .caret {
   height: 100%;
   width: 3px;
-  border-left: 1px solid white;
+  border-left: 1px solid $primary--color;
   animation: blink-caret 1.1s infinite steps(1, start);
 }
 

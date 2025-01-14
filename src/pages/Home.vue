@@ -59,7 +59,7 @@ function accessPortfolio() {
     display: flex;
     flex-direction: column;
     padding-right: 50px;
-    color: #0f52ba;
+    color: $secondary-dark--color;
     width: 70%;
     margin-bottom: 50px;
 

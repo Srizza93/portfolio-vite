@@ -322,13 +322,13 @@ const projects: Ref<Project[]> = ref([
 .portfolio-subcontainer {
   display: flex;
   flex-direction: column;
-  border-left: 3px solid #dedede;
+  border-left: 3px solid $detail--color;
 
   &--dot {
     width: 100%;
     height: 5px;
-    border-left: 4px solid #dedede;
-    background-color: #dedede;
+    border-left: 4px solid $detail--color;
+    background-color: $detail--color;
     margin: 0px 10px 10px auto;
   }
 }

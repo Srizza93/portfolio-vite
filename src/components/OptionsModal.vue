@@ -112,8 +112,8 @@ function trapFocus(event: KeyboardEvent) {
   width: 300px;
   padding: 15px;
   border-radius: 15px;
-  background-color: white;
-  border: 2px solid #0474b3;
+  background-color: $primary--color;
+  border: 2px solid $secondary--color;
   z-index: 99999;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
