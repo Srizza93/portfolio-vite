@@ -74,6 +74,7 @@ function navigateToPage(page: string) {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 70px;
   padding: 5px 30px 5px 30px;
   background-color: #0474b3;
 

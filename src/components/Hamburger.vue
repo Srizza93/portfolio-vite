@@ -51,7 +51,7 @@ function selectOption(option: RouteOption) {
 <style lang="scss" scoped>
 .hamburger-component {
   display: none;
-  margin-right: 15px;
+  margin: 0 15px 0 auto;
 }
 
 .hamburger {
