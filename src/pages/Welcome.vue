@@ -107,6 +107,8 @@ onMounted(() => {
 </style>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .welcome {
   display: flex;
   flex-direction: column;

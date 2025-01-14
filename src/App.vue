@@ -11,6 +11,8 @@ onMounted(() => initLanguage());
 </script>
 
 <style lang="scss">
+@use '@/assets/global.scss' as *;
+
 body {
   background-color: $primary--color;
   margin: 0;

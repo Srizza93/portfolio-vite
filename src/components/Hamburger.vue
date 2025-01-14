@@ -49,6 +49,8 @@ function selectOption(option: RouteOption) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .hamburger-component {
   display: none;
   margin: 0 15px 0 auto;

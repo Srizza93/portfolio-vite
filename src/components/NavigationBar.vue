@@ -67,6 +67,8 @@ function navigateToPage(page: string) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .navigation-bar {
   position: relative;
   display: flex;

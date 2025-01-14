@@ -30,6 +30,8 @@ const themeClass = computed(() => {
 </script>
 
 <style lang="scss">
+@use '@/assets/global.scss' as *;
+
 @keyframes blink-dark {
   0% {
     outline: none;
@@ -58,6 +60,8 @@ const themeClass = computed(() => {
 </style>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .folio-button {
   width: 100%;
   max-width: 250px;

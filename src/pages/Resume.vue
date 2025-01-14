@@ -67,6 +67,8 @@ const orderedCvs = computed(() =>
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .resume {
   display: flex;
   flex-direction: column;

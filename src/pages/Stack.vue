@@ -164,6 +164,8 @@ const stack: Ref<Tech[]> = ref([
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .stack {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

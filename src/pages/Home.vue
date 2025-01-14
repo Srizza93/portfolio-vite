@@ -38,6 +38,8 @@ function accessPortfolio() {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .home {
   display: flex;
   flex-direction: column;

@@ -312,6 +312,8 @@ const projects: Ref<Project[]> = ref([
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .portfolio {
   display: flex;
   flex-direction: column;

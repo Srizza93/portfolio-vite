@@ -101,6 +101,8 @@ function trapFocus(event: KeyboardEvent) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .options-modal {
   position: fixed;
   display: none;

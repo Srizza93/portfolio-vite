@@ -55,6 +55,8 @@ function openDetails(project: Project) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .project-container {
   position: relative;
   padding: 0 30px 0 60px;

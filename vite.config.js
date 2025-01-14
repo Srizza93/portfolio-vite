@@ -10,13 +10,6 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/assets/global.scss";`,
-      },
-    },
-  },
 });
 
 // GH PAGES

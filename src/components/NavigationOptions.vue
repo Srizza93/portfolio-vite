@@ -34,6 +34,8 @@ defineEmits<{
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global.scss' as *;
+
 .pages {
   display: flex;
   flex-direction: row;
