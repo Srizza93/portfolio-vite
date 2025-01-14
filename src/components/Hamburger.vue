@@ -1,9 +1,10 @@
 <template>
-  <div class="menu">
+  <div class="hamburger-component">
     <div
       class="hamburger"
       v-bind:class="{ 'hamburger--open': isMenuOpen }"
       tabindex="0"
+      aria-label="close button"
       @keydown.enter="toggleMenu"
       @click="toggleMenu"
     >
@@ -12,16 +13,18 @@
       <span></span>
     </div>
     <transition>
-      <div v-if="isMenuOpen" class="links">
-        <router-link
-          class="links__link"
-          v-for="link in links"
-          :key="link.name + '-humburger'"
-          :to="link.path"
-          @click="toggleMenu"
-          >{{ getTranslationFromPageName(link.name) }}</router-link
+      <ul v-if="isMenuOpen" class="hamburger-options">
+        <li
+          v-for="option in hamburgerOptions"
+          :key="option.name + '-humburger'"
+          tabindex="0"
+          @keydown.enter="selectOption(option)"
+          @click="selectOption(option)"
+          class="hamburger-options__option"
         >
-      </div>
+          {{ getTranslationFromPageName(option.name) }}
+        </li>
+      </ul>
     </transition>
   </div>
 </template>
@@ -33,20 +36,26 @@ import { getTranslationFromPageName } from '@/services/translationService';
 
 const props = defineProps<{
   isMenuOpen: boolean;
-  links: RouteOption[];
+  hamburgerOptions: RouteOption[];
 }>();
 
 const emit = defineEmits<{
   'toggle-menu': [boolean];
+  'option-clicked': [RouteOption];
 }>();
 
 function toggleMenu() {
   emit('toggle-menu', !props.isMenuOpen);
 }
+
+function selectOption(option: RouteOption) {
+  toggleMenu();
+  emit('option-clicked', option);
+}
 </script>
 
 <style lang="scss" scoped>
-.menu {
+.hamburger-component {
   display: none;
   position: relative;
   margin-right: 15px;
@@ -59,7 +68,6 @@ function toggleMenu() {
   align-items: center;
   width: 35px;
   height: 35px;
-
   cursor: pointer;
 
   &:hover {
@@ -94,23 +102,25 @@ function toggleMenu() {
   }
 }
 
-.links {
+.hamburger-options {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 53px;
   right: -19px;
+  padding: 0;
+  margin: 0;
   border: 1px solid white;
   border-radius: 0 0 0 15px;
   background-color: white;
   transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 9999;
+  list-style: none;
 
-  &__link {
+  &__option {
     padding: 20px 40px;
     color: #0f52ba;
-    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
 
@@ -126,7 +136,7 @@ function toggleMenu() {
 }
 
 @media screen and (max-width: 750px) {
-  .menu {
+  .hamburger-component {
     display: flex;
   }
 }

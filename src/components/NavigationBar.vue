@@ -5,8 +5,8 @@
       alt="logo"
       src="@/assets/s-icon.png"
       tabindex="0"
-      @keydown.enter="navigateToWelcome"
-      @click="navigateToWelcome"
+      @keydown.enter="navigateToPage(WELCOME_PATH)"
+      @click="navigateToPage(WELCOME_PATH)"
     />
     <div class="navigation__links">
       <div class="navigation__link" v-for="page in pages" :key="page.name">
@@ -31,8 +31,9 @@
     </div>
     <hamburger
       :is-menu-open="isHamburgerMenuOpen"
-      :links="pages"
+      :hamburger-options="pages"
       @toggle-menu="toggleHamburgerMenu"
+      @option-clicked="navigateToPage($event.path)"
     />
   </div>
 </template>
@@ -77,8 +78,8 @@ const pages: ComputedRef<RouteOption[]> = computed(
     ) || []
 );
 
-function navigateToWelcome() {
-  router.push(WELCOME_PATH);
+function navigateToPage(page: string) {
+  router.push(page);
 }
 </script>
 
