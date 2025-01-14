@@ -51,7 +51,6 @@ function selectOption(option: RouteOption) {
 <style lang="scss" scoped>
 .hamburger-component {
   display: none;
-  position: relative;
   margin-right: 15px;
 }
 
@@ -104,11 +103,11 @@ function selectOption(option: RouteOption) {
 
 .v-enter-active,
 .v-leave-active {
-  right: -45px;
+  right: 0;
 }
 
 .v-enter-from,
 .v-leave-to {
-  right: -250px;
+  right: -150px;
 }
 </style>

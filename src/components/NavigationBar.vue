@@ -68,6 +68,7 @@ function navigateToPage(page: string) {
 
 <style lang="scss" scoped>
 .navigation-bar {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -84,8 +84,8 @@ defineEmits<{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 53px;
-  right: -45px;
+  top: 70px;
+  right: 0;
   padding: 0;
   margin: 0;
   border: 1px solid white;
