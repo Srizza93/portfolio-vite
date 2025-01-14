@@ -43,11 +43,34 @@ defineEmits<{
   list-style: none;
 
   &__page {
+    position: relative;
     padding: 5px 10px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+
+    &:after {
+      display: block;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      border-bottom: 3px solid white;
+      content: '';
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform 0.25s ease-in-out;
+      transition: -webkit-transform 0.25s ease-in-out;
+      transition: transform 0.25s ease-in-out;
+      transition: transform 0.25s ease-in-out,
+        -webkit-transform 0.25s ease-in-out;
+      width: 100%;
+    }
+
+    &:hover:after {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
   }
 }
 
