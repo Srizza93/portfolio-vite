@@ -5,7 +5,7 @@
   },
   "navigation": {
     "home": "Acceuil",
-    "portfolio": "Portfeuille",
+    "portfolio": "Portefeuille",
     "stack": "Stack",
     "contacts": "Contacts",
     "resume": "Résumé"
@@ -42,11 +42,11 @@
     "functionalities": "Fonctionnalités",
     "tododescr": "Simple Todo App - Responsive Design",
     "weatherdescr": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design",
-    "portfolio2Descr": "Portfeuille Personnel - Responsive Design",
+    "portfolio2Descr": "Portefeuille Personnel - Responsive Design",
     "ecommerce2Descr": "Site de e-commerce - Expérience client complètement moquée - Responsive Design",
     "adventDescr": "Collection de 24 défis de codage - Responsive Design",
     "socialDescr": "Social Network - Expérience client partiellement moquée - Responsive Design",
-    "portfolioDescr": "Portfeuille Personnel - Responsive Design",
+    "portfolioDescr": "Portefeuille Personnel - Responsive Design",
     "moviesDescr": "Site de Film en Streaming - Responsive Design",
     "ecommerceDescr": "Site de e-commerce - Responsive Design",
     "htmlLayoutDescr": "CV personnel en format HTML-email - Responsive Design",

@@ -29,12 +29,16 @@
         ></span>
       </div>
     </div>
-    <hamburger :links="pages" />
+    <hamburger
+      :is-menu-open="isHamburgerMenuOpen"
+      :links="pages"
+      @toggle-menu="toggleHamburgerMenu"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { computed, ComputedRef } from 'vue';
+import { computed, ComputedRef, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 import Hamburger from '@/components/Hamburger.vue';
@@ -54,9 +58,15 @@ import { RouteOption } from '@/types/route';
 
 const router = useRouter();
 
+const isHamburgerMenuOpen = ref(false);
+
+function toggleHamburgerMenu(isOpen: boolean) {
+  isHamburgerMenuOpen.value = isOpen;
+}
+
 const pages: ComputedRef<RouteOption[]> = computed(
   () =>
-    routeOptions[0].children?.filter((page) =>
+    routeOptions[0].children?.filter((page: RouteOption) =>
       [
         HOME_PAGE_NAME,
         PORTFOLIO_PAGE_NAME,
