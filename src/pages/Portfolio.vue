@@ -312,6 +312,8 @@ const projects: Ref<Project[]> = ref([
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -322,14 +324,6 @@ const projects: Ref<Project[]> = ref([
 .portfolio-subcontainer {
   display: flex;
   flex-direction: column;
-  border-left: 3px solid #dedede;
-
-  &--dot {
-    width: 100%;
-    height: 5px;
-    border-left: 4px solid #dedede;
-    background-color: #dedede;
-    margin: 0px 10px 10px auto;
-  }
+  border-left: 3px solid global.$detail--color;
 }
 </style>

@@ -131,6 +131,8 @@ async function copyToClipboard(contact: Contact) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -150,30 +152,31 @@ async function copyToClipboard(contact: Contact) {
 .contact {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin: global.$spacing--medium 0;
 
   &__link {
     display: flex;
-    color: #0474b3;
+    color: global.$secondary--color;
     text-decoration: none;
 
     &__icon {
-      max-width: 50px;
+      max-width: global.$icon-size--medium;
     }
   }
 
   &__link:hover {
-    opacity: 0.7;
+    opacity: global.$opacity--light;
   }
 
   &__copy {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+    width: global.$icon-size--small;
+    height: global.$icon-size--small;
+    padding: global.$spacing--xsmall;
+    margin-left: global.$spacing--xsmall;
     cursor: pointer;
 
     &--to-copy:hover {
-      opacity: 0.7;
+      opacity: global.$opacity--light;
     }
   }
 }

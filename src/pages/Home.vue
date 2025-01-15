@@ -38,6 +38,8 @@ function accessPortfolio() {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .home {
   display: flex;
   flex-direction: column;
@@ -50,7 +52,7 @@ function accessPortfolio() {
 
   &__content-image {
     max-width: 315px;
-    border-radius: 50%;
+    border-radius: global.$border-radius--round;
     object-fit: cover;
     margin-bottom: 50px;
   }
@@ -58,25 +60,24 @@ function accessPortfolio() {
   &__description {
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
-    color: #0f52ba;
+    padding-right: global.$spacing--large;
+    color: global.$secondary-dark--color;
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: global.$spacing--large;
+    line-height: global.$line-height--small;
 
     &-first-line {
-      margin-bottom: 30px;
+      margin-bottom: global.$spacing--medium;
     }
 
     &-name {
-      font-size: 32px;
+      font-size: global.$font-size--xlarge;
       font-weight: bold;
-      line-height: 1.5;
     }
 
     &-parag {
-      color: #000033;
+      color: global.$standard-text--color;
       white-space: pre-wrap;
-      line-height: 1.6;
     }
   }
 }

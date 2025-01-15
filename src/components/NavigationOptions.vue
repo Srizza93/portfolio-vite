@@ -34,18 +34,20 @@ defineEmits<{
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .pages {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: global.$spacing--large;
   padding: 0;
   margin: 0;
   list-style: none;
 
   &__page {
     position: relative;
-    padding: 5px 10px;
-    color: white;
+    // padding: global.$spacing-vertical-horizontal--xsmall;
+    color: global.$primary--color;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -55,7 +57,7 @@ defineEmits<{
       left: 0;
       bottom: 0;
       position: absolute;
-      border-bottom: 3px solid white;
+      border-bottom: 3px solid global.$primary--color;
       content: '';
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -88,27 +90,27 @@ defineEmits<{
   right: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid white;
-  border-radius: 0 0 0 15px;
-  background-color: white;
+  border: 1px solid global.$primary--color;
+  border-radius: 0 0 0 global.$border-radius--medium;
+  background-color: global.$primary--color;
   transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 9999;
   list-style: none;
 
   &__option {
-    padding: 20px 40px;
-    color: #0f52ba;
+    padding: global.$spacing-vertical-horizontal--medium;
+    color: global.$secondary-dark--color;
     font-weight: bold;
     cursor: pointer;
 
     &:last-child {
-      border-radius: 0 0 0 15px;
+      border-radius: 0 0 0 global.$border-radius--medium;
     }
 
     &:hover {
-      background-color: #0f52ba;
-      color: white;
+      background-color: global.$secondary-dark--color;
+      color: global.$primary--color;
     }
   }
 }

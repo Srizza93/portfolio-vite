@@ -81,6 +81,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+@use '@/assets/global';
+
 .hide-element {
   opacity: 0;
 }
@@ -90,7 +92,7 @@ onMounted(() => {
     opacity: 1;
   }
   to {
-    opacity: 0.5;
+    opacity: global.$opacity--light;
   }
 }
 
@@ -107,6 +109,8 @@ onMounted(() => {
 </style>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -115,29 +119,29 @@ onMounted(() => {
   position: absolute;
   min-width: 100%;
   height: 100%;
-  padding: 30px 15px;
-  background-color: #0474b3;
+  padding: global.$spacing-vertical-horizontal--large;
+  background-color: global.$secondary--color;
   transition-duration: 2s;
 }
 
 .introduction {
   margin: 0 auto;
-  color: white;
-  font-size: 32px;
+  color: global.$primary--color;
+  font-size: global.$font-size--xlarge;
   font-weight: bold;
 }
 
 .caret {
   height: 100%;
   width: 3px;
-  border-left: 1px solid white;
+  border-left: 1px solid global.$primary--color;
   animation: blink-caret 1.1s infinite steps(1, start);
 }
 
 .button-box {
   position: relative;
   display: flex;
-  margin-top: 60px;
+  margin-top: global.$spacing--large;
 
   &__mouse {
     position: absolute;

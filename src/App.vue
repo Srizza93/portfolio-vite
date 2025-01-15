@@ -11,7 +11,10 @@ onMounted(() => initLanguage());
 </script>
 
 <style lang="scss">
+@use '@/assets/global';
+
 body {
+  background-color: global.$primary--color;
   margin: 0;
   min-height: 100vh;
 }
@@ -29,6 +32,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #003;
 }
 </style>

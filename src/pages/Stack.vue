@@ -164,17 +164,18 @@ const stack: Ref<Tech[]> = ref([
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .stack {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  gap: global.$spacing--small;
   margin: 0;
   padding: 0;
 }
 
 .tech {
   display: flex;
-  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -183,7 +184,7 @@ const stack: Ref<Tech[]> = ref([
   flex-direction: row;
   align-items: center;
   width: 200px;
-  height: 40px;
+  height: global.$icon-size--medium;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -199,7 +200,7 @@ const stack: Ref<Tech[]> = ref([
   &__logo {
     width: 40px;
     height: 40px;
-    margin-right: 30px;
+    margin-right: global.$spacing--medium;
     object-fit: contain;
   }
 
@@ -210,11 +211,11 @@ const stack: Ref<Tech[]> = ref([
 
 @keyframes text-grow {
   0% {
-    color: #003;
+    color: global.$standard-text--color;
   }
   100% {
-    font-size: 18px;
-    color: #0474b3;
+    font-size: global.$font-size--large;
+    color: global.$secondary--color;
   }
 }
 
@@ -225,9 +226,9 @@ const stack: Ref<Tech[]> = ref([
     margin-left: 0;
   }
   100% {
-    width: 60px;
-    height: 60px;
-    margin-left: -10px;
+    width: global.$icon-size--medium;
+    height: global.$icon-size--medium;
+    margin-left: -8px;
   }
 }
 </style>

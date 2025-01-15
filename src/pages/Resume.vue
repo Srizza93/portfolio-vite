@@ -67,12 +67,14 @@ const orderedCvs = computed(() =>
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .resume {
   display: flex;
   flex-direction: column;
 
   &__title {
-    margin: 0 0 50px 0;
+    margin: 0 0 global.$spacing--large 0;
   }
 }
 
@@ -89,11 +91,15 @@ const orderedCvs = computed(() =>
   align-items: center;
   width: 200px;
   height: 200px;
-  margin: 30px 0;
-  color: white;
+  padding: global.$spacing--xsmall;
+  margin: global.$spacing--medium 0 0 0;
+  color: global.$primary--color;
   text-decoration: none;
-  border-radius: 50%;
-  overflow: hidden;
+  border-radius: global.$border-radius--round;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &:hover .cv__download,
   &:focus .cv__download {
@@ -103,22 +109,22 @@ const orderedCvs = computed(() =>
   &__flag {
     width: 100%;
     height: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: global.$border-radius--round;
+    box-shadow: global.$shadow--large;
   }
 
   &__download {
     position: absolute;
-    top: 5%;
+    top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    height: 80%;
+    background-color: global.$hover-element--color;
     opacity: 0;
     margin: 0;
-    border-radius: 50%;
+    border-radius: global.$border-radius--round;
     transition-duration: 0.4s;
   }
 }
