@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div v-if="welcomeData" class="welcome">
     <p class="introduction">
       <span ref="messageRef"></span>
       <span class="caret"></span>
@@ -25,17 +25,24 @@ import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import i18n from '@/i18n';
 
+import { useToasterStore } from '@/store/toaster';
+import { getWelcomeData } from '@/api/welcome';
+import { WelcomeDto } from '@/types/welcomeDto';
+
 import FolioButton from '@/components/FolioButton.vue';
 import { HOME_PATH } from '@/constants/pageEndpoints';
 
 const router = useRouter();
+const toasterStore = useToasterStore();
+
+const welcomeData = ref<WelcomeDto | null>(null);
 const messageRef = ref<HTMLParagraphElement | null>(null);
 const intervalId = ref<number | null>(null);
 const messageIndex = ref(0);
 
 function playAnimation() {
   const message = i18n.global.t('welcome.introduction', {
-    name: 'Simone Rizza',
+    name: welcomeData.value?.name,
   });
   intervalId.value = setInterval(() => {
     if (messageIndex.value === message.length) {
@@ -75,7 +82,19 @@ function goToHome() {
   router.push(HOME_PATH);
 }
 
-onMounted(() => {
+function getData(): Promise<void> {
+  return getWelcomeData()
+    .then((response: WelcomeDto) => {
+      welcomeData.value = response;
+    })
+    .catch(() => {
+      router.push(HOME_PATH);
+      toasterStore.setMessage(i18n.global.t('global.error'));
+    });
+}
+
+onMounted(async () => {
+  await getData();
   playAnimation();
 });
 </script>
