@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div v-if="homeData" class="home">
     <div class="home__content">
       <div class="home__description">
         <span class="home__description-first-line">{{
           $t('home.greatings')
         }}</span>
-        <span class="home__description-name">Simone Rizza</span>
+        <span class="home__description-name">{{ homeData.name }}</span>
         <span>{{ $t('home.position') }}</span>
         <p class="home__description-parag">
           {{ $t('home.pitch') }}
@@ -24,17 +24,40 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted, ref, type Ref } from 'vue';
 import { useRouter } from 'vue-router';
+
+import { getHomeData } from '@/api/home.ts';
+import { useToasterStore } from '@/store/toaster';
+import i18n from '@/i18n';
+import { HomeDto } from '@/types/homeDto';
 
 import FolioButton from '@/components/FolioButton.vue';
 
 import { PORTFOLIO_PATH } from '@/constants/pageEndpoints';
 
 const router = useRouter();
+const toasterStore = useToasterStore();
+
+const homeData: Ref<HomeDto | null> = ref(null);
 
 function accessPortfolio() {
   router.push(PORTFOLIO_PATH);
 }
+
+function getData(): Promise<void> {
+  return getHomeData()
+    .then((response: HomeDto) => {
+      homeData.value = response;
+    })
+    .catch(() => {
+      toasterStore.setMessage(i18n.global.t('global.error'));
+    });
+}
+
+onMounted(() => {
+  getData();
+});
 </script>
 
 <style lang="scss" scoped>
