@@ -81,14 +81,14 @@ function navigateToPage(page: string) {
   background-color: global.$secondary--color;
 
   &__logo {
-    width: 100%;
-    max-width: 50px;
+    width: global.$icon-size--medium;
+    height: global.$icon-size--medium;
     padding: global.$spacing--xsmall;
     height: auto;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.7;
+      opacity: global.$opacity--light;
     }
   }
 }

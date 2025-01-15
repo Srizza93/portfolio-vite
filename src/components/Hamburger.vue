@@ -61,12 +61,12 @@ function selectOption(option: RouteOption) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: global.$icon-size--medium;
+  height: global.$icon-size--medium;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.7;
+    opacity: global.$opacity--light;
   }
 
   &--open {
@@ -89,7 +89,7 @@ function selectOption(option: RouteOption) {
     width: 33px;
     height: 4px;
     border-radius: global.$border-radius--medium;
-    margin-bottom: 5px;
+    margin-bottom: global.$spacing--xsmall;
     background-color: global.$primary--color;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),

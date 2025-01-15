@@ -81,6 +81,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+@use '@/assets/global';
+
 .hide-element {
   opacity: 0;
 }
@@ -90,7 +92,7 @@ onMounted(() => {
     opacity: 1;
   }
   to {
-    opacity: 0.5;
+    opacity: global.$opacity--light;
   }
 }
 
@@ -139,7 +141,7 @@ onMounted(() => {
 .button-box {
   position: relative;
   display: flex;
-  margin-top: 60px;
+  margin-top: global.$spacing--large;
 
   &__mouse {
     position: absolute;

@@ -160,22 +160,23 @@ async function copyToClipboard(contact: Contact) {
     text-decoration: none;
 
     &__icon {
-      max-width: 50px;
+      max-width: global.$icon-size--medium;
     }
   }
 
   &__link:hover {
-    opacity: 0.7;
+    opacity: global.$opacity--light;
   }
 
   &__copy {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+    width: global.$icon-size--small;
+    height: global.$icon-size--small;
+    padding: global.$spacing--xsmall;
+    margin-left: global.$spacing--xsmall;
     cursor: pointer;
 
     &--to-copy:hover {
-      opacity: 0.7;
+      opacity: global.$opacity--light;
     }
   }
 }

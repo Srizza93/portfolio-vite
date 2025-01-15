@@ -60,25 +60,24 @@ function accessPortfolio() {
   &__description {
     display: flex;
     flex-direction: column;
-    padding-right: 60px;
+    padding-right: global.$spacing--large;
     color: global.$secondary-dark--color;
     width: 70%;
-    margin-bottom: 60px;
+    margin-bottom: global.$spacing--large;
+    line-height: global.$line-height--small;
 
     &-first-line {
-      margin-bottom: 30px;
+      margin-bottom: global.$spacing--medium;
     }
 
     &-name {
       font-size: global.$font-size--xlarge;
       font-weight: bold;
-      line-height: 1.5;
     }
 
     &-parag {
       color: global.$standard-text--color;
       white-space: pre-wrap;
-      line-height: 1.6;
     }
   }
 }

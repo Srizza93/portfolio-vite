@@ -39,14 +39,14 @@ defineEmits<{
 .pages {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: global.$spacing--large;
   padding: 0;
   margin: 0;
   list-style: none;
 
   &__page {
     position: relative;
-    padding: global.$spacing-vertical-horizontal--xsmall;
+    // padding: global.$spacing-vertical-horizontal--xsmall;
     color: global.$primary--color;
     text-decoration: none;
     font-weight: bold;

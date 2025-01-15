@@ -74,6 +74,10 @@ const themeClass = computed(() => {
   white-space: nowrap;
   font-weight: bold;
   cursor: pointer;
+}
+
+.folio-dark {
+  background-color: global.$secondary-dark--color;
 
   &:focus {
     outline: none;
@@ -82,16 +86,18 @@ const themeClass = computed(() => {
   }
 }
 
-.folio-dark {
-  background-color: global.$secondary-dark--color;
-}
-
 .folio-dark:hover {
   animation: blink-dark 1s linear infinite;
 }
 
 .folio-light {
   background-color: global.$secondary--color;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px global.$primary--color,
+      0 0 0 4px global.$secondary-dark--color;
+  }
 }
 
 .folio-light:hover {
@@ -101,6 +107,12 @@ const themeClass = computed(() => {
 .folio-x-light {
   background-color: global.$primary--color;
   color: global.$secondary-dark--color;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px global.$secondary-dark--color,
+      0 0 0 4px global.$primary--color;
+  }
 }
 
 .folio-x-light:hover {

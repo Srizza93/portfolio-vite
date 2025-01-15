@@ -60,7 +60,7 @@ function openDetails(project: Project) {
 .project-container {
   position: relative;
   padding: 0 global.$spacing--medium 0 global.$spacing--large;
-  margin-top: 30px;
+  margin-top: global.$spacing--medium;
 
   &:first-child {
     margin-top: 0;
@@ -96,7 +96,7 @@ function openDetails(project: Project) {
   max-width: 500px;
   border: 1px solid global.$detail--color;
   border-radius: global.$border-radius--medium;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: global.$shadow--large;
 
   &--open {
     height: 100%;
@@ -108,7 +108,7 @@ function openDetails(project: Project) {
   width: 100%;
   height: 400px;
   border-radius: global.$border-radius--medium global.$border-radius--medium 0 0;
-  margin-bottom: 15px;
+  margin-bottom: global.$spacing--small;
   padding: global.$spacing--xsmall;
   object-fit: contain;
   border-bottom: 1px solid global.$detail--color;
@@ -118,7 +118,7 @@ function openDetails(project: Project) {
   color: global.$secondary--color;
   text-decoration: none;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: global.$spacing--small;
   display: inline-block;
 
   &:hover {

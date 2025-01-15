@@ -39,7 +39,7 @@ defineProps<{
   max-height: 0;
   overflow: hidden;
   text-align: left;
-  line-height: 30px;
+  line-height: global.$line-height--medium;
   visibility: hidden;
 
   &--open {

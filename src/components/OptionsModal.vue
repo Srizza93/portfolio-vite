@@ -117,7 +117,7 @@ function trapFocus(event: KeyboardEvent) {
   background-color: global.$primary--color;
   border: 2px solid global.$secondary--color;
   z-index: 99999;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: global.$shadow--large;
 
   &--open {
     display: flex;
@@ -137,20 +137,19 @@ function trapFocus(event: KeyboardEvent) {
   list-style: none;
 
   &__option {
-    width: 48px;
-    height: 48px;
+    width: global.$icon-size--medium;
+    height: global.$icon-size--medium;
     border-radius: global.$border-radius--round;
     cursor: pointer;
 
     &:hover {
-      opacity: 0.7;
+      opacity: global.$opacity--light;
     }
 
     &--selected {
       position: fixed;
       bottom: 0;
       right: 0;
-      max-width: 50px;
     }
   }
 }
