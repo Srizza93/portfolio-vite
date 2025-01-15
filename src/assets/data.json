@@ -1,9 +1,23 @@
 {
   "personalInfo": {
     "name": "Simone Rizza",
-    "email": "simonerizzanl@gmail.com",
-    "phone": "+33 772233271",
-    "linkedin": "https://www.linkedin.com/in/simonerizza1993"
+    "contacts": [
+      {
+        "name": "email",
+        "text": "simonerizzanl@gmail.com",
+        "link": "mailto:simonerizzanl@gmail.com"
+      },
+      {
+        "name": "phone",
+        "text": "+33 772233271",
+        "link": "tel:+33772233271"
+      },
+      {
+        "name": "linkedin",
+        "text": "Linkedin",
+        "link": "https://www.linkedin.com/in/simonerizza1993"
+      }
+    ]
   },
   "projects": [
     {
