@@ -46,7 +46,7 @@ defineEmits<{
 
   &__page {
     position: relative;
-    padding: 5px 10px;
+    padding: global.$spacing-vertical-horizontal--xsmall;
     color: global.$primary--color;
     text-decoration: none;
     font-weight: bold;
@@ -91,7 +91,7 @@ defineEmits<{
   padding: 0;
   margin: 0;
   border: 1px solid global.$primary--color;
-  border-radius: 0 0 0 15px;
+  border-radius: 0 0 0 global.$border-radius--medium;
   background-color: global.$primary--color;
   transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -99,13 +99,13 @@ defineEmits<{
   list-style: none;
 
   &__option {
-    padding: 20px 40px;
+    padding: global.$spacing-vertical-horizontal--medium;
     color: global.$secondary-dark--color;
     font-weight: bold;
     cursor: pointer;
 
     &:last-child {
-      border-radius: 0 0 0 15px;
+      border-radius: 0 0 0 global.$border-radius--medium;
     }
 
     &:hover {

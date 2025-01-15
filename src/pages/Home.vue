@@ -52,7 +52,7 @@ function accessPortfolio() {
 
   &__content-image {
     max-width: 315px;
-    border-radius: 50%;
+    border-radius: global.$border-radius--round;
     object-fit: cover;
     margin-bottom: 50px;
   }
@@ -60,10 +60,10 @@ function accessPortfolio() {
   &__description {
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
+    padding-right: 60px;
     color: global.$secondary-dark--color;
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 
     &-first-line {
       margin-bottom: 30px;

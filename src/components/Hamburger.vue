@@ -53,7 +53,7 @@ function selectOption(option: RouteOption) {
 
 .hamburger-component {
   display: none;
-  margin: 0 15px 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .hamburger {
@@ -88,7 +88,7 @@ function selectOption(option: RouteOption) {
     display: block;
     width: 33px;
     height: 4px;
-    border-radius: 15px;
+    border-radius: global.$border-radius--medium;
     margin-bottom: 5px;
     background-color: global.$primary--color;
     transform-origin: 4px 0px;

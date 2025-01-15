@@ -117,7 +117,7 @@ onMounted(() => {
   position: absolute;
   min-width: 100%;
   height: 100%;
-  padding: 30px 15px;
+  padding: global.$spacing-vertical-horizontal--large;
   background-color: global.$secondary--color;
   transition-duration: 2s;
 }

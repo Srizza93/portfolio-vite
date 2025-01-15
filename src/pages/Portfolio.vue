@@ -325,13 +325,5 @@ const projects: Ref<Project[]> = ref([
   display: flex;
   flex-direction: column;
   border-left: 3px solid global.$detail--color;
-
-  &--dot {
-    width: 100%;
-    height: 5px;
-    border-left: 4px solid global.$detail--color;
-    background-color: global.$detail--color;
-    margin: 0px 10px 10px auto;
-  }
 }
 </style>

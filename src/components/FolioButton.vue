@@ -65,8 +65,8 @@ const themeClass = computed(() => {
 .folio-button {
   width: 100%;
   max-width: 250px;
-  padding: 8px 30px;
-  border-radius: 5px;
+  padding: global.$spacing-vertical-horizontal--medium;
+  border-radius: global.$border-radius--small;
   border: none;
   color: global.$primary--color;
   text-align: center;

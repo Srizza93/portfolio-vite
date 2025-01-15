@@ -152,7 +152,7 @@ async function copyToClipboard(contact: Contact) {
 .contact {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin: global.$spacing--medium 0;
 
   &__link {
     display: flex;
