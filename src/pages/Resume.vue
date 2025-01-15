@@ -9,7 +9,11 @@
         :download="cv.name"
         class="cv"
       >
-        <img class="cv__flag" :src="getFilePath(cv.image)" :alt="cv.alt" />
+        <img
+          class="cv__flag"
+          :src="getFilePath(cv.image)"
+          :alt="getAltFromCv(cv.name)"
+        />
         <p class="cv__download">
           {{ $t('resume.download') }}
         </p>
@@ -26,12 +30,12 @@ import { getFilePath } from '@/services/fileService';
 import { getCvsData } from '@/api/cvs';
 import { Cv } from '@/types/cvs';
 import { useToasterStore } from '@/store/toaster';
-import { mapAndSortCvs } from '@/services/cvsService';
+import { getAltFromCv, sortCvs } from '@/services/cvsService';
 
 const toasterStore = useToasterStore();
 const cvsData: Ref<Cv[] | null> = ref(null);
 
-const cvsMap = computed(() => mapAndSortCvs(cvsData?.value));
+const cvsMap = computed(() => sortCvs(cvsData?.value));
 
 function getData(): Promise<void> {
   return getCvsData()
