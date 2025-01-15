@@ -131,6 +131,8 @@ async function copyToClipboard(contact: Contact) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -150,11 +152,11 @@ async function copyToClipboard(contact: Contact) {
 .contact {
   display: flex;
   align-items: center;
-  margin: 30px 0;
+  margin: global.$spacing--medium 0;
 
   &__link {
     display: flex;
-    color: #0474b3;
+    color: global.$secondary--color;
     text-decoration: none;
 
     &__icon {

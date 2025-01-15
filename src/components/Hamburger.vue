@@ -49,9 +49,11 @@ function selectOption(option: RouteOption) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .hamburger-component {
   display: none;
-  margin: 0 15px 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .hamburger {
@@ -86,9 +88,9 @@ function selectOption(option: RouteOption) {
     display: block;
     width: 33px;
     height: 4px;
-    border-radius: 15px;
+    border-radius: global.$border-radius--medium;
     margin-bottom: 5px;
-    background-color: white;
+    background-color: global.$primary--color;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;

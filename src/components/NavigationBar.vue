@@ -67,6 +67,8 @@ function navigateToPage(page: string) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .navigation-bar {
   position: relative;
   display: flex;
@@ -75,12 +77,13 @@ function navigateToPage(page: string) {
   justify-content: space-between;
   width: 100%;
   height: 70px;
-  padding: 5px 30px 5px 30px;
-  background-color: #0474b3;
+  padding: global.$spacing-vertical-horizontal--medium;
+  background-color: global.$secondary--color;
 
   &__logo {
     width: 100%;
-    max-width: 60px;
+    max-width: 50px;
+    padding: global.$spacing--xsmall;
     height: auto;
     cursor: pointer;
 

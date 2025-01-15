@@ -32,6 +32,8 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .details {
   width: 100%;
   max-height: 0;
@@ -41,9 +43,9 @@ defineProps<{
   visibility: hidden;
 
   &--open {
-    max-height: 10000px;
+    max-height: max-content;
     visibility: visible;
-    padding: 15px;
+    padding: global.$spacing--small;
   }
 }
 

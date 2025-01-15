@@ -101,6 +101,8 @@ function trapFocus(event: KeyboardEvent) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .options-modal {
   position: fixed;
   display: none;
@@ -110,10 +112,10 @@ function trapFocus(event: KeyboardEvent) {
   top: 30%;
   left: calc(50% - 150px);
   width: 300px;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: white;
-  border: 2px solid #0474b3;
+  padding: global.$spacing--medium;
+  border-radius: global.$border-radius--medium;
+  background-color: global.$primary--color;
+  border: 2px solid global.$secondary--color;
   z-index: 99999;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -129,15 +131,15 @@ function trapFocus(event: KeyboardEvent) {
 .options {
   display: flex;
   justify-content: center;
-  list-style: none;
-  margin: 15px 0 0 0;
+  gap: global.$spacing--small;
+  margin: global.$spacing--small 0 0 0;
   padding: 0;
+  list-style: none;
 
   &__option {
     width: 48px;
     height: 48px;
-    margin: 0 10px;
-    border-radius: 50px;
+    border-radius: global.$border-radius--round;
     cursor: pointer;
 
     &:hover {

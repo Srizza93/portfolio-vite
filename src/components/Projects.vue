@@ -55,9 +55,11 @@ function openDetails(project: Project) {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .project-container {
   position: relative;
-  padding: 0 30px 0 60px;
+  padding: 0 global.$spacing--medium 0 global.$spacing--large;
   margin-top: 30px;
 
   &:first-child {
@@ -71,8 +73,8 @@ function openDetails(project: Project) {
   left: -9px;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
-  background-color: #dedede;
+  border-radius: global.$border-radius--round;
+  background-color: global.$detail--color;
 
   &__relative {
     position: relative;
@@ -81,7 +83,7 @@ function openDetails(project: Project) {
       position: absolute;
       top: -10px;
       left: 20px;
-      color: #888888;
+      color: global.$detail-dark--color;
       font-weight: bold;
     }
   }
@@ -92,8 +94,8 @@ function openDetails(project: Project) {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  border: 1px solid #dedede;
-  border-radius: 15px;
+  border: 1px solid global.$detail--color;
+  border-radius: global.$border-radius--medium;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   &--open {
@@ -105,15 +107,15 @@ function openDetails(project: Project) {
   display: block;
   width: 100%;
   height: 400px;
-  border-radius: 15px 15px 0 0;
+  border-radius: global.$border-radius--medium global.$border-radius--medium 0 0;
   margin-bottom: 15px;
-  padding: 5px;
+  padding: global.$spacing--xsmall;
   object-fit: contain;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid global.$detail--color;
 }
 
 .project-link {
-  color: #0474b3;
+  color: global.$secondary--color;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 15px;
@@ -121,13 +123,13 @@ function openDetails(project: Project) {
 
   &:hover {
     text-decoration: underline;
-    color: #035a91;
+    color: global.$secondary-dark--color;
   }
 }
 
 .project-button {
   width: 90%;
-  margin: 0 auto 15px auto;
+  margin: 0 auto global.$spacing--small auto;
 }
 
 @media screen and (max-width: 500px) {

@@ -45,14 +45,16 @@ const selectedLanguage = computed(() =>
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .portfolio-layout {
   width: 100%;
-  padding: 60px;
+  padding: global.$spacing-vertical-horizontal--xlarge;
 }
 
 @media screen and (max-width: 600px) {
   .portfolio-layout {
-    padding: 60px 15px;
+    padding: global.$spacing-vertical-horizontal--large;
   }
 }
 </style>
