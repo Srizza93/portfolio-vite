@@ -1,7 +1,7 @@
 <template>
   <div class="contact-details" v-if="contactsData">
     <h3 class="contact-details__title">{{ $t('navigation.contacts') }}</h3>
-    <ul class="contact-details__list">
+    <ul v-if="contactsData.length" class="contact-details__list">
       <li
         v-for="contact in contactsData"
         :key="'contact-' + contact.name"

@@ -1,15 +1,15 @@
 <template>
-  <div class="resume">
+  <div class="resume" v-if="cvsData">
     <h3 class="resume__title">{{ $t('resume.header') }}</h3>
-    <div class="cvs">
+    <div class="cvs" v-if="cvsMap.length">
       <a
-        v-for="cv in orderedCvs"
+        v-for="cv in cvsMap"
         :key="cv.name"
-        :href="getFilePath(cv.filePath)"
+        :href="getFilePath(cv.link)"
         :download="cv.name"
         class="cv"
       >
-        <img class="cv__flag" :src="getFilePath(cv.img)" :alt="cv.alt" />
+        <img class="cv__flag" :src="getFilePath(cv.image)" :alt="cv.alt" />
         <p class="cv__download">
           {{ $t('resume.download') }}
         </p>
@@ -19,51 +19,33 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, type Ref } from 'vue';
+import { computed, onMounted, ref, type Ref } from 'vue';
 
 import i18n from '@/i18n';
 import { getFilePath } from '@/services/fileService';
+import { getCvsData } from '@/api/cvs';
+import { Cv } from '@/types/cvs';
+import { useToasterStore } from '@/store/toaster';
+import { mapAndSortCvs } from '@/services/cvsService';
 
-type Cv = {
-  id: string;
-  name: string;
-  alt: string;
-  img: string;
-  filePath: string;
-};
+const toasterStore = useToasterStore();
+const cvsData: Ref<Cv[] | null> = ref(null);
 
-const cvs: Ref<Cv[]> = ref([
-  {
-    id: 'fr',
-    name: 'cv-fr',
-    alt: 'french-flag',
-    img: 'fr-flag.svg',
-    filePath: 'cv-fr.pdf',
-  },
-  {
-    id: 'en',
-    name: 'cv-eng',
-    alt: 'uk-flag',
-    img: 'uk-flag.svg',
-    filePath: 'cv-eng.pdf',
-  },
-  {
-    id: 'it',
-    name: 'cv-ita',
-    alt: 'ita-flag',
-    img: 'it-flag.svg',
-    filePath: 'cv-ita.pdf',
-  },
-]);
+const cvsMap = computed(() => mapAndSortCvs(cvsData?.value));
 
-const orderedCvs = computed(() =>
-  cvs.value.sort((a, b) => {
-    const actLang = i18n.global.locale.split('-')[0];
-    if (a.id === actLang) return -1;
-    if (b.id === actLang) return 1;
-    return a.id.localeCompare(b.id);
-  })
-);
+function getData(): Promise<void> {
+  return getCvsData()
+    .then((response: Cv[]) => {
+      cvsData.value = response;
+    })
+    .catch(() => {
+      toasterStore.setMessage(i18n.global.t('global.error'));
+    });
+}
+
+onMounted(() => {
+  getData();
+});
 </script>
 
 <style lang="scss" scoped>
