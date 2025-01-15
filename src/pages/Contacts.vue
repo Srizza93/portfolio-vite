@@ -1,20 +1,19 @@
 <template>
-  <div class="contact-details">
+  <div class="contact-details" v-if="contactsData">
     <h3 class="contact-details__title">{{ $t('navigation.contacts') }}</h3>
-    <ul class="contact-details__list">
+    <ul v-if="contactsData.length" class="contact-details__list">
       <li
-        v-for="contact in contacts"
-        :key="'contact-' + contact.id"
+        v-for="contact in contactsData"
+        :key="'contact-' + contact.name"
         class="contact"
       >
         <a class="contact__link" :href="contact.link">
-          <span v-if="showText(contact.id)">{{ contact.text }}</span>
           <img
-            v-if="contact.image"
             class="contact__link__icon"
-            :src="getFilePath(contact.image.link)"
-            :alt="contact.image.name"
+            :src="getFilePath(contact.name + '.png')"
+            :alt="contact.name"
           />
+          <span>{{ contact.text }}</span>
         </a>
         <img
           v-if="!contact.isCopying"
@@ -43,91 +42,37 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, type Ref } from 'vue';
+import { onMounted, ref, type Ref } from 'vue';
 import i18n from '@/i18n';
 
 import { getFilePath } from '@/services/fileService';
+import { getContactsData } from '@/api/contacts';
+import { Contact } from '@/types/contacts';
+import { copyToClipboard, mapContactsData } from '@/services/contactsService';
 
 import { useToasterStore } from '@/store/toaster';
-import { MessageTypeEnum } from '@/types/toaster';
 
 const toasterStore = useToasterStore();
-
-type Contact = {
-  id: string;
-  link: string;
-  text: string;
-  image?: {
-    link: string;
-    name: string;
-  };
-  isCopying: boolean;
-  isCopySuccessful: boolean;
-};
-
-const toasterDelay = 1500;
-
+const contactsData: Ref<Contact[] | null> = ref(null);
 const copyIcons = {
   copy: 'copy-clipboard.png',
   check: 'check.png',
   error: 'cross.png',
 };
 
-const contacts: Ref<Contact[]> = ref([
-  {
-    id: 'phone',
-    link: 'tel:+33772233271',
-    text: '+33 772233271',
-    isCopying: false,
-    isCopySuccessful: false,
-  },
-  {
-    id: 'email',
-    link: 'mailto:simonerizzanl@gmail.com',
-    text: 'simonerizzanl@gmail.com',
-    isCopying: false,
-    isCopySuccessful: false,
-  },
-  {
-    id: 'linkedin',
-    link: 'https://www.linkedin.com/in/simonerizza1993',
-    text: 'https://www.linkedin.com/in/simonerizza1993',
-    image: {
-      link: 'linkedin.png',
-      name: 'linkedin',
-    },
-    isCopying: false,
-    isCopySuccessful: false,
-  },
-]);
-
-function showText(contactId: string) {
-  return contactId === 'phone' || contactId === 'email';
-}
-
-async function copyToClipboard(contact: Contact) {
-  await navigator.clipboard
-    .writeText(contact.text)
-    .then(() => {
-      contact.isCopying = true;
-      contact.isCopySuccessful = true;
-      toasterStore.setMessage(
-        i18n.global.t('contacts.copy-clipboard-success'),
-        MessageTypeEnum.SUCCESS,
-        toasterDelay
-      );
+function getData(): Promise<void> {
+  return getContactsData()
+    .then((response: Contact[]) => {
+      contactsData.value = mapContactsData(response);
     })
     .catch(() => {
-      contact.isCopying = true;
-      toasterStore.setMessage(i18n.global.t('contacts.copy-clipboard-error'));
-    })
-    .finally(() => {
-      setTimeout(() => {
-        contact.isCopying = false;
-        contact.isCopySuccessful = false;
-      }, toasterDelay);
+      toasterStore.setMessage(i18n.global.t('global.error'));
     });
 }
+
+onMounted(() => {
+  getData();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -152,15 +97,18 @@ async function copyToClipboard(contact: Contact) {
 .contact {
   display: flex;
   align-items: center;
+  gap: global.$spacing--xsmall;
   margin: global.$spacing--medium 0;
 
   &__link {
     display: flex;
+    align-items: center;
+    gap: global.$spacing--small;
     color: global.$secondary--color;
     text-decoration: none;
 
     &__icon {
-      max-width: global.$icon-size--medium;
+      max-width: global.$icon-size--small;
     }
   }
 
@@ -172,7 +120,6 @@ async function copyToClipboard(contact: Contact) {
     width: global.$icon-size--small;
     height: global.$icon-size--small;
     padding: global.$spacing--xsmall;
-    margin-left: global.$spacing--xsmall;
     cursor: pointer;
 
     &--to-copy:hover {
