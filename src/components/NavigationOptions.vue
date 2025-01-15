@@ -55,7 +55,7 @@ defineEmits<{
     &:after {
       display: block;
       left: 0;
-      bottom: 0;
+      bottom: -4px;
       position: absolute;
       border-bottom: 3px solid global.$primary--color;
       content: '';
