@@ -117,7 +117,7 @@ const orderedCvs = computed(() =>
     align-items: center;
     width: 90%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: global.$hover-element--color;
     opacity: 0;
     margin: 0;
     border-radius: 50%;

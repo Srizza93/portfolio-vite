@@ -70,13 +70,13 @@ function accessPortfolio() {
     }
 
     &-name {
-      font-size: 32px;
+      font-size: global.$font-size--xlarge;
       font-weight: bold;
       line-height: 1.5;
     }
 
     &-parag {
-      color: #000033;
+      color: global.$standard-text--color;
       white-space: pre-wrap;
       line-height: 1.6;
     }

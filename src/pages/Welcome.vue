@@ -125,7 +125,7 @@ onMounted(() => {
 .introduction {
   margin: 0 auto;
   color: global.$primary--color;
-  font-size: 32px;
+  font-size: global.$font-size--xlarge;
   font-weight: bold;
 }
 

@@ -83,7 +83,7 @@ function openDetails(project: Project) {
       position: absolute;
       top: -10px;
       left: 20px;
-      color: #888888;
+      color: global.$detail-dark--color;
       font-weight: bold;
     }
   }

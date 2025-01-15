@@ -24,16 +24,18 @@ const { toasterMessage, messageType } = storeToRefs(toasterStore);
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/global';
+
 .toaster {
   position: fixed;
   top: -100%;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: global.$primary--color;
   padding: 15px 30px;
   border-radius: 5px;
   margin: 30px auto;
-  font-size: 14px;
+  font-size: global.$font-size--small;
   font-weight: bold;
   text-align: left;
   white-space: nowrap;
@@ -43,19 +45,19 @@ const { toasterMessage, messageType } = storeToRefs(toasterStore);
   }
 
   &--error {
-    background-color: #ef4444;
+    background-color: global.$error--color;
   }
 
   &--success {
-    background-color: #15b8a6;
+    background-color: global.$succes--color;
   }
 
   &--info {
-    background-color: #3b81f6;
+    background-color: global.$info--color;
   }
 
   &--warning {
-    background-color: #eab305;
+    background-color: global.$warning--color;
   }
 }
 

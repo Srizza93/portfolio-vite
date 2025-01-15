@@ -212,10 +212,10 @@ const stack: Ref<Tech[]> = ref([
 
 @keyframes text-grow {
   0% {
-    color: #003;
+    color: global.$standard-text--color;
   }
   100% {
-    font-size: 18px;
+    font-size: global.$font-size--large;
     color: global.$secondary--color;
   }
 }
