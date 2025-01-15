@@ -39,14 +39,14 @@ defineEmits<{
 .pages {
   display: flex;
   flex-direction: row;
-  gap: global.$spacing--large;
+  gap: global.$spacing--medium;
   padding: 0;
   margin: 0;
   list-style: none;
 
   &__page {
     position: relative;
-    // padding: global.$spacing-vertical-horizontal--xsmall;
+    padding: global.$spacing-vertical-horizontal--xsmall;
     color: global.$primary--color;
     text-decoration: none;
     font-weight: bold;
@@ -55,7 +55,7 @@ defineEmits<{
     &:after {
       display: block;
       left: 0;
-      bottom: -4px;
+      bottom: 0px;
       position: absolute;
       border-bottom: 3px solid global.$primary--color;
       content: '';
