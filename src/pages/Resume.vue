@@ -67,7 +67,7 @@ const orderedCvs = computed(() =>
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .resume {
   display: flex;
@@ -92,7 +92,7 @@ const orderedCvs = computed(() =>
   width: 200px;
   height: 200px;
   margin: 30px 0;
-  color: $primary--color;
+  color: global.$primary--color;
   text-decoration: none;
   border-radius: 50%;
   overflow: hidden;

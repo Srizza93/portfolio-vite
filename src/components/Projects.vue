@@ -55,7 +55,7 @@ function openDetails(project: Project) {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .project-container {
   position: relative;
@@ -74,7 +74,7 @@ function openDetails(project: Project) {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: $detail--color;
+  background-color: global.$detail--color;
 
   &__relative {
     position: relative;
@@ -94,7 +94,7 @@ function openDetails(project: Project) {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  border: 1px solid $detail--color;
+  border: 1px solid global.$detail--color;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -111,11 +111,11 @@ function openDetails(project: Project) {
   margin-bottom: 15px;
   padding: 5px;
   object-fit: contain;
-  border-bottom: 1px solid $detail--color;
+  border-bottom: 1px solid global.$detail--color;
 }
 
 .project-link {
-  color: $secondary--color;
+  color: global.$secondary--color;
   text-decoration: none;
   font-weight: bold;
   margin-bottom: 15px;
@@ -123,7 +123,7 @@ function openDetails(project: Project) {
 
   &:hover {
     text-decoration: underline;
-    color: $secondary-dark--color;
+    color: global.$secondary-dark--color;
   }
 }
 

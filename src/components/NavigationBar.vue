@@ -67,7 +67,7 @@ function navigateToPage(page: string) {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .navigation-bar {
   position: relative;
@@ -78,7 +78,7 @@ function navigateToPage(page: string) {
   width: 100%;
   height: 70px;
   padding: 5px 30px 5px 30px;
-  background-color: $secondary--color;
+  background-color: global.$secondary--color;
 
   &__logo {
     width: 100%;

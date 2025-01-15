@@ -101,7 +101,7 @@ function trapFocus(event: KeyboardEvent) {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .options-modal {
   position: fixed;
@@ -114,8 +114,8 @@ function trapFocus(event: KeyboardEvent) {
   width: 300px;
   padding: 15px;
   border-radius: 15px;
-  background-color: $primary--color;
-  border: 2px solid $secondary--color;
+  background-color: global.$primary--color;
+  border: 2px solid global.$secondary--color;
   z-index: 99999;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 

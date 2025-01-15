@@ -38,7 +38,7 @@ function accessPortfolio() {
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .home {
   display: flex;
@@ -61,7 +61,7 @@ function accessPortfolio() {
     display: flex;
     flex-direction: column;
     padding-right: 50px;
-    color: $secondary-dark--color;
+    color: global.$secondary-dark--color;
     width: 70%;
     margin-bottom: 50px;
 

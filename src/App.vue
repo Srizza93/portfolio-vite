@@ -11,10 +11,10 @@ onMounted(() => initLanguage());
 </script>
 
 <style lang="scss">
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 body {
-  background-color: $primary--color;
+  background-color: global.$primary--color;
   margin: 0;
   min-height: 100vh;
 }

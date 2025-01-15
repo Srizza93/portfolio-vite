@@ -164,7 +164,7 @@ const stack: Ref<Tech[]> = ref([
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .stack {
   display: grid;
@@ -216,7 +216,7 @@ const stack: Ref<Tech[]> = ref([
   }
   100% {
     font-size: 18px;
-    color: $secondary--color;
+    color: global.$secondary--color;
   }
 }
 

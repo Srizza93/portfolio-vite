@@ -34,7 +34,7 @@ defineEmits<{
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .pages {
   display: flex;
@@ -47,7 +47,7 @@ defineEmits<{
   &__page {
     position: relative;
     padding: 5px 10px;
-    color: $primary--color;
+    color: global.$primary--color;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -57,7 +57,7 @@ defineEmits<{
       left: 0;
       bottom: 0;
       position: absolute;
-      border-bottom: 3px solid $primary--color;
+      border-bottom: 3px solid global.$primary--color;
       content: '';
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -90,9 +90,9 @@ defineEmits<{
   right: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid $primary--color;
+  border: 1px solid global.$primary--color;
   border-radius: 0 0 0 15px;
-  background-color: $primary--color;
+  background-color: global.$primary--color;
   transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 9999;
@@ -100,7 +100,7 @@ defineEmits<{
 
   &__option {
     padding: 20px 40px;
-    color: $secondary-dark--color;
+    color: global.$secondary-dark--color;
     font-weight: bold;
     cursor: pointer;
 
@@ -109,8 +109,8 @@ defineEmits<{
     }
 
     &:hover {
-      background-color: $secondary-dark--color;
-      color: $primary--color;
+      background-color: global.$secondary-dark--color;
+      color: global.$primary--color;
     }
   }
 }

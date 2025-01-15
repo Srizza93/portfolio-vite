@@ -107,7 +107,7 @@ onMounted(() => {
 </style>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .welcome {
   display: flex;
@@ -118,13 +118,13 @@ onMounted(() => {
   min-width: 100%;
   height: 100%;
   padding: 30px 15px;
-  background-color: $secondary--color;
+  background-color: global.$secondary--color;
   transition-duration: 2s;
 }
 
 .introduction {
   margin: 0 auto;
-  color: $primary--color;
+  color: global.$primary--color;
   font-size: 32px;
   font-weight: bold;
 }
@@ -132,7 +132,7 @@ onMounted(() => {
 .caret {
   height: 100%;
   width: 3px;
-  border-left: 1px solid $primary--color;
+  border-left: 1px solid global.$primary--color;
   animation: blink-caret 1.1s infinite steps(1, start);
 }
 

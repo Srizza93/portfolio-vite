@@ -30,14 +30,14 @@ const themeClass = computed(() => {
 </script>
 
 <style lang="scss">
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 @keyframes blink-dark {
   0% {
     outline: none;
   }
   50% {
-    outline: 3px solid $secondary--color;
+    outline: 3px solid global.$secondary--color;
   }
   100% {
     outline-offset: 5px;
@@ -50,7 +50,7 @@ const themeClass = computed(() => {
     outline: none;
   }
   50% {
-    outline: 3px solid $primary--color;
+    outline: 3px solid global.$primary--color;
   }
   100% {
     outline-offset: 5px;
@@ -60,7 +60,7 @@ const themeClass = computed(() => {
 </style>
 
 <style lang="scss" scoped>
-@use '@/assets/global.scss' as *;
+@use '@/assets/global';
 
 .folio-button {
   width: 100%;
@@ -68,7 +68,7 @@ const themeClass = computed(() => {
   padding: 8px 30px;
   border-radius: 5px;
   border: none;
-  color: $primary--color;
+  color: global.$primary--color;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -77,12 +77,13 @@ const themeClass = computed(() => {
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px $primary--color, 0 0 0 4px $secondary-dark--color;
+    box-shadow: 0 0 0 2px global.$primary--color,
+      0 0 0 4px global.$secondary-dark--color;
   }
 }
 
 .folio-dark {
-  background-color: $secondary-dark--color;
+  background-color: global.$secondary-dark--color;
 }
 
 .folio-dark:hover {
@@ -90,7 +91,7 @@ const themeClass = computed(() => {
 }
 
 .folio-light {
-  background-color: $secondary--color;
+  background-color: global.$secondary--color;
 }
 
 .folio-light:hover {
@@ -98,8 +99,8 @@ const themeClass = computed(() => {
 }
 
 .folio-x-light {
-  background-color: $primary--color;
-  color: $secondary-dark--color;
+  background-color: global.$primary--color;
+  color: global.$secondary-dark--color;
 }
 
 .folio-x-light:hover {
