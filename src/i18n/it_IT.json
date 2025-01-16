@@ -73,7 +73,7 @@
   "contacts": {
     "copy-clipboard-success": "Copiato nella clipboard.",
     "copy-clipboard-error": "Copia nella clipboard fallita.",
-    "copy-clipboard--alt": "Copia nella clipboard",
+    "copy-clipboard--alt": "Icona copia nella clipboard",
     "copy-clipboard-success--alt": "Copiato nella clipboard",
     "copy-clipboard-error--alt": "Copia nella clipboard fallita"
   },

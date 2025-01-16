@@ -8,6 +8,7 @@
       'toaster--info': messageType === MessageTypeEnum.INFO,
       'toaster--warning': messageType === MessageTypeEnum.WARNING,
     }"
+    role="alert"
   >
     <p>{{ toasterMessage }}</p>
   </div>

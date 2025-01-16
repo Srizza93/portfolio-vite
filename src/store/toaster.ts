@@ -8,7 +8,7 @@ type State = {
   timeoutId: number;
 };
 
-const toasterDelay = 4000;
+const toasterDelay = 6000;
 
 export const useToasterStore = defineStore('toaster', {
   state: (): State => ({

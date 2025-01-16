@@ -73,7 +73,7 @@
   "contacts": {
     "copy-clipboard-success": "Copié dans le presse-papiers.",
     "copy-clipboard-error": "Échec de la copie dans le presse-papiers.",
-    "copy-clipboard--alt": "Copier dans le presse-papiers",
+    "copy-clipboard--alt": "Icône pour copier dans le presse-papiers",
     "copy-clipboard-success--alt": "Copié dans le presse-papiers",
     "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers"
   },

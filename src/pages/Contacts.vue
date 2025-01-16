@@ -29,12 +29,14 @@
           :src="getFilePath(copyIcons.check)"
           :alt="$t('contacts.copy-clipboard-success--alt')"
           class="contact__copy"
+          role="alert"
         />
         <img
           v-else
           :src="getFilePath(copyIcons.error)"
           :alt="$t('contacts.copy-clipboard-error--alt')"
           class="contact__copy"
+          role="alert"
         />
       </li>
     </ul>
