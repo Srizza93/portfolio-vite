@@ -2,7 +2,7 @@
   <img
     class="options__option options__option--selected modal-opener"
     :src="selectedLanguage?.img"
-    :alt="getSelectedImageAlt()"
+    :alt="getSelectedLanguageAlt()"
     tabindex="0"
     @keydown.enter="openModal"
     @click="openModal"
@@ -102,7 +102,7 @@ function trapFocus(event: KeyboardEvent) {
   }
 }
 
-function getSelectedImageAlt() {
+function getSelectedLanguageAlt() {
   return i18n.global.t('language-modal.selected--alt', {
     language: i18n.global.t(`global.languages.${props.selectedLanguage?.name}`),
   });
