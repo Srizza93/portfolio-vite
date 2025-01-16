@@ -80,6 +80,6 @@
   "resume": {
     "header": "Télécharge mon CV dans la langue de ton choix",
     "download": "Télécharger",
-    "flag--alt": "Drapeau de {language}"
+    "flag--alt": "Télécharge mon cv en {language}"
   }
 }

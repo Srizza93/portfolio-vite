@@ -10,6 +10,7 @@
   <div
     class="options-modal"
     v-bind:class="{ 'options-modal--open': isModalOpen }"
+    tabindex="0"
   >
     <p class="modal-title">{{ $t('global.select-language') }}</p>
     <ul class="options">

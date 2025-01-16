@@ -14,7 +14,7 @@
           :src="getFilePath(cv.image)"
           :alt="getAltFromCv(cv.name)"
         />
-        <p class="cv__download">
+        <p class="cv__download" aria-hidden="true">
           {{ $t('resume.download') }}
         </p>
       </a>

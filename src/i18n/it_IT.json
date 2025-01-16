@@ -80,6 +80,6 @@
   "resume": {
     "header": "Scarica il mio CV nella lingua che preferisci",
     "download": "Scarica",
-    "flag--alt": "Bandiera di {language}"
+    "flag--alt": "Scarica il mio cv in {language}"
   }
 }

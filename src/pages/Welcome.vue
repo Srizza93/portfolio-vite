@@ -22,6 +22,7 @@
         class="button-box__mouse"
         src="@/assets/cursor.png"
         :alt="$t('welcome.cursor-animation--alt')"
+        aria-hidden="true"
       />
     </div>
   </div>

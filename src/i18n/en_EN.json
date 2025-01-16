@@ -81,6 +81,6 @@
   "resume": {
     "header": "Download my cv in your preferred language",
     "download": "download",
-    "flag--alt": "Flag of {language}"
+    "flag--alt": "Download {language} cv"
   }
 }
