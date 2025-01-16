@@ -2,7 +2,7 @@
   <img
     class="options__option options__option--selected modal-opener"
     :src="selectedLanguage?.img"
-    :alt="getSelectedLanguageAlt()"
+    :alt="selectedLanguageAlt"
     tabindex="0"
     @keydown.enter="openModal"
     @click="openModal"
@@ -29,6 +29,7 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import i18n from '@/i18n';
 
 type Option = {
@@ -102,11 +103,11 @@ function trapFocus(event: KeyboardEvent) {
   }
 }
 
-function getSelectedLanguageAlt() {
-  return i18n.global.t('language-modal.selected--alt', {
+const selectedLanguageAlt = computed(() =>
+  i18n.global.t('language-modal.selected--alt', {
     language: i18n.global.t(`global.languages.${props.selectedLanguage?.name}`),
-  });
-}
+  })
+);
 
 function getAltImage(optionName: string) {
   return i18n.global.t('language-modal.flag--alt', {
