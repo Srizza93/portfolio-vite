@@ -17,7 +17,7 @@
         <img
           class="options__option"
           :src="option.img"
-          alt="Modal option"
+          :alt="getAltImage(option.name)"
           tabindex="0"
           @keydown.enter="selectOption(option.name)"
           @click="selectOption(option.name)"
@@ -28,6 +28,8 @@
 </template>
 
 <script lang="ts" setup>
+import i18n from '@/i18n';
+
 type Option = {
   name: string;
   img: string;
@@ -97,6 +99,12 @@ function trapFocus(event: KeyboardEvent) {
       }
     }
   }
+}
+
+function getAltImage(optionName: string) {
+  return i18n.global.t('language-modal.flag', {
+    language: i18n.global.t(`global.languages.${[optionName]}`),
+  });
 }
 </script>
 

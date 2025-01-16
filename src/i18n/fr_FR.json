@@ -1,7 +1,15 @@
 {
   "global": {
     "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
-    "select-language": "Sélectionnez une langue"
+    "select-language": "Sélectionnez une langue",
+    "languages": {
+      "en": "Anglais",
+      "fr": "Francais",
+      "it": "Italien"
+    }
+  },
+  "language-modal": {
+    "flag": "Drapeau {language}"
   },
   "navigation": {
     "home": "Acceuil",

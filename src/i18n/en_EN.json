@@ -1,7 +1,15 @@
 {
   "global": {
     "error": "An error occurred. Please try again later.",
-    "select-language": "Select a language"
+    "select-language": "Select a language",
+    "languages": {
+      "en": "English",
+      "fr": "French",
+      "it": "Italian"
+    }
+  },
+  "language-modal": {
+    "flag": "{language} flag"
   },
   "navigation": {
     "home": "Home",
