@@ -77,7 +77,10 @@
     "copy-clipboard-error": "Échec de la copie dans le presse-papiers.",
     "copy-clipboard--alt": "Icône pour copier dans le presse-papiers",
     "copy-clipboard-success--alt": "Copié dans le presse-papiers",
-    "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers"
+    "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers",
+    "email--alt": "Icône pour envoyer un email",
+    "phone--alt": "Icône pour appeler",
+    "linkedin--alt": "Icône pour visiter mon profil LinkedIn"
   },
   "resume": {
     "header": "Télécharge mon CV dans la langue de ton choix",

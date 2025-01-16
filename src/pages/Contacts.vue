@@ -11,7 +11,7 @@
           <img
             class="contact__link__icon"
             :src="getFilePath(contact.name + '.png')"
-            :alt="contact.name"
+            :alt="$t('contacts.' + contact.name + '--alt')"
           />
           <span>{{ contact.text }}</span>
         </a>
@@ -111,6 +111,8 @@ onMounted(() => {
 
     &__icon {
       max-width: global.$icon-size--small;
+      overflow: visible;
+      font-size: global.$font-size--small;
     }
   }
 

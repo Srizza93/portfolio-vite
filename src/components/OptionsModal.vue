@@ -156,6 +156,7 @@ function getAltImage(optionName: string) {
     height: global.$icon-size--medium;
     border-radius: global.$border-radius--round;
     cursor: pointer;
+    overflow: visible;
 
     &:hover {
       opacity: global.$opacity--light;

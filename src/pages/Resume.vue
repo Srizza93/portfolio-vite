@@ -97,6 +97,7 @@ onMounted(() => {
     height: 100%;
     border-radius: global.$border-radius--round;
     box-shadow: global.$shadow--large;
+    color: global.$secondary--color;
   }
 
   &__download {

@@ -78,7 +78,10 @@
     "copy-clipboard-error": "Failed to copy to clipboard.",
     "copy-clipboard--alt": "Copy to clipboard icon",
     "copy-clipboard-success--alt": "Copied successfully to clipboard",
-    "copy-clipboard-error--alt": "Failed to copy to clipboard"
+    "copy-clipboard-error--alt": "Failed to copy to clipboard",
+    "email--alt": "Email icon",
+    "phone--alt": "Phone icon",
+    "linkedin--alt": "LinkedIn icon"
   },
   "resume": {
     "header": "Download my cv in your preferred language",
