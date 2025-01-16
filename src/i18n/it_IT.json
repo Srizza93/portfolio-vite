@@ -9,7 +9,8 @@
     }
   },
   "language-modal": {
-    "flag": "Bandiera {language}"
+    "selected--alt": "Lingua selezionata {language}",
+    "flag--alt": "Bandiera {language}"
   },
   "navigation": {
     "home": "Home",
@@ -21,7 +22,7 @@
   "welcome": {
     "introduction": "Benvenuti nel portfolio di {name}",
     "access-home": "Accedi alla Home",
-    "cursor-animation": "Animazione del cursore"
+    "cursor-animation--alt": "Animazione del cursore"
   },
   "home": {
     "greatings": "Ciao, il mio nome é",

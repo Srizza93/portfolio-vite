@@ -21,7 +21,7 @@
       <img
         class="button-box__mouse"
         src="@/assets/cursor.png"
-        :alt="$t('welcome.cursor-animation')"
+        :alt="$t('welcome.cursor-animation--alt')"
       />
     </div>
   </div>

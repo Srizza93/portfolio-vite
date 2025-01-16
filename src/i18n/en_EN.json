@@ -9,19 +9,21 @@
     }
   },
   "language-modal": {
-    "flag": "{language} flag"
+    "selected--alt": "Selected language {language}",
+    "flag--alt": "{language} flag"
   },
   "navigation": {
     "home": "Home",
     "portfolio": "Portfolio",
     "stack": "Stack",
     "contacts": "Contacts",
-    "resume": "Resume"
+    "resume": "Resume",
+    "logo--alt": "Navigation logo"
   },
   "welcome": {
     "introduction": "Welcome to {name}'s portfolio",
     "access-home": "Access Home",
-    "cursor-animation": "Cursor animation"
+    "cursor-animation--alt": "Cursor animation"
   },
   "home": {
     "greatings": "Hi, my name is",
