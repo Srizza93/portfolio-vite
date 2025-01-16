@@ -17,7 +17,9 @@
     "portfolio": "Portefeuille",
     "stack": "Stack",
     "contacts": "Contacts",
-    "resume": "Résumé"
+    "resume": "Résumé",
+    "hamburger-close--label": "Fermer le menu de navigation",
+    "hamburger-open--label": "Ouvrir le menu de navigation"
   },
   "welcome": {
     "introduction": "Bienvenue sur le portefeuille de {name}",

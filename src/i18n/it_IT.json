@@ -17,7 +17,9 @@
     "portfolio": "Portfolio",
     "stack": "Stack",
     "contacts": "Contatti",
-    "resume": "Cv"
+    "resume": "Cv",
+    "hamburger-close--label": "Chiudi il menu di navigazione",
+    "hamburger-open--label": "Apri il menu di navigazione"
   },
   "welcome": {
     "introduction": "Benvenuti nel portfolio di {name}",

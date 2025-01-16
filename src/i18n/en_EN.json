@@ -18,7 +18,9 @@
     "stack": "Stack",
     "contacts": "Contacts",
     "resume": "Resume",
-    "logo--alt": "Navigation logo"
+    "logo--alt": "Navigation logo",
+    "hamburger-close--label": "Close navigation menu",
+    "hamburger-open--label": "Open navigation menu"
   },
   "welcome": {
     "introduction": "Welcome to {name}'s portfolio",

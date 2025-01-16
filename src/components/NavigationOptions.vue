@@ -1,6 +1,7 @@
 <template>
   <ul
     :class="{ 'hamburger-options': isHamburgerMenu, pages: !isHamburgerMenu }"
+    tabindex="0"
   >
     <li
       v-for="page in pages"
