@@ -4,7 +4,7 @@
       class="hamburger"
       v-bind:class="{ 'hamburger--open': isMenuOpen }"
       tabindex="0"
-      aria-label="close button"
+      :aria-label="hamburgerAriaLabel"
       @keydown.enter="toggleMenu"
       @click="toggleMenu"
     >
@@ -24,9 +24,11 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import NavigationOptions from '@/components/NavigationOptions.vue';
 
 import { RouteOption } from '@/types/route';
+import i18n from '@/i18n';
 
 const props = defineProps<{
   isMenuOpen: boolean;
@@ -46,6 +48,12 @@ function selectOption(option: RouteOption) {
   toggleMenu();
   emit('option-clicked', option);
 }
+
+const hamburgerAriaLabel = computed(() =>
+  props.isMenuOpen
+    ? i18n.global.t('navigation.hamburger-close--label')
+    : i18n.global.t('navigation.hamburger-open--label')
+);
 </script>
 
 <style lang="scss" scoped>

@@ -14,7 +14,7 @@
           :src="getFilePath(cv.image)"
           :alt="getAltFromCv(cv.name)"
         />
-        <p class="cv__download">
+        <p class="cv__download" aria-hidden="true">
           {{ $t('resume.download') }}
         </p>
       </a>
@@ -97,6 +97,8 @@ onMounted(() => {
     height: 100%;
     border-radius: global.$border-radius--round;
     box-shadow: global.$shadow--large;
+    color: global.$secondary--color;
+    line-height: 200px;
   }
 
   &__download {

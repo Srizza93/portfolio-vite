@@ -4,7 +4,7 @@
       @keydown.enter="navigateToPage(WELCOME_PATH)"
       @click="navigateToPage(WELCOME_PATH)"
       class="navigation-bar__logo"
-      alt="logo"
+      :alt="$t('navigation.logo--alt')"
       src="@/assets/s-icon.png"
       tabindex="0"
     />

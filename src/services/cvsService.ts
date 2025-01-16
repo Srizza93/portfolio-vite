@@ -14,7 +14,7 @@ export function sortCvs(cvs: Cv[] | null) {
 
 export function getAltFromCv(cvName: string) {
   return i18n.global.t('resume.flag--alt', {
-    language: getCvLangId(cvName),
+    language: i18n.global.t(`global.languages.${getCvLangId(cvName)}`),
   });
 }
 

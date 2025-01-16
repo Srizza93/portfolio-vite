@@ -1,18 +1,32 @@
 {
   "global": {
+    "app-name--label": "Portefeuille",
     "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
-    "select-language": "Sélectionnez une langue"
+    "select-language": "Sélectionnez une langue",
+    "languages": {
+      "en": "Anglais",
+      "fr": "Francais",
+      "it": "Italien"
+    }
+  },
+  "language-modal": {
+    "selected--alt": "Langue sélectionnée {language}",
+    "flag--alt": "Drapeau {language}"
   },
   "navigation": {
+    "welcome": "Bienvenue",
     "home": "Acceuil",
     "portfolio": "Portefeuille",
     "stack": "Stack",
     "contacts": "Contacts",
-    "resume": "Résumé"
+    "resume": "Résumé",
+    "hamburger-close--label": "Fermer le menu de navigation",
+    "hamburger-open--label": "Ouvrir le menu de navigation"
   },
   "welcome": {
-    "introduction": "Bienvenue sur le portfolio de {name}",
-    "access-home": "Accéder à l'acceuil"
+    "introduction": "Bienvenue sur le portefeuille de {name}",
+    "access-home": "Accéder à l'acceuil",
+    "cursor-animation--alt": "Animation du curseur"
   },
   "home": {
     "greatings": "Bonjour, mon prénom est",
@@ -61,13 +75,16 @@
   "contacts": {
     "copy-clipboard-success": "Copié dans le presse-papiers.",
     "copy-clipboard-error": "Échec de la copie dans le presse-papiers.",
-    "copy-clipboard--alt": "Copier dans le presse-papiers",
+    "copy-clipboard--alt": "Icône pour copier dans le presse-papiers",
     "copy-clipboard-success--alt": "Copié dans le presse-papiers",
-    "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers"
+    "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers",
+    "email--alt": "Icône pour envoyer un email",
+    "phone--alt": "Icône pour appeler",
+    "linkedin--alt": "Icône pour visiter mon profil LinkedIn"
   },
   "resume": {
     "header": "Télécharge mon CV dans la langue de ton choix",
     "download": "Télécharger",
-    "flag--alt": "Drapeau de {language}"
+    "flag--alt": "Cv en {language}"
   }
 }

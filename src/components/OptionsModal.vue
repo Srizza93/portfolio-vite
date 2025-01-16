@@ -2,7 +2,7 @@
   <img
     class="options__option options__option--selected modal-opener"
     :src="selectedLanguage?.img"
-    alt="Selected language option"
+    :alt="selectedLanguageAlt"
     tabindex="0"
     @keydown.enter="openModal"
     @click="openModal"
@@ -10,6 +10,7 @@
   <div
     class="options-modal"
     v-bind:class="{ 'options-modal--open': isModalOpen }"
+    tabindex="0"
   >
     <p class="modal-title">{{ $t('global.select-language') }}</p>
     <ul class="options">
@@ -17,7 +18,7 @@
         <img
           class="options__option"
           :src="option.img"
-          alt="Modal option"
+          :alt="getAltImage(option.name)"
           tabindex="0"
           @keydown.enter="selectOption(option.name)"
           @click="selectOption(option.name)"
@@ -28,6 +29,9 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
+import i18n from '@/i18n';
+
 type Option = {
   name: string;
   img: string;
@@ -98,6 +102,18 @@ function trapFocus(event: KeyboardEvent) {
     }
   }
 }
+
+const selectedLanguageAlt = computed(() =>
+  i18n.global.t('language-modal.selected--alt', {
+    language: i18n.global.t(`global.languages.${props.selectedLanguage?.name}`),
+  })
+);
+
+function getAltImage(optionName: string) {
+  return i18n.global.t('language-modal.flag--alt', {
+    language: i18n.global.t(`global.languages.${[optionName]}`),
+  });
+}
 </script>
 
 <style lang="scss" scoped>
@@ -141,6 +157,7 @@ function trapFocus(event: KeyboardEvent) {
     height: global.$icon-size--medium;
     border-radius: global.$border-radius--round;
     cursor: pointer;
+    overflow: visible;
 
     &:hover {
       opacity: global.$opacity--light;

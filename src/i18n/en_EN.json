@@ -1,18 +1,33 @@
 {
   "global": {
+    "app-name--label": "Portfolio",
     "error": "An error occurred. Please try again later.",
-    "select-language": "Select a language"
+    "select-language": "Select a language",
+    "languages": {
+      "en": "English",
+      "fr": "French",
+      "it": "Italian"
+    }
+  },
+  "language-modal": {
+    "selected--alt": "Selected language {language}",
+    "flag--alt": "{language} flag"
   },
   "navigation": {
+    "welcome": "Welcome",
     "home": "Home",
     "portfolio": "Portfolio",
     "stack": "Stack",
     "contacts": "Contacts",
-    "resume": "Resume"
+    "resume": "Resume",
+    "logo--alt": "Navigation logo",
+    "hamburger-close--label": "Close navigation menu",
+    "hamburger-open--label": "Open navigation menu"
   },
   "welcome": {
     "introduction": "Welcome to {name}'s portfolio",
-    "access-home": "Access Home"
+    "access-home": "Access Home",
+    "cursor-animation--alt": "Cursor animation"
   },
   "home": {
     "greatings": "Hi, my name is",
@@ -61,13 +76,16 @@
   "contacts": {
     "copy-clipboard-success": "Copied to clipboard.",
     "copy-clipboard-error": "Failed to copy to clipboard.",
-    "copy-clipboard--alt": "Copy to clipboard",
+    "copy-clipboard--alt": "Copy to clipboard icon",
     "copy-clipboard-success--alt": "Copied successfully to clipboard",
-    "copy-clipboard-error--alt": "Failed to copy to clipboard"
+    "copy-clipboard-error--alt": "Failed to copy to clipboard",
+    "email--alt": "Email icon",
+    "phone--alt": "Phone icon",
+    "linkedin--alt": "LinkedIn icon"
   },
   "resume": {
     "header": "Download my cv in your preferred language",
     "download": "download",
-    "flag--alt": "Flag of {language}"
+    "flag--alt": "{language} cv"
   }
 }

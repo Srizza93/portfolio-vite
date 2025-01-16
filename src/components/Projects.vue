@@ -12,7 +12,11 @@
         >
       </div>
     </div>
-    <div class="project" :class="{ 'project--open': project.toggle }">
+    <div
+      class="project"
+      :class="{ 'project--open': project.toggle }"
+      tabindex="0"
+    >
       <img
         class="project-image"
         :src="getFilePath(project.image)"

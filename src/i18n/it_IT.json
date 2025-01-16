@@ -1,18 +1,32 @@
 {
   "global": {
+    "app-name--label": "Portfolio",
     "error": "Si è verificato un errore. Riprova più tardi.",
-    "select-language": "Seleziona una lingua"
+    "select-language": "Seleziona una lingua",
+    "languages": {
+      "en": "Inglese",
+      "fr": "Francese",
+      "it": "Italiano"
+    }
+  },
+  "language-modal": {
+    "selected--alt": "Lingua selezionata {language}",
+    "flag--alt": "Bandiera {language}"
   },
   "navigation": {
+    "welcome": "Benvenuto",
     "home": "Home",
     "portfolio": "Portfolio",
     "stack": "Stack",
     "contacts": "Contatti",
-    "resume": "Cv"
+    "resume": "Cv",
+    "hamburger-close--label": "Chiudi il menu di navigazione",
+    "hamburger-open--label": "Apri il menu di navigazione"
   },
   "welcome": {
     "introduction": "Benvenuti nel portfolio di {name}",
-    "access-home": "Accedi alla Home"
+    "access-home": "Accedi alla Home",
+    "cursor-animation--alt": "Animazione del cursore"
   },
   "home": {
     "greatings": "Ciao, il mio nome é",
@@ -61,13 +75,16 @@
   "contacts": {
     "copy-clipboard-success": "Copiato nella clipboard.",
     "copy-clipboard-error": "Copia nella clipboard fallita.",
-    "copy-clipboard--alt": "Copia nella clipboard",
+    "copy-clipboard--alt": "Icona copia nella clipboard",
     "copy-clipboard-success--alt": "Copiato nella clipboard",
-    "copy-clipboard-error--alt": "Copia nella clipboard fallita"
+    "copy-clipboard-error--alt": "Copia nella clipboard fallita",
+    "email--alt": "Icona email",
+    "phone--alt": "Icona telefono",
+    "linkedin--alt": "Icona LinkedIn"
   },
   "resume": {
     "header": "Scarica il mio CV nella lingua che preferisci",
     "download": "Scarica",
-    "flag--alt": "Bandiera di {language}"
+    "flag--alt": "Cv in {language}"
   }
 }

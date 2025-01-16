@@ -80,6 +80,8 @@ onMounted(() => {
     height: 40px;
     margin-right: global.$spacing--medium;
     object-fit: contain;
+    overflow: visible;
+    font-size: global.$font-size--small;
   }
 
   &__text {
