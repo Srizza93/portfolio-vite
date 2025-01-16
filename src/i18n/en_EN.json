@@ -20,7 +20,8 @@
   },
   "welcome": {
     "introduction": "Welcome to {name}'s portfolio",
-    "access-home": "Access Home"
+    "access-home": "Access Home",
+    "cursor-animation": "Cursor animation"
   },
   "home": {
     "greatings": "Hi, my name is",

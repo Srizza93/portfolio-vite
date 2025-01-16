@@ -1,7 +1,14 @@
 <template>
   <div v-if="welcomeData" class="welcome">
     <p class="introduction">
-      <span ref="messageRef"></span>
+      <span
+        ref="messageRef"
+        :aria-label="
+          $t('welcome.introduction', {
+            name: welcomeData?.name,
+          })
+        "
+      ></span>
       <span class="caret"></span>
     </p>
     <div class="button-box">
@@ -14,7 +21,7 @@
       <img
         class="button-box__mouse"
         src="@/assets/cursor.png"
-        alt="Mouse cursor animation"
+        :alt="$t('welcome.cursor-animation')"
       />
     </div>
   </div>
@@ -88,7 +95,7 @@ function getData(): Promise<void> {
       welcomeData.value = response;
     })
     .catch(() => {
-      router.push(HOME_PATH);
+      goToHome();
       toasterStore.setMessage(i18n.global.t('global.error'));
     });
 }

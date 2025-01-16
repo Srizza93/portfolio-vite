@@ -19,8 +19,9 @@
     "resume": "Résumé"
   },
   "welcome": {
-    "introduction": "Bienvenue sur le portfolio de {name}",
-    "access-home": "Accéder à l'acceuil"
+    "introduction": "Bienvenue sur le portefeuille de {name}",
+    "access-home": "Accéder à l'acceuil",
+    "cursor-animation": "Animation du curseur"
   },
   "home": {
     "greatings": "Bonjour, mon prénom est",
