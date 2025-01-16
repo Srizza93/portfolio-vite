@@ -28,35 +28,43 @@ export const routeOptions = [
         path: '',
         name: 'portfolio-default',
         redirect: { name: WELCOME_PAGE_NAME },
+        meta: { documentTitle: WELCOME_PAGE_NAME },
       },
       {
         name: WELCOME_PAGE_NAME,
         path: WELCOME_PATH,
+        meta: { documentTitle: WELCOME_PAGE_NAME },
       },
       {
         name: HOME_PAGE_NAME,
         path: HOME_PATH,
+        meta: { documentTitle: HOME_PAGE_NAME },
       },
       {
         name: PORTFOLIO_PAGE_NAME,
         path: PORTFOLIO_PATH,
+        meta: { documentTitle: PORTFOLIO_PAGE_NAME },
       },
       {
         name: STACK_PAGE_NAME,
         path: STACK_PATH,
+        meta: { documentTitle: STACK_PAGE_NAME },
       },
       {
         name: CONTACTS_PAGE_NAME,
         path: CONTACTS_PATH,
+        meta: { documentTitle: CONTACTS_PAGE_NAME },
       },
       {
         name: RESUME_PAGE_NAME,
         path: RESUME_PATH,
+        meta: { documentTitle: RESUME_PAGE_NAME },
       },
     ],
   },
   {
     name: WELCOME_PAGE_NAME,
     path: '/:pathMatch(.*)*',
+    meta: { documentTitle: WELCOME_PAGE_NAME },
   },
 ];

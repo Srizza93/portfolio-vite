@@ -5,6 +5,7 @@ import {
 } from 'vue-router';
 import { routeOptions } from '@/router/routeOptions';
 import { Component } from 'vue';
+import i18n from '@/i18n';
 
 function loadComponent(component?: Component | null, view?: string) {
   if (!!component) {
@@ -27,6 +28,14 @@ const routes = routeOptions.map((route) => ({
 const router = createRouter({
   history: createWebHashHistory('/portfolio-vite/'),
   routes,
+});
+
+router.beforeEach((to, _from, next) => {
+  const title = to.meta?.documentTitle;
+  document.title = title
+    ? i18n.global.t('navigation.' + title.toString().toLowerCase())
+    : i18n.global.t('global.app-name--label');
+  next();
 });
 
 export default router;

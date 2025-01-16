@@ -1,5 +1,6 @@
 {
   "global": {
+    "app-name--label": "Portfolio",
     "error": "Si è verificato un errore. Riprova più tardi.",
     "select-language": "Seleziona una lingua",
     "languages": {
@@ -13,6 +14,7 @@
     "flag--alt": "Bandiera {language}"
   },
   "navigation": {
+    "welcome": "Benvenuto",
     "home": "Home",
     "portfolio": "Portfolio",
     "stack": "Stack",

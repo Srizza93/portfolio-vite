@@ -1,5 +1,6 @@
 {
   "global": {
+    "app-name--label": "Portefeuille",
     "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
     "select-language": "Sélectionnez une langue",
     "languages": {
@@ -13,6 +14,7 @@
     "flag--alt": "Drapeau {language}"
   },
   "navigation": {
+    "welcome": "Bienvenue",
     "home": "Acceuil",
     "portfolio": "Portefeuille",
     "stack": "Stack",
