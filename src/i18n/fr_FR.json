@@ -53,6 +53,36 @@
       "Nov",
       "Déc"
     ],
+    "checkout-store": {
+      "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
+      "tasks": [
+        {
+          "title": "Conception des Tâches et Collecte des Exigences",
+          "description": "Collaborer avec les chefs de produit, développeurs et testeurs pour comprendre les besoins du projet, définir les tâches et évaluer la faisabilité technique."
+        },
+        {
+          "title": "Développement Frontend",
+          "description": "Créer des interfaces utilisateur réactives et accessibles avec Vue.js, en veillant au respect des normes d'accessibilité."
+        },
+        {
+          "title": "Développement Backend et Back for Front (BFF)",
+          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+        },
+        {
+          "title": "Collaboration Inter-Équipes",
+          "description": "Collaborer avec les équipes de design, QA et développement pour assurer une cohérence tout au long du cycle de développement, de la conception au déploiement."
+        },
+        {
+          "title": "Gestion des Tâches et Surveillance des Produits",
+          "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
+        },
+        {
+          "title": "Analyse des Produits à l'Étranger",
+          "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
+        }
+      ]
+    },
+    "tasks": "Tâches",
     "functionalities": "Fonctionnalités",
     "tododescr": "Simple Todo App - Responsive Design",
     "weatherdescr": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design",
@@ -67,7 +97,6 @@
     "tooltipDescr": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design",
     "squareDescr": "Carré qu'il suit la souris avec caractéristiques supplémentaires",
     "stack": "Stack",
-    "checkout-store": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
     "stocky": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
     "scpt-360": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
     "symbol-it": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"

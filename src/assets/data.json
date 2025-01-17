@@ -21,10 +21,10 @@
   },
   "projects": [
     {
+      "id": "checkout-store",
       "name": "Checkout Tunnel",
       "date": ["1", "2024"],
       "image": "leroy-merlin.png",
-      "description": "checkout-store",
       "stack": [
         "Java 17",
         "SpringBoot",
@@ -48,10 +48,10 @@
       "toggle": false
     },
     {
+      "id": "stocky",
       "name": "Stocky",
       "date": ["9", "2023"],
       "image": "symbol-it.png",
-      "description": "stocky",
       "stack": [
         "Java 17",
         "SpringBoot",
@@ -75,10 +75,10 @@
       "toggle": false
     },
     {
+      "id": "scpt-360",
       "name": "Scpt 360",
       "date": ["1", "2023"],
       "image": "leroy-merlin.png",
-      "description": "scpt-360",
       "stack": [
         "HTML",
         "CSS",
@@ -96,10 +96,10 @@
       "toggle": false
     },
     {
+      "id": "symbol-it",
       "name": "Symbol-IT",
       "date": ["9", "2022"],
       "image": "symbol-it.png",
-      "description": "symbol-it",
       "stack": [
         "HTML",
         "CSS",
@@ -114,41 +114,41 @@
       "toggle": false
     },
     {
+      "id": "todo",
       "name": "Todo App",
       "date": ["10", "2022"],
       "image": "todo.png",
       "link": "https://srizza93.github.io/todo-app/",
-      "description": "tododescr",
       "github": "https://github.com/Srizza93/todo-app",
       "stack": ["HTML", "CSS", "SASS", "JS", "Vue", "Nuxt", "Jest"],
       "toggle": false
     },
     {
+      "id": "weather",
       "name": "Weather App",
       "date": ["10", "2022"],
       "image": "weather.png",
       "link": "https://srizza93.github.io/weather-app/#/",
-      "description": "weatherdescr",
       "github": "https://github.com/Srizza93/weather-app",
       "stack": ["HTML", "CSS", "SASS", "JS", "Vue", "Vue-router", "Vite"],
       "toggle": false
     },
     {
+      "id": "portfolio2",
       "name": "New Portfolio",
       "date": ["6", "2022"],
       "image": "portfolio2.png",
       "link": "https://srizza93.github.io/portfolio-vite/",
-      "description": "portfolio2Descr",
       "github": "https://github.com/Srizza93/portfolio-vite",
       "stack": ["HTML", "CSS", "JS", "Vue", "Vue-router", "Vite", "i18n"],
       "toggle": false
     },
     {
+      "id": "e-commerce-2",
       "name": "E-commerce 2",
       "date": ["4", "2022"],
       "image": "e-commerce-2.png",
       "link": "https://srizza93.github.io/sales/",
-      "description": "ecommerce2Descr",
       "github": "https://github.com/Srizza93/sales",
       "functionalities": [
         "Products filtering and sort system",
@@ -164,21 +164,21 @@
       "toggle": false
     },
     {
+      "id": "advent",
       "name": "Advent Challenges",
       "date": ["1", "2022"],
       "image": "advent.png",
       "link": "https://srizza93.github.io/advent-challenges/",
-      "description": "adventDescr",
       "github": "https://github.com/Srizza93/advent-challenges",
       "stack": ["HTML", "CSS", "JS", "Vue", "Vue-router"],
       "toggle": false
     },
     {
+      "id": "social",
       "name": "Social Network",
       "date": ["10", "2021"],
       "image": "social.png",
       "link": "https://srizza93.github.io/social/",
-      "description": "socialDescr",
       "github": "https://github.com/Srizza93/social",
       "functionalities": [
         "API data rendering",
@@ -202,21 +202,21 @@
       "toggle": false
     },
     {
+      "id": "portfolio",
       "name": "Portfolio",
       "date": ["10", "2021"],
       "image": "portfolio.png",
       "link": "https://srizza93.github.io/portfolio/",
-      "description": "portfolioDescr",
       "github": "https://github.com/Srizza93/portfolio",
       "stack": ["Webpack", "HTML", "CSS", "JS", "Vue"],
       "toggle": false
     },
     {
+      "id": "streaming",
       "name": "Movie Streaming",
       "date": ["8", "2021"],
       "image": "streaming.png",
       "link": "https://srizza93.github.io/streaming/",
-      "description": "moviesDescr",
       "github": "https://github.com/Srizza93/streaming",
       "functionalities": [
         "API data rendering",
@@ -240,11 +240,11 @@
       "toggle": false
     },
     {
+      "id": "e-commerce",
       "name": "E-commerce",
       "date": ["6", "2021"],
       "image": "e-commerce.png",
       "link": "https://srizza93.github.io/e-commerce/",
-      "description": "ecommerceDescr",
       "github": "https://github.com/Srizza93/e-commerce",
       "functionalities": [
         "Navigation bar filtering",
@@ -271,21 +271,21 @@
       "toggle": false
     },
     {
+      "id": "email-layout",
       "name": "HTML Email layout",
       "date": ["6", "2021"],
       "image": "email-layout.png",
       "link": "https://srizza93.github.io/cv-email-html/",
-      "description": "htmlLayoutDescr",
       "github": "https://github.com/Srizza93/cv-email-html",
       "stack": ["HTML"],
       "toggle": false
     },
     {
+      "id": "tooltip",
       "name": "Tooltip plugin",
       "date": ["5", "2021"],
       "image": "tooltip.png",
       "link": "https://srizza93.github.io/tooltip/",
-      "description": "tooltipDescr",
       "github": "https://github.com/Srizza93/tooltip",
       "functionalities": [
         "Custom content re-usability",
@@ -299,11 +299,11 @@
       "toggle": false
     },
     {
+      "id": "square-task",
       "name": "Square task",
       "date": ["1", "2021"],
       "image": "square-task.png",
       "link": "https://srizza93.github.io/square_task/",
-      "description": "squareDescr",
       "github": "https://github.com/Srizza93/square_task",
       "functionalities": [
         "Square catching mouse",

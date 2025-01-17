@@ -2,8 +2,19 @@
   <div class="details" :class="{ 'details--open': project.toggle }">
     <h3 class="project-title">{{ project.name }}</h3>
     <p class="project-description">
-      {{ $t(`portfolio.${project.description}`) }}
+      {{ $t(`portfolio.${project.id}.description`) }}
     </p>
+    <!-- // Fix this -->
+    <h3 v-if="tasksFromTranslations.length" class="project-title">
+      {{ $t('portfolio.tasks') }}
+    </h3>
+    <ul v-if="tasksFromTranslations.length" class="project-tasks">
+      <li v-for="task in tasksFromTranslations" :key="task.title">
+        <h3>{{ task.title }} :</h3>
+        <p>{{ task.description }}</p>
+      </li>
+    </ul>
+    <!-- Here  -->
     <h3 v-if="project.functionalities" class="project-title">
       {{ $t('portfolio.functionalities') }}
     </h3>
@@ -24,11 +35,20 @@
 </template>
 
 <script lang="ts" setup>
-import { Project } from '@/types/project';
+import i18n from '@/i18n';
 
-defineProps<{
+import { Project } from '@/types/project';
+import { computed } from 'vue';
+
+const props = defineProps<{
   project: Project;
 }>();
+
+const tasksFromTranslations = computed(() =>
+  Object.values(i18n.global.tm(`portfolio.${props.project.id}.tasks`))
+);
+
+console.log(tasksFromTranslations.value);
 </script>
 
 <style lang="scss" scoped>

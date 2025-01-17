@@ -54,6 +54,7 @@
       "Nov",
       "Dec"
     ],
+    "tasks": "Tasks",
     "functionalities": "Functionalities",
     "tododescr": "Simple Todo App - Responsive Design",
     "weatherdescr": "App to check the current weather in the city of user's choice - Responsive Design",
@@ -68,7 +69,35 @@
     "tooltipDescr": "A tool tip plugin with specific conditions and optional tasks - Responsive Design",
     "squareDescr": "Square following mouse with extra features",
     "stack": "Stack",
-    "checkout-store": "As a full-stack developer at Leroy Merlin, I worked within the ELO team on the Checkout Store project, a multichannel solution aimed at transforming the in-store customer experience. I have also contributed to several other projects within the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
+    "checkout-store": {
+      "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
+      "tasks": [
+        {
+          "title": "Conception des Tâches et Collecte des Exigences",
+          "description": "Collaborer avec les chefs de produit, développeurs et testeurs pour comprendre les besoins du projet, définir les tâches et évaluer la faisabilité technique."
+        },
+        {
+          "title": "Développement Frontend",
+          "description": "Créer des interfaces utilisateur réactives et accessibles avec Vue.js, en veillant au respect des normes d'accessibilité."
+        },
+        {
+          "title": "Développement Backend et Back for Front (BFF)",
+          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+        },
+        {
+          "title": "Collaboration Inter-Équipes",
+          "description": "Collaborer avec les équipes de design, QA et développement pour assurer une cohérence tout au long du cycle de développement, de la conception au déploiement."
+        },
+        {
+          "title": "Gestion des Tâches et Surveillance des Produits",
+          "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
+        },
+        {
+          "title": "Analyse des Produits à l'Étranger",
+          "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
+        }
+      ]
+    },
     "stocky": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing for the equipment.",
     "scpt-360": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators.",
     "symbol-it": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects:\n\n- Colexpress: Order and billing solution for a logistics company\n- Proch’Orientation (Hauts de France Region): Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application\n- For Each Academy: Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)\n- For Each Academy: Creation of an application for the management of students' progress"
