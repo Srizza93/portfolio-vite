@@ -28,6 +28,9 @@ const routes = routeOptions.map((route) => ({
 const router = createRouter({
   history: createWebHistory('/portfolio-vite/'),
   routes,
+  scrollBehavior(_to, _from) {
+    return { top: 0, behavior: 'smooth' };
+  },
 });
 
 router.beforeEach((to, _from, next) => {
