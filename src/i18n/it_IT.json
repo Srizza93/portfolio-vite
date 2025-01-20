@@ -60,28 +60,28 @@
       "description": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
       "tasks": [
         {
-          "title": "Conception des Tâches et Collecte des Exigences",
-          "description": "Collaborer avec les chefs de produit, développeurs et testeurs pour comprendre les besoins du projet, définir les tâches et évaluer la faisabilité technique."
+          "title": "Analisi e Pianificazione",
+          "description": "Collaborare con gli stakeholder per definire i requisiti e progettare soluzioni tecniche che soddisfino le esigenze degli utenti."
         },
         {
-          "title": "Développement Frontend",
-          "description": "Créer des interfaces utilisateur réactives et accessibles avec Vue.js, en veillant au respect des normes d'accessibilité."
+          "title": "Programmazione Frontend",
+          "description": "Sviluppare componenti e funzionalità front-end con Vue.js, garantendo un'esperienza utente fluida e coinvolgente."
         },
         {
-          "title": "Développement Backend et Back for Front (BFF)",
+          "title": "Programmazione Backend",
           "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
         },
         {
-          "title": "Collaboration Inter-Équipes",
-          "description": "Collaborer avec les équipes de design, QA et développement pour assurer une cohérence tout au long du cycle de développement, de la conception au déploiement."
+          "title": "Collaborazione Multidisciplinare",
+          "description": "Collaborare con i team di progetto, i team di sviluppo e i team di qualità per garantire la coerenza e la qualità delle soluzioni tecniche."
         },
         {
-          "title": "Gestion des Tâches et Surveillance des Produits",
-          "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
+          "title": "Gestione delle Attività e Monitoraggio dei Prodotti",
+          "description": "Supervisionare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
         },
         {
-          "title": "Analyse des Produits à l'Étranger",
-          "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
+          "title": "Analisi dei Prodotti all'Estero",
+          "description": "Partecipare a viaggi di lavoro internazionali per analizzare i prodotti in loco, raccogliere feedback dalle parti interessate e perfezionare le soluzioni in base ai casi d'uso reali."
         }
       ]
     },

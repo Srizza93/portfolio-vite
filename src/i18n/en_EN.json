@@ -58,31 +58,31 @@
     "functionalities": "Functionalities",
     "stack": "Stack",
     "checkout-store": {
-      "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
+      "description": "As a full-stack developer at Leroy Merlin, I work within the ELO team on the order funnel project, a multichannel solution aimed at transforming the in-store customer experience. I have also contributed to several other projects within the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
       "tasks": [
         {
-          "title": "Conception des Tâches et Collecte des Exigences",
-          "description": "Collaborer avec les chefs de produit, développeurs et testeurs pour comprendre les besoins du projet, définir les tâches et évaluer la faisabilité technique."
+          "title": "Task Design and Requirements Gathering",
+          "description": "Collaborate with product managers, developers, and testers to understand project needs, define tasks, and assess technical feasibility."
         },
         {
-          "title": "Développement Frontend",
-          "description": "Créer des interfaces utilisateur réactives et accessibles avec Vue.js, en veillant au respect des normes d'accessibilité."
+          "title": "Front-End Development",
+          "description": "Create responsive and accessible user interfaces with Vue.js, ensuring compliance with accessibility standards."
         },
         {
-          "title": "Développement Backend et Back for Front (BFF)",
-          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+          "title": "Back-End Development and Back for Front (BFF)",
+          "description": "Work with Java in a back-end and Back for Front architecture, integrating multiple back-end systems to retrieve, aggregate, and map the necessary data for the front-end."
         },
         {
-          "title": "Collaboration Inter-Équipes",
-          "description": "Collaborer avec les équipes de design, QA et développement pour assurer une cohérence tout au long du cycle de développement, de la conception au déploiement."
+          "title": "Cross-Team Collaboration",
+          "description": "Work closely with design, QA, and development teams to ensure consistency throughout the development cycle, from design to deployment."
         },
         {
-          "title": "Gestion des Tâches et Surveillance des Produits",
-          "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
+          "title": "Task Management and Product Monitoring",
+          "description": "Oversee the functionality of applications, monitor performance, and quickly resolve issues to ensure system stability after deployment."
         },
         {
-          "title": "Analyse des Produits à l'Étranger",
-          "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
+          "title": "Product Analysis Abroad",
+          "description": "Participate in international business trips to analyze products on-site, gather feedback from stakeholders, and refine solutions based on real use cases."
         }
       ]
     },
