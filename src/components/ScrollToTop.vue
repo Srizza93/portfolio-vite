@@ -4,6 +4,8 @@
     :class="{ 'scroller--visible': showScroller }"
     :src="getFilePath('arrow-up.png')"
     alt="scroll up"
+    tabindex="0"
+    @keydown.enter="scrollToTop"
     @click="scrollToTop"
   />
 </template>

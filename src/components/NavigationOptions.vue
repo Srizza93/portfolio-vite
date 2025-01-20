@@ -1,7 +1,7 @@
 <template>
   <ul
     :class="{ 'hamburger-options': isHamburgerMenu, pages: !isHamburgerMenu }"
-    tabindex="0"
+    :tabindex="isHamburgerMenu ? 0 : undefined"
   >
     <li
       v-for="page in pages"
@@ -42,7 +42,7 @@ defineEmits<{
   flex-direction: row;
   gap: global.$spacing--medium;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 auto;
   list-style: none;
 
   &__page {

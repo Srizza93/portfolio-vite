@@ -164,9 +164,19 @@ function getAltImage(optionName: string) {
     }
 
     &--selected {
-      position: fixed;
-      bottom: 0;
-      right: 0;
+      width: global.$icon-size--small;
+      height: global.$icon-size--small;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .options {
+    &__option {
+      &--selected {
+        margin: 0 50px 0 auto;
+      }
     }
   }
 }

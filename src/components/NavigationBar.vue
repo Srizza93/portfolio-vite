@@ -12,6 +12,15 @@
       :pages="pages"
       @option-clicked="navigateToPage($event.path)"
     />
+    <options-modal
+      v-if="!isWelcomePage && availableLanguages"
+      :selected-language="selectedLanguage"
+      :options="availableLanguages"
+      :is-modal-open="isLanguageModalOpen"
+      @select-option="selectLanguage"
+      @open-modal="openLanguageModal"
+      @close-modal="closeLanguageModal"
+    />
     <hamburger
       :is-menu-open="isHamburgerMenuOpen"
       :hamburger-options="pages"
@@ -24,7 +33,13 @@
 <script lang="ts" setup>
 import { computed, ComputedRef, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { storeToRefs } from 'pinia';
 
+import { useLanguageModalStore } from '@/store/languageModal';
+import { availableLanguages } from '@/composables/languageComposable';
+import { usePortfolioRouter } from '@/composables/routerComposable';
+
+import OptionsModal from '@/components/OptionsModal.vue';
 import NavigationOptions from '@/components/NavigationOptions.vue';
 import Hamburger from '@/components/Hamburger.vue';
 
@@ -37,12 +52,21 @@ import {
   CONTACTS_PAGE_NAME,
   RESUME_PAGE_NAME,
 } from '@/constants/pageNames';
+import { selectLanguage } from '@/services/languageService';
 
 import { RouteOption } from '@/types/route';
 
 const router = useRouter();
 
+const languageModalStore = useLanguageModalStore();
+const { openLanguageModal, closeLanguageModal } = languageModalStore;
+const { isLanguageModalOpen } = storeToRefs(languageModalStore);
+const { isWelcomePage } = usePortfolioRouter();
 const isHamburgerMenuOpen = ref(false);
+
+const selectedLanguage = computed(() =>
+  availableLanguages.value.find((language) => language.selected)
+);
 
 function toggleHamburgerMenu(isOpen: boolean) {
   isHamburgerMenuOpen.value = isOpen;
