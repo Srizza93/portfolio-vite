@@ -124,7 +124,45 @@
       ]
     },
     "scpt-360": {
-      "description": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators."
+      "description": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators.",
+      "tasks": [
+        {
+          "title": "Collaborative Team Environment",
+          "description": "Worked alongside a team consisting of a back-end developer, a tech lead, a designer, a quality tester, a data scientist, and a digital product leader."
+        },
+        {
+          "title": "Integration with Java SpringBoot",
+          "description": "Gained front-end development experience while integrating with a back-end environment built using Java SpringBoot."
+        },
+        {
+          "title": "Development of Charts",
+          "description": "Created various dynamic charts using vue-chart.js and chart.js technologies to visualize data effectively."
+        },
+        {
+          "title": "Design System Contribution",
+          "description": "Actively collaborated on the development and enhancement of ADEO's internal design system to maintain consistency and scalability."
+        },
+        {
+          "title": "Internationalization",
+          "description": "Handled application internationalization using i18n to ensure multilingual support for global users."
+        },
+        {
+          "title": "Quality Assurance Testing",
+          "description": "Performed rigorous testing prior to deployment to maintain high-quality standards for the application."
+        },
+        {
+          "title": "Deployment",
+          "description": "Deployed the application within ADEO's internal micro-frontend framework, Kobi, ensuring smooth integration and functionality."
+        },
+        {
+          "title": "Collaboration and Meetings",
+          "description": "Engaged in active collaboration with the designer and QA tester during multiple meetings to refine and validate designs and functionality."
+        },
+        {
+          "title": "Agile Scrum Methodology",
+          "description": "Followed Agile Scrum practices, participating in regular meetings to discuss user stories and ensure continuous progress and alignment with project goals."
+        }
+      ]
     },
     "symbol-it": {
       "description": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects:\n\n- Colexpress: Order and billing solution for a logistics company\n- Proch’Orientation (Hauts de France Region): Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application\n- For Each Academy: Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)\n- For Each Academy: Creation of an application for the management of students' progress"

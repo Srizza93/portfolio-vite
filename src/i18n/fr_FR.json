@@ -123,7 +123,45 @@
       ]
     },
     "scpt-360": {
-      "description": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance."
+      "description": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
+      "tasks": [
+        {
+          "title": "Environnement Collaboratif d'Équipe",
+          "description": "Travaillé au sein d'une équipe composée d'un développeur back-end, d'un tech lead, d'un designer, d'un testeur qualité, d'un data scientist et d'un chef de produit digital."
+        },
+        {
+          "title": "Intégration avec Java SpringBoot",
+          "description": "Acquis de l'expérience en développement front-end tout en intégrant un environnement back-end construit avec Java SpringBoot."
+        },
+        {
+          "title": "Développement de Graphiques",
+          "description": "Création de divers graphiques dynamiques à l'aide des technologies vue-chart.js et chart.js pour visualiser efficacement les données."
+        },
+        {
+          "title": "Contribution au Design System",
+          "description": "Collaboration active au développement et à l'amélioration du design system interne d'ADEO pour garantir la cohérence et l'évolutivité."
+        },
+        {
+          "title": "Internationalisation",
+          "description": "Géré l'internationalisation de l'application avec i18n pour assurer un support multilingue destiné aux utilisateurs internationaux."
+        },
+        {
+          "title": "Tests de Qualité",
+          "description": "Effectué des tests rigoureux avant le déploiement pour maintenir des normes de qualité élevées pour l'application."
+        },
+        {
+          "title": "Déploiement",
+          "description": "Déployé l'application dans le cadre du micro-frontend interne d'ADEO, Kobi, en assurant une intégration fluide et fonctionnelle."
+        },
+        {
+          "title": "Collaboration et Réunions",
+          "description": "Participé activement à des réunions avec le designer et le testeur QA pour affiner et valider les designs et les fonctionnalités."
+        },
+        {
+          "title": "Méthodologie Agile Scrum",
+          "description": "Suivi des pratiques Agile Scrum, en participant à des réunions régulières pour discuter des user stories et garantir une progression continue et alignée avec les objectifs du projet."
+        }
+      ]
     },
     "symbol-it": {
       "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"
