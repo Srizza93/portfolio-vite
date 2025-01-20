@@ -53,24 +53,173 @@
       "Nov",
       "Dic"
     ],
+    "tasks": "Compiti",
     "functionalities": "Funzionalitá",
-    "tododescr": "Todo App - Responsive Design",
-    "weatherdescr": "App per verificare il meteo attuale di una città scelta dall'utilizzatore - Responsive Design",
-    "portfolio2Descr": "Portfolio Personale - Responsive Design",
-    "ecommerce2Descr": "Sito di e-commerce - Esperienza cliente completamente simulata - Responsive Design",
-    "adventDescr": "Collzione di 24 sfide coding - Responsive Design",
-    "socialDescr": "Social Network - Esperienza cliente parzialmente simulata - Responsive Design",
-    "portfolioDescr": "Portfolio Personale - Responsive Design",
-    "moviesDescr": "Sito di Film in Streaming - Responsive Design",
-    "ecommerceDescr": "Sito di e-commerce - Responsive Design",
-    "htmlLayoutDescr": "CV personale in formato HTML-email - Responsive Design",
-    "tooltipDescr": "Un tooltip plugin con delle condizioni specifiche e compiti facoltativi - Responsive Design",
-    "squareDescr": "Quadrato che segue il mouse con caratteristiche extra",
     "stack": "Stack",
-    "checkout-store": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
-    "stocky": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
-    "scpt-360": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione.",
-    "symbol-it": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
+    "checkout-store": {
+      "description": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
+      "tasks": [
+        {
+          "title": "Analisi e Pianificazione",
+          "description": "Collaborare con gli stakeholder per definire i requisiti e progettare soluzioni tecniche che soddisfino le esigenze degli utenti."
+        },
+        {
+          "title": "Programmazione Frontend",
+          "description": "Sviluppare componenti e funzionalità front-end con Vue.js, garantendo un'esperienza utente fluida e coinvolgente."
+        },
+        {
+          "title": "Programmazione Backend",
+          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+        },
+        {
+          "title": "Collaborazione Multidisciplinare",
+          "description": "Collaborare con i team di progetto, i team di sviluppo e i team di qualità per garantire la coerenza e la qualità delle soluzioni tecniche."
+        },
+        {
+          "title": "Gestione delle Attività e Monitoraggio dei Prodotti",
+          "description": "Supervisionare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
+        },
+        {
+          "title": "Analisi dei Prodotti all'Estero",
+          "description": "Partecipare a viaggi di lavoro internazionali per analizzare i prodotti in loco, raccogliere feedback dalle parti interessate e perfezionare le soluzioni in base ai casi d'uso reali."
+        }
+      ]
+    },
+    "stocky": {
+      "description": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
+      "tasks": [
+        {
+          "title": "Collaborazione con il Team",
+          "description": "Il team è composto da un PO, un tech lead back-end, tre sviluppatori full-stack e un QA."
+        },
+        {
+          "title": "Progettazione",
+          "description": "Progettazione dell'architettura del front-end e del back-end, garantendo un'integrazione fluida."
+        },
+        {
+          "title": "Processo CI/CD",
+          "description": "Implementazione delle immagini Docker per semplificare il deployment e la gestione degli ambienti."
+        },
+        {
+          "title": "Deployment",
+          "description": "Deployment efficiente dell'applicazione con Fly.io, garantendo una disponibilità ottimale."
+        },
+        {
+          "title": "Gestione del Database",
+          "description": "Creazione di un database PostgresSQL robusto utilizzando CockroachDB per garantire l'affidabilità dei dati."
+        },
+        {
+          "title": "Programmazione Frontend",
+          "description": "Programmazione attiva del front-end, con focus sull'esperienza utente e sulla facilità d'uso"
+        },
+        {
+          "title": "Programmazione Backend",
+          "description": "Programmazione del back-end per garantire una solida funzionalità e prestazioni ottimali."
+        },
+        {
+          "title": "Test",
+          "description": "Configurazione completa del processo CI/CD per automatizzare i test e il deployment, garantendo una gestione efficiente del ciclo di vita dell'applicazione."
+        }
+      ]
+    },
+    "scpt-360": {
+      "description": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione.",
+      "tasks": [
+        {
+          "title": "Ambiente Collaborativo di Team",
+          "description": "Lavorato all'interno di un team composto da uno sviluppatore back-end, un tech lead, un designer, un tester di qualità, un data scientist e un leader di prodotto digitale."
+        },
+        {
+          "title": "Integrazione con Java SpringBoot",
+          "description": "Acquisita esperienza nello sviluppo front-end integrandosi con un ambiente back-end basato su Java SpringBoot."
+        },
+        {
+          "title": "Sviluppo di Grafici",
+          "description": "Creato vari grafici dinamici utilizzando le tecnologie vue-chart.js e chart.js per visualizzare i dati in modo efficace."
+        },
+        {
+          "title": "Contributo al Design System",
+          "description": "Collaborato attivamente allo sviluppo e al miglioramento del design system interno di ADEO per garantire coerenza e scalabilità."
+        },
+        {
+          "title": "Internazionalizzazione",
+          "description": "Gestita l'internazionalizzazione dell'applicazione utilizzando i18n per garantire il supporto multilingue agli utenti globali."
+        },
+        {
+          "title": "Test di Qualità",
+          "description": "Eseguiti test rigorosi prima del deployment per mantenere elevati standard di qualità dell'applicazione."
+        },
+        {
+          "title": "Deployment",
+          "description": "Distribuita l'applicazione all'interno del micro-frontend interno di ADEO, Kobi, assicurando un'integrazione e una funzionalità fluida."
+        },
+        {
+          "title": "Collaborazione e Riunioni",
+          "description": "Partecipato attivamente a riunioni con il designer e il tester QA per affinare e validare i design e le funzionalità."
+        },
+        {
+          "title": "Metodologia Agile Scrum",
+          "description": "Seguite le pratiche Agile Scrum, partecipando a riunioni regolari per discutere le user story e garantire un progresso continuo e in linea con gli obiettivi del progetto."
+        }
+      ]
+    },
+    "symbol-it": {
+      "description": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS.",
+      "tasks": [
+        {
+          "title": "Colexpress",
+          "description": "Una soluzione per ordini e fatturazione per un'azienda logistica."
+        },
+        {
+          "title": "Proch’Orientation (Hauts de France Region)",
+          "description": "Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Sviluppo di un'applicazione per la gestione del progresso degli studenti."
+        }
+      ]
+    },
+    "todo": {
+      "description": "Todo App - Responsive Design"
+    },
+    "weather": {
+      "description": "App per verificare il meteo attuale di una città scelta dall'utilizzatore - Responsive Design"
+    },
+    "portfolio-vite": {
+      "description": "Portfolio Personale - Responsive Design"
+    },
+    "e-commerce-2": {
+      "description": "Sito di e-commerce - Esperienza cliente completamente simulata - Responsive Design"
+    },
+    "advent": {
+      "description": "Collezione di 24 sfide coding - Responsive Design"
+    },
+    "social": {
+      "description": "Social Network - Esperienza cliente parzialmente simulata - Responsive Design"
+    },
+    "portfolio": {
+      "description": "Portfolio Personale - Responsive Design"
+    },
+    "streaming": {
+      "description": "Sito di Film in Streaming - Responsive Design"
+    },
+    "e-commerce": {
+      "description": "Sito di e-commerce - Responsive Design"
+    },
+    "email-layout": {
+      "description": "CV personale in formato HTML-email - Responsive Design"
+    },
+    "tooltip": {
+      "description": "Un tooltip plugin con delle condizioni specifiche e compiti facoltativi - Responsive Design"
+    },
+    "square-task": {
+      "description": "Quadrato che segue il mouse con caratteristiche extra"
+    }
   },
   "contacts": {
     "copy-clipboard-success": "Copiato nella clipboard.",

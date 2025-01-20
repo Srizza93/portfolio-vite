@@ -1,34 +1,45 @@
 <template>
   <div class="details" :class="{ 'details--open': project.toggle }">
-    <h3 class="project-title">{{ project.name }}</h3>
-    <p class="project-description">
-      {{ $t(`portfolio.${project.description}`) }}
-    </p>
-    <h3 v-if="project.functionalities" class="project-title">
-      {{ $t('portfolio.functionalities') }}
-    </h3>
-    <ul v-if="project.functionalities" class="project-bullet-points">
-      <li v-for="(func, index) in project.functionalities" :key="func + index">
-        {{ func }}
-      </li>
-    </ul>
-    <h3 v-if="project.stack" class="project-title">
-      {{ $t('portfolio.stack') }}
-    </h3>
-    <ul v-if="project.stack" class="project-bullet-points">
-      <li v-for="(tech, index) in project.stack" :key="tech + index">
-        {{ tech }}
-      </li>
-    </ul>
+    <section>
+      <h3 class="project-title">{{ project.name }}</h3>
+      <p class="project-description">
+        {{ $t(`portfolio.${project.id}.description`) }}
+      </p>
+    </section>
+    <project-section
+      v-if="tasksFromTranslations.length"
+      :title="$t('portfolio.tasks')"
+      :list-items="tasksFromTranslations"
+      is-tasks
+    />
+    <project-section
+      v-if="project.functionalities"
+      :title="$t('portfolio.functionalities')"
+      :list-items="project.functionalities"
+    />
+    <project-section
+      v-if="project.stack"
+      :title="$t('portfolio.stack')"
+      :list-items="project.stack"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
+
+import i18n from '@/i18n';
 import { Project } from '@/types/project';
 
-defineProps<{
+import ProjectSection from '@/components/ProjectSection.vue';
+
+const props = defineProps<{
   project: Project;
 }>();
+
+const tasksFromTranslations = computed(() =>
+  Object.values(i18n.global.tm(`portfolio.${props.project.id}.tasks`))
+);
 </script>
 
 <style lang="scss" scoped>
@@ -55,16 +66,5 @@ defineProps<{
 
 .project-description {
   white-space: pre-wrap;
-}
-
-.project-bullet-points {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  margin-bottom: 0;
-  padding: 0;
-
-  & li {
-    margin-left: 20px;
-  }
 }
 </style>

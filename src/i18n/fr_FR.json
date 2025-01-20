@@ -39,6 +39,9 @@
     "showDetails": "Afficher les détails",
     "closeDetails": "Cacher les détails",
     "github": "Découvrez le code",
+    "tasks": "Tâches",
+    "functionalities": "Fonctionnalités",
+    "stack": "Stack",
     "months": [
       "Jan",
       "Fév",
@@ -53,24 +56,170 @@
       "Nov",
       "Déc"
     ],
-    "functionalities": "Fonctionnalités",
-    "tododescr": "Simple Todo App - Responsive Design",
-    "weatherdescr": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design",
-    "portfolio2Descr": "Portefeuille Personnel - Responsive Design",
-    "ecommerce2Descr": "Site de e-commerce - Expérience client complètement moquée - Responsive Design",
-    "adventDescr": "Collection de 24 défis de codage - Responsive Design",
-    "socialDescr": "Social Network - Expérience client partiellement moquée - Responsive Design",
-    "portfolioDescr": "Portefeuille Personnel - Responsive Design",
-    "moviesDescr": "Site de Film en Streaming - Responsive Design",
-    "ecommerceDescr": "Site de e-commerce - Responsive Design",
-    "htmlLayoutDescr": "CV personnel en format HTML-email - Responsive Design",
-    "tooltipDescr": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design",
-    "squareDescr": "Carré qu'il suit la souris avec caractéristiques supplémentaires",
-    "stack": "Stack",
-    "checkout-store": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
-    "stocky": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
-    "scpt-360": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
-    "symbol-it": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"
+    "checkout-store": {
+      "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
+      "tasks": [
+        {
+          "title": "Conception des Tâches et Collecte des Exigences",
+          "description": "Collaborer avec les chefs de produit, développeurs et testeurs pour comprendre les besoins du projet, définir les tâches et évaluer la faisabilité technique."
+        },
+        {
+          "title": "Développement Frontend",
+          "description": "Créer des interfaces utilisateur réactives et accessibles avec Vue.js, en veillant au respect des normes d'accessibilité."
+        },
+        {
+          "title": "Développement Backend et Back for Front (BFF)",
+          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+        },
+        {
+          "title": "Collaboration Inter-Équipes",
+          "description": "Collaborer avec les équipes de design, QA et développement pour assurer une cohérence tout au long du cycle de développement, de la conception au déploiement."
+        },
+        {
+          "title": "Gestion des Tâches et Surveillance des Produits",
+          "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
+        },
+        {
+          "title": "Analyse des Produits à l'Étranger",
+          "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
+        }
+      ]
+    },
+    "stocky": {
+      "description": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
+      "tasks": [
+        {
+          "title": "Collaboration d'Équipe",
+          "description": "L'équipe est composée d'un PO, d'un tech lead back-end, de trois développeurs full-stack et d'un QA."
+        },
+        {
+          "title": "Conception",
+          "description": "Concevoir l'architecture front-end et back-end, en garantissant une intégration fluide."
+        },
+        {
+          "title": "Processus CI/CD",
+          "description": "Mise en œuvre des images Docker pour simplifier le déploiement et la gestion des environnements."
+        },
+        {
+          "title": "Déploiement",
+          "description": "Déploiement efficace de l'application avec Fly.io, en garantissant une disponibilité optimale."
+        },
+        {
+          "title": "Gestion de Base de Données",
+          "description": "Création d'une base de données PostgresSQL robuste à l'aide de CockroachDB pour garantir la fiabilité des données."
+        },
+        {
+          "title": "Développement Front-End",
+          "description": "Développement actif du front-end, en se concentrant sur l'expérience utilisateur et la facilité d'utilisation."
+        },
+        {
+          "title": "Développement Back-End",
+          "description": "Développement du back-end pour assurer une fonctionnalité solide et des performances optimales."
+        },
+        {
+          "title": "Tests",
+          "description": "Configuration complète du processus CI/CD pour automatiser les tests et le déploiement, garantissant une gestion efficace du cycle de vie de l'application."
+        }
+      ]
+    },
+    "scpt-360": {
+      "description": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
+      "tasks": [
+        {
+          "title": "Environnement Collaboratif d'Équipe",
+          "description": "Travaillé au sein d'une équipe composée d'un développeur back-end, d'un tech lead, d'un designer, d'un testeur qualité, d'un data scientist et d'un chef de produit digital."
+        },
+        {
+          "title": "Intégration avec Java SpringBoot",
+          "description": "Acquis de l'expérience en développement front-end tout en intégrant un environnement back-end construit avec Java SpringBoot."
+        },
+        {
+          "title": "Développement de Graphiques",
+          "description": "Création de divers graphiques dynamiques à l'aide des technologies vue-chart.js et chart.js pour visualiser efficacement les données."
+        },
+        {
+          "title": "Contribution au Design System",
+          "description": "Collaboration active au développement et à l'amélioration du design system interne d'ADEO pour garantir la cohérence et l'évolutivité."
+        },
+        {
+          "title": "Internationalisation",
+          "description": "Géré l'internationalisation de l'application avec i18n pour assurer un support multilingue destiné aux utilisateurs internationaux."
+        },
+        {
+          "title": "Tests de Qualité",
+          "description": "Effectué des tests rigoureux avant le déploiement pour maintenir des normes de qualité élevées pour l'application."
+        },
+        {
+          "title": "Déploiement",
+          "description": "Déployé l'application dans le cadre du micro-frontend interne d'ADEO, Kobi, en assurant une intégration fluide et fonctionnelle."
+        },
+        {
+          "title": "Collaboration et Réunions",
+          "description": "Participé activement à des réunions avec le designer et le testeur QA pour affiner et valider les designs et les fonctionnalités."
+        },
+        {
+          "title": "Méthodologie Agile Scrum",
+          "description": "Suivi des pratiques Agile Scrum, en participant à des réunions régulières pour discuter des user stories et garantir une progression continue et alignée avec les objectifs du projet."
+        }
+      ]
+    },
+    "symbol-it": {
+      "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS.",
+      "tasks": [
+        {
+          "title": "Colexpress",
+          "description": "Une solution de commande et de facturation pour une entreprise logistique."
+        },
+        {
+          "title": "Proch’Orientation (Hauts de France Region)",
+          "description": "Des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Développement d'une application pour la gestion de la progression des étudiants."
+        }
+      ]
+    },
+    "todo": {
+      "description": "Simple Todo App - Responsive Design"
+    },
+    "weather": {
+      "description": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design"
+    },
+    "portfolio-vite": {
+      "description": "Portefeuille Personnel - Responsive Design"
+    },
+    "e-commerce-2": {
+      "description": "Site de e-commerce - Expérience client complètement moquée - Responsive Design"
+    },
+    "advent": {
+      "description": "Collection de 24 défis de codage - Responsive Design"
+    },
+    "social": {
+      "description": "Social Network - Expérience client partiellement moquée - Responsive Design"
+    },
+    "portfolio": {
+      "description": "Portefeuille Personnel - Responsive Design"
+    },
+    "streaming": {
+      "description": "Site de Film en Streaming - Responsive Design"
+    },
+    "e-commerce": {
+      "description": "Site de e-commerce - Responsive Design"
+    },
+    "email-layout": {
+      "description": "CV personnel en format HTML-email - Responsive Design"
+    },
+    "tooltip": {
+      "description": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design"
+    },
+    "square-task": {
+      "description": "Carré qu'il suit la souris avec caractéristiques supplémentaires"
+    }
   },
   "contacts": {
     "copy-clipboard-success": "Copié dans le presse-papiers.",

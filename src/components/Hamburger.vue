@@ -61,7 +61,6 @@ const hamburgerAriaLabel = computed(() =>
 
 .hamburger-component {
   display: none;
-  margin: 0 0 0 auto;
 }
 
 .hamburger {
