@@ -87,7 +87,41 @@
       ]
     },
     "stocky": {
-      "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing for the equipment."
+      "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing for the equipment.",
+      "tasks": [
+        {
+          "title": "Team Collaboration",
+          "description": "The team consists of a PO, a back-end tech lead, three full-stack developers, and a QA"
+        },
+        {
+          "title": "Conception",
+          "description": "Designing the front-end and back-end architecture, ensuring seamless integration"
+        },
+        {
+          "title": "CI/CD Process",
+          "description": "Implementing Docker images to simplify deployment and environment management"
+        },
+        {
+          "title": "Deployment",
+          "description": "Efficiently deploying the application with Fly.io, ensuring optimal availability"
+        },
+        {
+          "title": "Database Management",
+          "description": "Creating a robust PostgresSQL database using CockroachDB to ensure data reliability"
+        },
+        {
+          "title": "Front-End Development",
+          "description": "Actively developing the front-end, focusing on user experience and ease of use"
+        },
+        {
+          "title": "Back-End Development",
+          "description": "Developing the back-end to ensure solid functionality and optimal performance"
+        },
+        {
+          "title": "Testing",
+          "description": "Fully configuring the CI/CD process to automate testing and deployment, ensuring efficient application lifecycle management"
+        }
+      ]
     },
     "scpt-360": {
       "description": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators."
