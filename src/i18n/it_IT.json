@@ -55,21 +55,9 @@
     ],
     "tasks": "Compiti",
     "functionalities": "Funzionalitá",
-    "tododescr": "Todo App - Responsive Design",
-    "weatherdescr": "App per verificare il meteo attuale di una città scelta dall'utilizzatore - Responsive Design",
-    "portfolio2Descr": "Portfolio Personale - Responsive Design",
-    "ecommerce2Descr": "Sito di e-commerce - Esperienza cliente completamente simulata - Responsive Design",
-    "adventDescr": "Collzione di 24 sfide coding - Responsive Design",
-    "socialDescr": "Social Network - Esperienza cliente parzialmente simulata - Responsive Design",
-    "portfolioDescr": "Portfolio Personale - Responsive Design",
-    "moviesDescr": "Sito di Film in Streaming - Responsive Design",
-    "ecommerceDescr": "Sito di e-commerce - Responsive Design",
-    "htmlLayoutDescr": "CV personale in formato HTML-email - Responsive Design",
-    "tooltipDescr": "Un tooltip plugin con delle condizioni specifiche e compiti facoltativi - Responsive Design",
-    "squareDescr": "Quadrato che segue il mouse con caratteristiche extra",
     "stack": "Stack",
     "checkout-store": {
-      "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
+      "description": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
       "tasks": [
         {
           "title": "Conception des Tâches et Collecte des Exigences",
@@ -97,9 +85,51 @@
         }
       ]
     },
-    "stocky": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
-    "scpt-360": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione.",
-    "symbol-it": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
+    "stocky": {
+      "description": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature."
+    },
+    "scpt-360": {
+      "description": "In qualità di sviluppatore frontend presso Adeo Leroy Merlin, il team multidisciplinare collabora allo sviluppo di un'applicazione globale per il monitoraggio delle prestazioni dei fornitori. Questa applicazione offre esperienze personalizzate agli utenti in base al loro ruolo, con un'attenzione particolare agli indicatori chiave di prestazione."
+    },
+    "symbol-it": {
+      "description": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
+    },
+    "todo": {
+      "description": "Todo App - Responsive Design"
+    },
+    "weather": {
+      "description": "App per verificare il meteo attuale di una città scelta dall'utilizzatore - Responsive Design"
+    },
+    "portfolio-vite": {
+      "description": "Portfolio Personale - Responsive Design"
+    },
+    "e-commerce-2": {
+      "description": "Sito di e-commerce - Esperienza cliente completamente simulata - Responsive Design"
+    },
+    "advent": {
+      "description": "Collzione di 24 sfide coding - Responsive Design"
+    },
+    "social": {
+      "description": "Social Network - Esperienza cliente parzialmente simulata - Responsive Design"
+    },
+    "portfolio": {
+      "description": "Portfolio Personale - Responsive Design"
+    },
+    "streaming": {
+      "description": "Sito di Film in Streaming - Responsive Design"
+    },
+    "e-commerce": {
+      "description": "Sito di e-commerce - Responsive Design"
+    },
+    "email-layout": {
+      "description": "CV personale in formato HTML-email - Responsive Design"
+    },
+    "tooltip": {
+      "description": "Un tooltip plugin con delle condizioni specifiche e compiti facoltativi - Responsive Design"
+    },
+    "square-task": {
+      "description": "Quadrato che segue il mouse con caratteristiche extra"
+    }
   },
   "contacts": {
     "copy-clipboard-success": "Copiato nella clipboard.",

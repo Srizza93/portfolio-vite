@@ -47,8 +47,6 @@ const props = defineProps<{
 const tasksFromTranslations = computed(() =>
   Object.values(i18n.global.tm(`portfolio.${props.project.id}.tasks`))
 );
-
-console.log(tasksFromTranslations.value);
 </script>
 
 <style lang="scss" scoped>
