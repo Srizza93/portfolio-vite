@@ -39,6 +39,9 @@
     "showDetails": "Afficher les détails",
     "closeDetails": "Cacher les détails",
     "github": "Découvrez le code",
+    "tasks": "Tâches",
+    "functionalities": "Fonctionnalités",
+    "stack": "Stack",
     "months": [
       "Jan",
       "Fév",
@@ -82,24 +85,51 @@
         }
       ]
     },
-    "tasks": "Tâches",
-    "functionalities": "Fonctionnalités",
-    "tododescr": "Simple Todo App - Responsive Design",
-    "weatherdescr": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design",
-    "portfolio2Descr": "Portefeuille Personnel - Responsive Design",
-    "ecommerce2Descr": "Site de e-commerce - Expérience client complètement moquée - Responsive Design",
-    "adventDescr": "Collection de 24 défis de codage - Responsive Design",
-    "socialDescr": "Social Network - Expérience client partiellement moquée - Responsive Design",
-    "portfolioDescr": "Portefeuille Personnel - Responsive Design",
-    "moviesDescr": "Site de Film en Streaming - Responsive Design",
-    "ecommerceDescr": "Site de e-commerce - Responsive Design",
-    "htmlLayoutDescr": "CV personnel en format HTML-email - Responsive Design",
-    "tooltipDescr": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design",
-    "squareDescr": "Carré qu'il suit la souris avec caractéristiques supplémentaires",
-    "stack": "Stack",
-    "stocky": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
-    "scpt-360": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
-    "symbol-it": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"
+    "stocky": {
+      "description": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel."
+    },
+    "scpt-360": {
+      "description": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance."
+    },
+    "symbol-it": {
+      "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"
+    },
+    "todo": {
+      "description": "Simple Todo App - Responsive Design"
+    },
+    "weather": {
+      "description": "App pour vérifier la météo actuelle, d'une ville choisi par l'utilisateur - Responsive Design"
+    },
+    "portfolio-vite": {
+      "description": "Portefeuille Personnel - Responsive Design"
+    },
+    "e-commerce-2": {
+      "description": "Site de e-commerce - Expérience client complètement moquée - Responsive Design"
+    },
+    "advent": {
+      "description": "Collection de 24 défis de codage - Responsive Design"
+    },
+    "social": {
+      "description": "Social Network - Expérience client partiellement moquée - Responsive Design"
+    },
+    "portfolio": {
+      "description": "Portefeuille Personnel - Responsive Design"
+    },
+    "streaming": {
+      "description": "Site de Film en Streaming - Responsive Design"
+    },
+    "e-commerce": {
+      "description": "Site de e-commerce - Responsive Design"
+    },
+    "email-layout": {
+      "description": "CV personnel en format HTML-email - Responsive Design"
+    },
+    "tooltip": {
+      "description": "Un tooltip plugin avec des conditions spécifiques et des tâches facultatives - Responsive Design"
+    },
+    "square-task": {
+      "description": "Carré qu'il suit la souris avec caractéristiques supplémentaires"
+    }
   },
   "contacts": {
     "copy-clipboard-success": "Copié dans le presse-papiers.",

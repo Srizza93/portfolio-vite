@@ -134,7 +134,7 @@
       "toggle": false
     },
     {
-      "id": "portfolio2",
+      "id": "portfolio-vite",
       "name": "New Portfolio",
       "date": ["6", "2022"],
       "image": "portfolio2.png",
