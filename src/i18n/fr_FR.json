@@ -90,35 +90,35 @@
       "tasks": [
         {
           "title": "Collaboration d'Équipe",
-          "description": "L'équipe est composée d'un PO, d'un tech lead back-end, de trois développeurs full-stack et d'un QA"
+          "description": "L'équipe est composée d'un PO, d'un tech lead back-end, de trois développeurs full-stack et d'un QA."
         },
         {
           "title": "Conception",
-          "description": "Concevoir l'architecture front-end et back-end, en garantissant une intégration fluide"
+          "description": "Concevoir l'architecture front-end et back-end, en garantissant une intégration fluide."
         },
         {
           "title": "Processus CI/CD",
-          "description": "Mise en œuvre des images Docker pour simplifier le déploiement et la gestion des environnements"
+          "description": "Mise en œuvre des images Docker pour simplifier le déploiement et la gestion des environnements."
         },
         {
           "title": "Déploiement",
-          "description": "Déploiement efficace de l'application avec Fly.io, en garantissant une disponibilité optimale"
+          "description": "Déploiement efficace de l'application avec Fly.io, en garantissant une disponibilité optimale."
         },
         {
           "title": "Gestion de Base de Données",
-          "description": "Création d'une base de données PostgresSQL robuste à l'aide de CockroachDB pour garantir la fiabilité des données"
+          "description": "Création d'une base de données PostgresSQL robuste à l'aide de CockroachDB pour garantir la fiabilité des données."
         },
         {
           "title": "Développement Front-End",
-          "description": "Développement actif du front-end, en se concentrant sur l'expérience utilisateur et la facilité d'utilisation"
+          "description": "Développement actif du front-end, en se concentrant sur l'expérience utilisateur et la facilité d'utilisation."
         },
         {
           "title": "Développement Back-End",
-          "description": "Développement du back-end pour assurer une fonctionnalité solide et des performances optimales"
+          "description": "Développement du back-end pour assurer une fonctionnalité solide et des performances optimales."
         },
         {
           "title": "Tests",
-          "description": "Configuration complète du processus CI/CD pour automatiser les tests et le déploiement, garantissant une gestion efficace du cycle de vie de l'application"
+          "description": "Configuration complète du processus CI/CD pour automatiser les tests et le déploiement, garantissant une gestion efficace du cycle de vie de l'application."
         }
       ]
     },
@@ -164,7 +164,25 @@
       ]
     },
     "symbol-it": {
-      "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS :\n\n- Colexpress: une solution de commande et de facturation pour une entreprise logistique\n- Proch'Orientation (Région Hauts-de-France): des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application\n- For Each Academy: création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)\n- For Each Academy: Développement d'une application pour la gestion de la progression des étudiants"
+      "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS.",
+      "tasks": [
+        {
+          "title": "Colexpress",
+          "description": "Une solution de commande et de facturation pour une entreprise logistique."
+        },
+        {
+          "title": "Proch’Orientation (Hauts de France Region)",
+          "description": "Des outils d'orientation pour les jeunes où j'ai contribué au RUN front-end de l'application."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Création d'un bot Discord et intégration API pour des processus (création de canaux, ajout de membres, etc.)."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Développement d'une application pour la gestion de la progression des étudiants."
+        }
+      ]
     },
     "todo": {
       "description": "Simple Todo App - Responsive Design"

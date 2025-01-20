@@ -91,35 +91,35 @@
       "tasks": [
         {
           "title": "Team Collaboration",
-          "description": "The team consists of a PO, a back-end tech lead, three full-stack developers, and a QA"
+          "description": "The team consists of a PO, a back-end tech lead, three full-stack developers, and a QA."
         },
         {
           "title": "Conception",
-          "description": "Designing the front-end and back-end architecture, ensuring seamless integration"
+          "description": "Designing the front-end and back-end architecture, ensuring seamless integration."
         },
         {
           "title": "CI/CD Process",
-          "description": "Implementing Docker images to simplify deployment and environment management"
+          "description": "Implementing Docker images to simplify deployment and environment management."
         },
         {
           "title": "Deployment",
-          "description": "Efficiently deploying the application with Fly.io, ensuring optimal availability"
+          "description": "Efficiently deploying the application with Fly.io, ensuring optimal availability."
         },
         {
           "title": "Database Management",
-          "description": "Creating a robust PostgresSQL database using CockroachDB to ensure data reliability"
+          "description": "Creating a robust PostgresSQL database using CockroachDB to ensure data reliability."
         },
         {
           "title": "Front-End Development",
-          "description": "Actively developing the front-end, focusing on user experience and ease of use"
+          "description": "Actively developing the front-end, focusing on user experience and ease of use."
         },
         {
           "title": "Back-End Development",
-          "description": "Developing the back-end to ensure solid functionality and optimal performance"
+          "description": "Developing the back-end to ensure solid functionality and optimal performance."
         },
         {
           "title": "Testing",
-          "description": "Fully configuring the CI/CD process to automate testing and deployment, ensuring efficient application lifecycle management"
+          "description": "Fully configuring the CI/CD process to automate testing and deployment, ensuring efficient application lifecycle management."
         }
       ]
     },
@@ -165,7 +165,25 @@
       ]
     },
     "symbol-it": {
-      "description": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects:\n\n- Colexpress: Order and billing solution for a logistics company\n- Proch’Orientation (Hauts de France Region): Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application\n- For Each Academy: Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)\n- For Each Academy: Creation of an application for the management of students' progress"
+      "description": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects.",
+      "tasks": [
+        {
+          "title": "Colexpress",
+          "description": "Order and billing solution for a logistics company."
+        },
+        {
+          "title": "Proch’Orientation (Hauts de France Region)",
+          "description": "Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Creation of an application for the management of students' progress."
+        }
+      ]
     },
     "todo": {
       "description": "Simple Todo App - Responsive Design"

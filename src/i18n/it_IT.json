@@ -90,23 +90,23 @@
       "tasks": [
         {
           "title": "Collaborazione con il Team",
-          "description": "Il team è composto da un PO, un tech lead back-end, tre sviluppatori full-stack e un QA"
+          "description": "Il team è composto da un PO, un tech lead back-end, tre sviluppatori full-stack e un QA."
         },
         {
           "title": "Progettazione",
-          "description": "Progettazione dell'architettura del front-end e del back-end, garantendo un'integrazione fluida"
+          "description": "Progettazione dell'architettura del front-end e del back-end, garantendo un'integrazione fluida."
         },
         {
           "title": "Processo CI/CD",
-          "description": "Implementazione delle immagini Docker per semplificare il deployment e la gestione degli ambienti"
+          "description": "Implementazione delle immagini Docker per semplificare il deployment e la gestione degli ambienti."
         },
         {
           "title": "Deployment",
-          "description": "Deployment efficiente dell'applicazione con Fly.io, garantendo una disponibilità ottimale"
+          "description": "Deployment efficiente dell'applicazione con Fly.io, garantendo una disponibilità ottimale."
         },
         {
           "title": "Gestione del Database",
-          "description": "Creazione di un database PostgresSQL robusto utilizzando CockroachDB per garantire l'affidabilità dei dati"
+          "description": "Creazione di un database PostgresSQL robusto utilizzando CockroachDB per garantire l'affidabilità dei dati."
         },
         {
           "title": "Programmazione Frontend",
@@ -114,11 +114,11 @@
         },
         {
           "title": "Programmazione Backend",
-          "description": "Programmazione del back-end per garantire una solida funzionalità e prestazioni ottimali"
+          "description": "Programmazione del back-end per garantire una solida funzionalità e prestazioni ottimali."
         },
         {
           "title": "Test",
-          "description": "Configurazione completa del processo CI/CD per automatizzare i test e il deployment, garantendo una gestione efficiente del ciclo di vita dell'applicazione"
+          "description": "Configurazione completa del processo CI/CD per automatizzare i test e il deployment, garantendo una gestione efficiente del ciclo di vita dell'applicazione."
         }
       ]
     },
@@ -164,7 +164,25 @@
       ]
     },
     "symbol-it": {
-      "description": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS:\n\n- Colexpress: Una soluzione per ordini e fatturazione per un'azienda logistica\n- Proch’Orientation (Regione Hauts-de-France): Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione\n- For Each Academy: creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)\n- For Each Academy: Sviluppo di un'applicazione per la gestione del progresso degli studenti"
+      "description": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS.",
+      "tasks": [
+        {
+          "title": "Colexpress",
+          "description": "Una soluzione per ordini e fatturazione per un'azienda logistica."
+        },
+        {
+          "title": "Proch’Orientation (Hauts de France Region)",
+          "description": "Strumenti di orientamento per i giovani, dove ho contribuito al RUN front-end dell'applicazione."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Creazione di un bot Discord e integrazione API per processi (creazione di canali, aggiunta di membri, ecc.)."
+        },
+        {
+          "title": "For Each Academy",
+          "description": "Sviluppo di un'applicazione per la gestione del progresso degli studenti."
+        }
+      ]
     },
     "todo": {
       "description": "Todo App - Responsive Design"
