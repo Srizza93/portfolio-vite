@@ -13,6 +13,7 @@
     @close-modal="closeLanguageModal"
   />
   <toaster v-if="toasterMessage" />
+  <scroll-to-top />
 </template>
 
 <script lang="ts" setup>
@@ -22,6 +23,7 @@ import { storeToRefs } from 'pinia';
 import NavigationBar from '@/components/NavigationBar.vue';
 import OptionsModal from '@/components/OptionsModal.vue';
 import Toaster from '@/components/Toaster.vue';
+import ScrollToTop from '@/components/ScrollToTop.vue';
 
 import { availableLanguages } from '@/composables/languageComposable';
 import { usePortfolioRouter } from '@/composables/routerComposable';
