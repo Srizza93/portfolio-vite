@@ -45,7 +45,7 @@ defineProps<{
   padding: 0;
 
   & li {
-    margin-left: 20px;
+    margin-left: global.$spacing--small;
   }
 }
 
@@ -57,7 +57,7 @@ defineProps<{
     margin-bottom: 0;
   }
   &__description {
-    font-size: 14px;
+    font-size: global.$font-size--small;
     margin: 0;
   }
 }

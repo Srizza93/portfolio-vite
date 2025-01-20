@@ -15,10 +15,11 @@ import { onMounted, onUnmounted, ref } from 'vue';
 
 import { getFilePath } from '@/services/fileService';
 
+const PAGE_TOP_OFFSET = 100;
 const showScroller = ref(false);
 
 function handleScrollBehavior() {
-  if (window.scrollY > 100) {
+  if (window.scrollY > PAGE_TOP_OFFSET) {
     showScroller.value = true;
   } else {
     showScroller.value = false;
