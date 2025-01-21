@@ -80,6 +80,10 @@
           "description": "Monitorare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
         },
         {
+          "title": "Processo CI/CD",
+          "description": "Implementare un processo CI/CD per automatizzare l'analisi del codice tramite SonarQube e garantire un deployment continuo e affidabile."
+        },
+        {
           "title": "Analisi dei Prodotti all'Estero",
           "description": "Partecipare a viaggi di lavoro internazionali per analizzare i prodotti in loco, raccogliere feedback dalle parti interessate e perfezionare le soluzioni in base ai casi d'uso reali."
         }

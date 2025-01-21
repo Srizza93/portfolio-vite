@@ -80,6 +80,10 @@
           "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
         },
         {
+          "title": "Processus CI/CD",
+          "description": "Mettre en place des pipelines CI/CD pour automatiser le processus d'analyse du code avec Sonarqube et garantir un déploiement continu et fiable."
+        },
+        {
           "title": "Analyse des Produits à l'Étranger",
           "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
         }
