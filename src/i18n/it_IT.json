@@ -80,8 +80,20 @@
           "description": "Monitorare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
         },
         {
+          "title": "Ottimizzazione delle Prestazioni",
+          "description": "Ottimizzare le prestazioni delle applicazioni, riducendo i tempi di caricamento e migliorando l'esperienza utente."
+        },
+        {
+          "title": "Test",
+          "description": "Eseguire test unitari e di integrazione per garantire la qualità del codice e la stabilità delle funzionalità."
+        },
+        {
           "title": "Processo CI/CD",
           "description": "Implementare un processo CI/CD per automatizzare l'analisi del codice tramite SonarQube e garantire un deployment continuo e affidabile."
+        },
+        {
+          "title": "Tracking",
+          "description": "Implementare il tracking degli eventi per monitorare il comportamento degli utenti e migliorare l'esperienza utente."
         },
         {
           "title": "Analisi dei Prodotti all'Estero",

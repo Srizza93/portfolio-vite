@@ -81,8 +81,20 @@
           "description": "Monitored the functionality of applications, assessed performance, and resolved issues to ensure system stability post-deployment."
         },
         {
+          "title": "Performance Optimization",
+          "description": "Optimized application performance by identifying bottlenecks and implementing solutions to enhance user experience."
+        },
+        {
+          "title": "Testing",
+          "description": "Conducted unit and integration tests to ensure the quality and reliability of the application."
+        },
+        {
           "title": "CI/CD Process",
           "description": "Implemented new features to the existing CI/CD process, such as SONARQUBE analysis to guarantee code quality."
+        },
+        {
+          "title": "Tracking",
+          "description": "Implemented tracking solutions to monitor user behavior and gather insights for future improvements."
         },
         {
           "title": "Product Analysis Abroad",
