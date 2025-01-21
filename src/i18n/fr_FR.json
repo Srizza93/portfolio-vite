@@ -29,7 +29,7 @@
     "cursor-animation--alt": "Animation du curseur"
   },
   "home": {
-    "greatings": "Bonjour, mon prénom est",
+    "greetings": "Bonjour, mon prénom est",
     "pitch": "Je suis un développeur Full Stack passionné et polyvalent, avec plus de trois ans d'expérience, spécialisé à la fois dans les technologies front-end et back-end.\n\nJ'ai acquis une solide expertise dans l'écosystème Vue.js et JavaScript, développée au cours de deux ans de travail en développement front-end.\n\nLors de ma dernière expérience chez Symbol-It, j'ai approfondi mes compétences en participant à des projets majeurs, notamment pour Adeo Leroy Merlin, où j'ai contribué à optimiser les tunnels de transaction et à améliorer les systèmes de performance des fournisseurs.\n\nMa curiosité et mon dévouement me poussent à évoluer constamment, et j'apprécie les environnements collaboratifs où je peux proposer des solutions innovantes. Trilingue en anglais, italien et français, je suis prêt à apporter mes compétences à une équipe de développement tournée vers l'avenir.",
     "button": "Découvre mes projets",
     "position": "Développeur Full Stack"

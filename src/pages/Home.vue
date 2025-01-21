@@ -3,7 +3,7 @@
     <div class="home__content">
       <div class="home__description">
         <span class="home__description-first-line">{{
-          $t('home.greatings')
+          $t('home.greetings')
         }}</span>
         <span class="home__description-name">{{ homeData.name }}</span>
         <span>{{ $t('home.position') }}</span>
