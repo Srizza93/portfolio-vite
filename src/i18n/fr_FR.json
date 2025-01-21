@@ -80,6 +80,26 @@
           "description": "Superviser le fonctionnement des applications, surveiller les performances et résoudre rapidement les problèmes pour garantir la stabilité des systèmes après le déploiement."
         },
         {
+          "title": "Optimisation des Performances",
+          "description": "Optimiser les performances des applications en réduisant les temps de chargement, en minimisant les requêtes réseau et en améliorant l'expérience utilisateur."
+        },
+        {
+          "title": "Tests et Qualité",
+          "description": "Effectuer des tests unitaires et d'intégration pour garantir la qualité du code et la fiabilité des applications."
+        },
+        {
+          "title": "Processus CI/CD",
+          "description": "Mettre en place des pipelines CI/CD pour automatiser le processus d'analyse du code avec Sonarqube et garantir un déploiement continu et fiable."
+        },
+        {
+          "title": "Tracking",
+          "description": "Utilisation d’un système de déclenchement d’événements dans le code pour enregistrer et analyser les interactions des utilisateurs avec l’application."
+        },
+        {
+          "title": "Critical User Journeys et Terraform",
+          "description": "Développer des scénarios critiques pour tester les fonctionnalités clés de l'application et automatiser le déploiement avec Terraform."
+        },
+        {
           "title": "Analyse des Produits à l'Étranger",
           "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
         }
