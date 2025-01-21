@@ -10,7 +10,7 @@
     }
   },
   "language-modal": {
-    "selected--alt": "Selected language {language}",
+    "selected--alt": "Selected language: {language}",
     "flag--alt": "{language} flag"
   },
   "navigation": {
@@ -25,21 +25,21 @@
     "hamburger-open--label": "Open navigation menu"
   },
   "welcome": {
-    "introduction": "Welcome to {name}'s portfolio",
-    "access-home": "Access Home",
+    "introduction": "Welcome to {name}'s portfolio.",
+    "access-home": "Go to Home",
     "cursor-animation--alt": "Cursor animation"
   },
   "home": {
-    "greatings": "Hi, my name is",
-    "pitch": "I am a passionate and versatile Full Stack Developer with over three years of experience, specialising in both front-end and back-end technologies.\n\nI have solid expertise in the Vue.js and JavaScript ecosystems, honed over two years in front-end development.\n\nDuring my last experience, I have expanded my skill set further by contributing to key projects at Symbol-It, particularly with Adeo Leroy Merlin, where I’ve played a pivotal role in optimizing transaction tunnels and enhancing supplier performance systems.\n\nMy curiosity and dedication drive me to continually grow, and I thrive in collaborative environments where I can contribute innovative solutions. Fluent in English, Italian, and French, I am eager to bring my diverse skill set to a forward-thinking development team.",
-    "button": "Check out my projects",
+    "greetings": "Hi, my name is",
+    "pitch": "I am a passionate and versatile Full Stack Developer with over three years of experience, specializing in both front-end and back-end technologies.\n\nI have solid expertise in the Vue.js and JavaScript ecosystems, honed over two years of front-end development.\n\nDuring my recent experience, I expanded my skill set by contributing to key projects at Symbol-It, particularly with Adeo Leroy Merlin, where I played a pivotal role in optimizing transaction tunnels and enhancing supplier performance systems.\n\nMy curiosity and dedication drive me to continually grow, and I thrive in collaborative environments where I can contribute innovative solutions. Fluent in English, Italian, and French, I am eager to bring my diverse skill set to a forward-thinking development team.",
+    "button": "Explore my projects",
     "position": "Full Stack Developer"
   },
   "portfolio": {
-    "visit": "Check out the project",
+    "visit": "View project",
     "showDetails": "Show details",
     "closeDetails": "Close details",
-    "github": "Checkout out the code",
+    "github": "View code on GitHub",
     "months": [
       "Jan",
       "Feb",
@@ -58,77 +58,77 @@
     "functionalities": "Functionalities",
     "stack": "Stack",
     "checkout-store": {
-      "description": "As a full-stack developer at Leroy Merlin, I work within the ELO team on the order funnel project, a multichannel solution aimed at transforming the in-store customer experience. I have also contributed to several other projects within the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
+      "description": "As a full-stack developer at Leroy Merlin, I worked within the ELO team on the order funnel project, a multichannel solution aimed at transforming the in-store customer experience. I also contributed to several other projects in the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
       "tasks": [
         {
           "title": "Task Design and Requirements Gathering",
-          "description": "Collaborate with product managers, developers, and testers to understand project needs, define tasks, and assess technical feasibility."
+          "description": "Collaborated with product managers, developers, and testers to understand project needs, define tasks, and assess technical feasibility."
         },
         {
           "title": "Front-End Development",
-          "description": "Create responsive and accessible user interfaces with Vue.js, ensuring compliance with accessibility standards."
+          "description": "Created responsive and accessible user interfaces with Vue.js, ensuring compliance with accessibility standards."
         },
         {
           "title": "Back-End Development and Back for Front (BFF)",
-          "description": "Work with Java in a back-end and Back for Front architecture, integrating multiple back-end systems to retrieve, aggregate, and map the necessary data for the front-end."
+          "description": "Worked with Java in a back-end and Back for Front architecture, integrating multiple back-end systems to retrieve, aggregate, and map necessary data for the front-end."
         },
         {
           "title": "Cross-Team Collaboration",
-          "description": "Work closely with design, QA, and development teams to ensure consistency throughout the development cycle, from design to deployment."
+          "description": "Collaborated closely with design, QA, and development teams to ensure consistency throughout the development cycle, from design to deployment."
         },
         {
           "title": "Task Management and Product Monitoring",
-          "description": "Oversee the functionality of applications, monitor performance, and quickly resolve issues to ensure system stability after deployment."
+          "description": "Monitored the functionality of applications, assessed performance, and resolved issues to ensure system stability post-deployment."
         },
         {
           "title": "Product Analysis Abroad",
-          "description": "Participate in international business trips to analyze products on-site, gather feedback from stakeholders, and refine solutions based on real use cases."
+          "description": "Participated in international business trips to analyze products on-site, gather stakeholder feedback, and refine solutions based on real use cases."
         }
       ]
     },
     "stocky": {
-      "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing for the equipment.",
+      "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing.",
       "tasks": [
         {
           "title": "Team Collaboration",
-          "description": "The team consists of a PO, a back-end tech lead, three full-stack developers, and a QA."
+          "description": "Collaborated within a team comprising a PO, a back-end tech lead, three full-stack developers, and a QA specialist."
         },
         {
           "title": "Conception",
-          "description": "Designing the front-end and back-end architecture, ensuring seamless integration."
+          "description": "Designed the front-end and back-end architecture, ensuring seamless integration."
         },
         {
           "title": "CI/CD Process",
-          "description": "Implementing Docker images to simplify deployment and environment management."
+          "description": "Implemented Docker images to streamline deployment and environment management."
         },
         {
           "title": "Deployment",
-          "description": "Efficiently deploying the application with Fly.io, ensuring optimal availability."
+          "description": "Deployed the application efficiently using Fly.io, ensuring optimal availability."
         },
         {
           "title": "Database Management",
-          "description": "Creating a robust PostgresSQL database using CockroachDB to ensure data reliability."
+          "description": "Built a robust PostgreSQL database using CockroachDB for enhanced data reliability."
         },
         {
           "title": "Front-End Development",
-          "description": "Actively developing the front-end, focusing on user experience and ease of use."
+          "description": "Developed the front-end, prioritizing user experience and ease of use."
         },
         {
           "title": "Back-End Development",
-          "description": "Developing the back-end to ensure solid functionality and optimal performance."
+          "description": "Developed the back-end, ensuring robust functionality and performance."
         },
         {
           "title": "Testing",
-          "description": "Fully configuring the CI/CD process to automate testing and deployment, ensuring efficient application lifecycle management."
+          "description": "Configured the CI/CD process to automate testing and deployment for efficient application lifecycle management."
         }
       ]
     },
     "scpt-360": {
-      "description": "As a front-end developer at Adeo Leroy Merlin, the multidisciplinary team collaborates on a global application for monitoring supplier performance. This application provides tailored experiences for users based on their roles, with a particular focus on key performance indicators.",
+      "description": "As a front-end developer at Adeo Leroy Merlin, I collaborated with a multidisciplinary team on a global application for monitoring supplier performance. This application provides tailored user experiences based on roles, focusing on key performance indicators.",
       "tasks": [
         {
           "title": "Collaborative Team Environment",
-          "description": "Worked alongside a team consisting of a back-end developer, a tech lead, a designer, a quality tester, a data scientist, and a digital product leader."
+          "description": "Worked alongside a team comprising a back-end developer, a tech lead, a designer, a quality tester, a data scientist, and a digital product leader."
         },
         {
           "title": "Integration with Java SpringBoot",
@@ -136,52 +136,52 @@
         },
         {
           "title": "Development of Charts",
-          "description": "Created various dynamic charts using vue-chart.js and chart.js technologies to visualize data effectively."
+          "description": "Created dynamic charts using vue-chart.js and chart.js technologies to visualize data effectively."
         },
         {
           "title": "Design System Contribution",
-          "description": "Actively collaborated on the development and enhancement of ADEO's internal design system to maintain consistency and scalability."
+          "description": "Contributed to the development and enhancement of ADEO's internal design system for consistency and scalability."
         },
         {
           "title": "Internationalization",
-          "description": "Handled application internationalization using i18n to ensure multilingual support for global users."
+          "description": "Handled application internationalization using i18n for multilingual support."
         },
         {
           "title": "Quality Assurance Testing",
-          "description": "Performed rigorous testing prior to deployment to maintain high-quality standards for the application."
+          "description": "Conducted rigorous testing prior to deployment to uphold high application quality standards."
         },
         {
           "title": "Deployment",
-          "description": "Deployed the application within ADEO's internal micro-frontend framework, Kobi, ensuring smooth integration and functionality."
+          "description": "Deployed the application within ADEO's micro-frontend framework, Kobi, ensuring seamless integration and functionality."
         },
         {
           "title": "Collaboration and Meetings",
-          "description": "Engaged in active collaboration with the designer and QA tester during multiple meetings to refine and validate designs and functionality."
+          "description": "Collaborated with designers and QA testers during multiple meetings to refine and validate designs and functionalities."
         },
         {
           "title": "Agile Scrum Methodology",
-          "description": "Followed Agile Scrum practices, participating in regular meetings to discuss user stories and ensure continuous progress and alignment with project goals."
+          "description": "Adhered to Agile Scrum practices, participating in regular meetings to discuss user stories and ensure consistent progress."
         }
       ]
     },
     "symbol-it": {
-      "description": "I’ve worked for the internal projects of the agency Symbol-IT. This includes the RUN and BUILD of multiple JS projects.",
+      "description": "I worked on internal projects at Symbol-IT, including the RUN and BUILD phases of various JS projects.",
       "tasks": [
         {
           "title": "Colexpress",
-          "description": "Order and billing solution for a logistics company."
+          "description": "Developed an order and billing solution for a logistics company."
         },
         {
           "title": "Proch’Orientation (Hauts de France Region)",
-          "description": "Tools for the guidance of young people in the Hauts de France region. I participated in the front-end run of the application."
+          "description": "Contributed to the front-end RUN of tools guiding young individuals in the Hauts de France region."
         },
         {
           "title": "For Each Academy",
-          "description": "Creation of a Discord bot and API integration for processes (channel creation, member addition, etc.)."
+          "description": "Created a Discord bot and API integrations for automated processes (channel creation, member addition, etc.)."
         },
         {
           "title": "For Each Academy",
-          "description": "Creation of an application for the management of students' progress."
+          "description": "Developed an application to manage student progress."
         }
       ]
     },

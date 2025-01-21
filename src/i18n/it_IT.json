@@ -14,12 +14,12 @@
     "flag--alt": "Bandiera {language}"
   },
   "navigation": {
-    "welcome": "Benvenuto",
+    "welcome": "Benvenuti",
     "home": "Home",
     "portfolio": "Portfolio",
     "stack": "Stack",
     "contacts": "Contatti",
-    "resume": "Cv",
+    "resume": "CV",
     "hamburger-close--label": "Chiudi il menu di navigazione",
     "hamburger-open--label": "Apri il menu di navigazione"
   },
@@ -29,7 +29,7 @@
     "cursor-animation--alt": "Animazione del cursore"
   },
   "home": {
-    "greatings": "Ciao, il mio nome é",
+    "greetings": "Ciao, mi chiamo",
     "pitch": "Sono uno sviluppatore Full Stack appassionato e versatile, con oltre tre anni di esperienza, specializzato sia in tecnologie front-end che back-end.\n\nHo acquisito una solida esperienza nell'ecosistema Vue.js e JavaScript, maturata in due anni di sviluppo front-end.\n\nDurante la mia ultima esperienza lavorativa, ho ampliato ulteriormente le mie competenze contribuendo a progetti chiave presso Symbol-It, in particolare con Adeo Leroy Merlin, dove ho avuto un ruolo centrale nell'ottimizzazione dei tunnel di transazione e nel miglioramento dei sistemi di valutazione dei fornitori.\n\nLa mia curiosità e dedizione mi spingono a crescere continuamente, e mi trovo a mio agio in ambienti collaborativi dove posso offrire soluzioni innovative. Fluente in inglese, italiano e francese, sono pronto a mettere le mie competenze a disposizione di un team di sviluppo all'avanguardia.",
     "button": "Scopri i miei progetti",
     "position": "Full Stack Developer"
@@ -53,7 +53,7 @@
       "Nov",
       "Dic"
     ],
-    "tasks": "Compiti",
+    "tasks": "Mansioni",
     "functionalities": "Funzionalitá",
     "stack": "Stack",
     "checkout-store": {
@@ -69,7 +69,7 @@
         },
         {
           "title": "Programmazione Backend",
-          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+          "description": "Lavorare con Java in un'architettura backend e Back for Front, integrando diversi sistemi backend per recuperare, aggregare e mappare le informazioni necessarie per il frontend."
         },
         {
           "title": "Collaborazione Multidisciplinare",
@@ -77,7 +77,7 @@
         },
         {
           "title": "Gestione delle Attività e Monitoraggio dei Prodotti",
-          "description": "Supervisionare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
+          "description": "Monitorare il funzionamento delle applicazioni, monitorare le prestazioni e risolvere rapidamente i problemi per garantire la stabilità dei sistemi dopo il deployment."
         },
         {
           "title": "Analisi dei Prodotti all'Estero",
@@ -222,18 +222,18 @@
     }
   },
   "contacts": {
-    "copy-clipboard-success": "Copiato nella clipboard.",
-    "copy-clipboard-error": "Copia nella clipboard fallita.",
-    "copy-clipboard--alt": "Icona copia nella clipboard",
-    "copy-clipboard-success--alt": "Copiato nella clipboard",
-    "copy-clipboard-error--alt": "Copia nella clipboard fallita",
+    "copy-clipboard-success": "Copiato negli appunti.",
+    "copy-clipboard-error": "Copia negli appunti fallita.",
+    "copy-clipboard--alt": "Icona copia negli appunti",
+    "copy-clipboard-success--alt": "Copiato negli appunti",
+    "copy-clipboard-error--alt": "Copia negli appunti fallita",
     "email--alt": "Icona email",
     "phone--alt": "Icona telefono",
     "linkedin--alt": "Icona LinkedIn"
   },
   "resume": {
-    "header": "Scarica il mio CV nella lingua che preferisci",
+    "header": "Scarica il mio CV nella tua lingua preferita",
     "download": "Scarica",
-    "flag--alt": "Cv in {language}"
+    "flag--alt": "CV in {language}"
   }
 }

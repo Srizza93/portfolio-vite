@@ -5,7 +5,7 @@
     "select-language": "Sélectionnez une langue",
     "languages": {
       "en": "Anglais",
-      "fr": "Francais",
+      "fr": "Français",
       "it": "Italien"
     }
   },
@@ -15,7 +15,7 @@
   },
   "navigation": {
     "welcome": "Bienvenue",
-    "home": "Acceuil",
+    "home": "Accueil",
     "portfolio": "Portefeuille",
     "stack": "Stack",
     "contacts": "Contacts",
@@ -25,12 +25,12 @@
   },
   "welcome": {
     "introduction": "Bienvenue sur le portefeuille de {name}",
-    "access-home": "Accéder à l'acceuil",
+    "access-home": "Accéder à l'accueil",
     "cursor-animation--alt": "Animation du curseur"
   },
   "home": {
-    "greatings": "Bonjour, mon prénom est",
-    "pitch": "Je suis un développeur Full Stack passionné et polyvalent, avec plus de trois ans d'expérience, spécialisé à la fois dans les technologies front-end et back-end.\n\nJ'ai acquis une solide expertise dans l'écosystème Vue.js et JavaScript, développée au cours de deux ans de travail en développement front-end.\n\nAu cours de ma dernière expérience, j'ai élargi davantage mes compétences en contribuant à des projets clés chez Symbol-It, notamment avec Adeo Leroy Merlin, où j'ai joué un rôle essentiel dans l'optimisation des tunnels de transaction et l'amélioration des systèmes de performance des fournisseurs.\n\nMa curiosité et mon dévouement me poussent à évoluer constamment, et j'apprécie les environnements collaboratifs où je peux proposer des solutions innovantes. Trilingue en anglais, italien et français, je suis prêt à apporter mes compétences à une équipe de développement tournée vers l'avenir.",
+    "greetings": "Bonjour, mon prénom est",
+    "pitch": "Je suis un développeur Full Stack passionné et polyvalent, avec plus de trois ans d'expérience, spécialisé à la fois dans les technologies front-end et back-end.\n\nJ'ai acquis une solide expertise dans l'écosystème Vue.js et JavaScript, développée au cours de deux ans de travail en développement front-end.\n\nLors de ma dernière expérience chez Symbol-It, j'ai approfondi mes compétences en participant à des projets majeurs, notamment pour Adeo Leroy Merlin, où j'ai contribué à optimiser les tunnels de transaction et à améliorer les systèmes de performance des fournisseurs.\n\nMa curiosité et mon dévouement me poussent à évoluer constamment, et j'apprécie les environnements collaboratifs où je peux proposer des solutions innovantes. Trilingue en anglais, italien et français, je suis prêt à apporter mes compétences à une équipe de développement tournée vers l'avenir.",
     "button": "Découvre mes projets",
     "position": "Développeur Full Stack"
   },
@@ -69,7 +69,7 @@
         },
         {
           "title": "Développement Backend et Back for Front (BFF)",
-          "description": "Travailler avec Java dans une architecture backend et Back for Front, intégrant plusieurs systèmes back-end pour récupérer, agréger et mapper les informations nécessaires au front-end."
+          "description": "Développement backend avec Java dans une architecture Back for Front, intégrant plusieurs systèmes backend pour récupérer, agréger et mapper les informations destinées au frontend."
         },
         {
           "title": "Collaboration Inter-Équipes",
@@ -226,13 +226,13 @@
     "copy-clipboard-error": "Échec de la copie dans le presse-papiers.",
     "copy-clipboard--alt": "Icône pour copier dans le presse-papiers",
     "copy-clipboard-success--alt": "Copié dans le presse-papiers",
-    "copy-clipboard-error--alt": "Échec de la copie dans le presse-papiers",
+    "copy-clipboard-error--alt": "Impossible de copier dans le presse-papiers.",
     "email--alt": "Icône pour envoyer un email",
     "phone--alt": "Icône pour appeler",
     "linkedin--alt": "Icône pour visiter mon profil LinkedIn"
   },
   "resume": {
-    "header": "Télécharge mon CV dans la langue de ton choix",
+    "header": "Téléchargez mon CV dans la langue de votre choix.",
     "download": "Télécharger",
     "flag--alt": "Cv en {language}"
   }
