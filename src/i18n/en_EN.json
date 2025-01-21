@@ -97,6 +97,10 @@
           "description": "Implemented tracking solutions to monitor user behavior and gather insights for future improvements."
         },
         {
+          "title": "Critical User Journeys and Terraform Integration",
+          "description": "Developed critical user journeys and integrated Terraform to manage infrastructure as code."
+        },
+        {
           "title": "Product Analysis Abroad",
           "description": "Participated in international business trips to analyze products on-site, gather stakeholder feedback, and refine solutions based on real use cases."
         }

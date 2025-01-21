@@ -96,6 +96,10 @@
           "description": "Implementare il tracking degli eventi per monitorare il comportamento degli utenti e migliorare l'esperienza utente."
         },
         {
+          "title": "Critical User Journeys et Terraform",
+          "description": "Implementare i tunnel di transazione critici e utilizzare Terraform per automatizzare l'infrastruttura e garantire la scalabilità."
+        },
+        {
           "title": "Analisi dei Prodotti all'Estero",
           "description": "Partecipare a viaggi di lavoro internazionali per analizzare i prodotti in loco, raccogliere feedback dalle parti interessate e perfezionare le soluzioni in base ai casi d'uso reali."
         }

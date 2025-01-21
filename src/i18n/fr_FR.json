@@ -96,6 +96,10 @@
           "description": "Utilisation d’un système de déclenchement d’événements dans le code pour enregistrer et analyser les interactions des utilisateurs avec l’application."
         },
         {
+          "title": "Critical User Journeys et Terraform",
+          "description": "Développer des scénarios critiques pour tester les fonctionnalités clés de l'application et automatiser le déploiement avec Terraform."
+        },
+        {
           "title": "Analyse des Produits à l'Étranger",
           "description": "Participer à des déplacements professionnels internationaux pour analyser les produits sur place, recueillir les retours des parties prenantes et affiner les solutions en fonction des cas d’usage réels."
         }
