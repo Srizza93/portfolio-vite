@@ -2,6 +2,10 @@
   <div class="details" :class="{ 'details--open': project.toggle }">
     <section>
       <h3 class="project-title">{{ project.name }}</h3>
+      <p>
+        {{ $t(`portfolio.${project.id}.role`) }} -
+        {{ $t(`portfolio.${project.id}.company`) }}
+      </p>
       <p class="project-description">
         {{ $t(`portfolio.${project.id}.description`) }}
       </p>

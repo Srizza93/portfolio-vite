@@ -58,6 +58,8 @@
     "functionalities": "Functionalities",
     "stack": "Stack",
     "logistic-site-assortment-manager": {
+      "role": "Full Stack Developer",
+      "company": "Leroy Merlin",
       "description": "As a Full Stack Developer at Leroy Merlin, I am working on a stock optimization application that simplifies the assortment validation process. The system, based on an input/output mechanism, uses Kafka, notifications, and PostgreSQL to receive assortment recommendations and manage the workflow allowing collaborators to validate, reject, or confirm assortments before sending them to the supply chain.",
       "tasks": [
         {
@@ -87,6 +89,8 @@
       ]
     },
     "checkout-store": {
+      "role": "Full Stack Developer",
+      "company": "Leroy Merlin",
       "description": "As a full-stack developer at Leroy Merlin, I worked within the ELO team on the order funnel project, a multichannel solution aimed at transforming the in-store customer experience. I also contributed to several other projects in the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
       "tasks": [
         {
@@ -136,6 +140,8 @@
       ]
     },
     "stocky": {
+      "role": "Full Stack Developer",
+      "company": "Leroy Merlin",
       "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing.",
       "tasks": [
         {
@@ -173,6 +179,8 @@
       ]
     },
     "scpt-360": {
+      "role": "Frontend Developer",
+      "company": "Leroy Merlin",
       "description": "As a front-end developer at Adeo Leroy Merlin, I collaborated with a multidisciplinary team on a global application for monitoring supplier performance. This application provides tailored user experiences based on roles, focusing on key performance indicators.",
       "tasks": [
         {
@@ -214,6 +222,8 @@
       ]
     },
     "symbol-it": {
+      "role": "Full Stack Developer",
+      "company": "Leroy Merlin",
       "description": "I worked on internal projects at Symbol-IT, including the RUN and BUILD phases of various JS projects.",
       "tasks": [
         {
