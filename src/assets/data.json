@@ -21,6 +21,39 @@
   },
   "projects": [
     {
+      "id": "logistic-site-assortment-manager",
+      "name": "Logistic Site Assortment Manager",
+      "date": ["2", "2025"],
+      "image": "leroy-merlin.png",
+      "stack": [
+        "Java 21",
+        "SpringBoot",
+        "Maven",
+        "Kafka",
+        "JUnit",
+        "TestContainer",
+        "Liquibase",
+        "PostgresSQL",
+        "Aiven",
+        "GCP",
+        "Vault",
+        "Turbine",
+        "JFrog",
+        "Docker",
+        "CloudCraft",
+        "Terraform",
+        "SonarQube",
+        "Datadog",
+        "Vue",
+        "Typescript",
+        "Github / Github Actions",
+        "Gitbook",
+        "Jira",
+        "Methodology Agile Scrum"
+      ],
+      "toggle": false
+    },
+    {
       "id": "checkout-store",
       "name": "Checkout Tunnel",
       "date": ["1", "2024"],
@@ -43,7 +76,7 @@
         "Figma",
         "Jira",
         "Github, Github Actions",
-        "Méthodologie Agile Scrum"
+        "Methodology Agile Scrum"
       ],
       "toggle": false
     },
@@ -70,7 +103,7 @@
         "CockroachDB",
         "PostgresSQL",
         "Github, Github Actions",
-        "Méthodologie Agile Scrum"
+        "Methodology Agile Scrum"
       ],
       "toggle": false
     },
@@ -91,7 +124,7 @@
         "Figma",
         "Jira",
         "Github, Github Actions",
-        "Méthodologie Agile Scrum"
+        "Methodology Agile Scrum"
       ],
       "toggle": false
     },
