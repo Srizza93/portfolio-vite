@@ -56,6 +56,35 @@
     "tasks": "Mansioni",
     "functionalities": "Funzionalitá",
     "stack": "Stack",
+    "logistic-site-assortment-manager": {
+      "description": "In qualità di sviluppatore Full Stack presso Leroy Merlin, sto lavorando ad un'applicazione di ottimizzazione delle scorte che semplifica il processo di validazione degli assortimenti. Il sistema, basato su un meccanismo di input/output, utilizza Kafka, notifiche e PostgreSQL per ricevere raccomandazioni di assortimento e gestire il flusso di lavoro che permette ai collaboratori di validare, rifiutare o confermare gli assortimenti prima di inviarli alla catena di approvvigionamento.",
+      "tasks": [
+        {
+          "title": "Progettazione Funzionale e Raccolta Requisiti",
+          "description": "Ho collaborato con product manager, sviluppatori e tester per definire le funzionalità degli strumenti della catena di approvvigionamento, analizzare le esigenze aziendali e gettare le basi per l'architettura dell'applicazione."
+        },
+        {
+          "title": "Sviluppo Backend e Database",
+          "description": "Ho progettato e sviluppato servizi backend in Java, modellato il database PostgreSQL e implementato query per una gestione efficiente dei dati."
+        },
+        {
+          "title": "Kafka e Sincronizzazione Dati",
+          "description": "Ho configurato produttori/consumatori Kafka multi-topic per sincronizzare i flussi di dati tra diverse entità aziendali, con gestione degli errori Kafka per garantire l'affidabilità e la resilienza degli scambi."
+        },
+        {
+          "title": "Architettura e Integrazione",
+          "description": "Ho contribuito all'architettura tecnica, alla progettazione delle API e alla strutturazione delle interazioni tra componenti all'interno di un framework di architettura esagonale per garantire prestazioni e scalabilità."
+        },
+        {
+          "title": "Collaborazione tra Team",
+          "description": "Ho lavorato a stretto contatto con altri team di sviluppo per costruire un prodotto coerente sia tecnicamente che funzionalmente."
+        },
+        {
+          "title": "Strumenti e Deployment",
+          "description": "Ho configurato gli ambienti, selezionato le tecnologie, automatizzato i processi di build e deployment e impostato le pipeline CI/CD."
+        }
+      ]
+    },
     "checkout-store": {
       "description": "In qualità di sviluppatore full-stack presso Leroy Merlin, ho lavorato con il team ELO al progetto Checkout Store, una soluzione multicanale progettata per rivoluzionare l'esperienza in negozio, contribuendo anche allo sviluppo di librerie front-end, architetture back-end e sistemi Back for Front (BFF).",
       "tasks": [

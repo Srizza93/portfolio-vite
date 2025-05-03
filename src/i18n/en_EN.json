@@ -57,6 +57,35 @@
     "tasks": "Tasks",
     "functionalities": "Functionalities",
     "stack": "Stack",
+    "logistic-site-assortment-manager": {
+      "description": "As a Full Stack Developer at Leroy Merlin, I am working on a stock optimization application that simplifies the assortment validation process. The system, based on an input/output mechanism, uses Kafka, notifications, and PostgreSQL to receive assortment recommendations and manage the workflow allowing collaborators to validate, reject, or confirm assortments before sending them to the supply chain.",
+      "tasks": [
+        {
+          "title": "Functional Design and Requirements Gathering",
+          "description": "Collaborated with product managers, developers, and testers to define supply chain tool functionalities, analyze business needs, and lay the groundwork for the application architecture."
+        },
+        {
+          "title": "Backend and Database Development",
+          "description": "Designed and developed Java backend services, modeled the PostgreSQL database, and implemented queries for efficient data management."
+        },
+        {
+          "title": "Kafka and Data Synchronization",
+          "description": "Set up multi-topic Kafka producers/consumers to synchronize data flows between different business entities, with Kafka error handling to ensure reliability and resilience of exchanges."
+        },
+        {
+          "title": "Architecture and Integration",
+          "description": "Contributed to the technical architecture, API design, and structuring of component interactions within a hexagonal architecture framework to ensure performance and scalability."
+        },
+        {
+          "title": "Cross-Team Collaboration",
+          "description": "Worked closely with other development teams to build a product that is coherent both technically and functionally."
+        },
+        {
+          "title": "Tools and Deployment",
+          "description": "Configured environments, selected technologies, automated build and deployment processes, and set up CI/CD pipelines."
+        }
+      ]
+    },
     "checkout-store": {
       "description": "As a full-stack developer at Leroy Merlin, I worked within the ELO team on the order funnel project, a multichannel solution aimed at transforming the in-store customer experience. I also contributed to several other projects in the same environment, including the development of front-end libraries, back-end architecture, and Back for Front (BFF).",
       "tasks": [
