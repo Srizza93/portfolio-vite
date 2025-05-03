@@ -57,6 +57,8 @@
       "Déc"
     ],
     "logistic-site-assortment-manager": {
+      "role": "Développeur Full Stack",
+      "company": "Leroy Merlin",
       "description": "En tant que développeur Full Stack chez Leroy Merlin, je travaille sur une application d’optimisation des stocks qui simplifie le processus de validation des assortiments. Le système, basé sur un mécanisme d’entrée/sortie, utilise Kafka, des notifications et PostgreSQL pour recevoir des recommandations d’assortiment et gérer le flux de travail permettant aux collaborateurs de valider, rejeter ou confirmer les assortiments avant leur envoi à la chaîne d’approvisionnement.",
       "tasks": [
         {
@@ -86,6 +88,8 @@
       ]
     },
     "checkout-store": {
+      "role": "Développeur Full Stack",
+      "company": "Leroy Merlin",
       "description": "En tant que développeur fullstack chez Leroy Merlin, j'ai travaillé au sein de l’équipe ELO sur le projet du tunnel de commande, une solution multicanale visant à transformer l'expérience client en magasin. J’ai également contribué à plusieurs autres projets dans le même environnement, incluant le développement de libraries front-end, l’architecture back-end et le Back for Front (BFF).",
       "tasks": [
         {
@@ -135,6 +139,8 @@
       ]
     },
     "stocky": {
+      "role": "Développeur Full Stack",
+      "company": "Storfy",
       "description": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
       "tasks": [
         {
@@ -172,6 +178,8 @@
       ]
     },
     "scpt-360": {
+      "role": "Développeur Frontend",
+      "company": "Leroy Merlin",
       "description": "En tant que développeur frontend chez Adeo Leroy Merlin, l'équipe multidisciplinaire collabore sur une application mondiale de surveillance des performances des fournisseurs. Cette application offre des expériences adaptées aux utilisateurs en fonction de leur rôle, avec une attention particulière aux indicateurs clés de performance.",
       "tasks": [
         {
@@ -213,6 +221,8 @@
       ]
     },
     "symbol-it": {
+      "role": "Développeur Full Stack",
+      "company": "Symbol-IT",
       "description": "J'ai travaillé sur les projets internes de l'agence Symbol-IT, incluant le RUN et le BUILD de plusieurs projets JS.",
       "tasks": [
         {
