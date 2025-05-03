@@ -5,7 +5,7 @@
       @click="navigateToPage(WELCOME_PATH)"
       class="navigation-bar__logo"
       :alt="$t('navigation.logo--alt')"
-      src="@/assets/s-icon.png"
+      src="@/assets/logo.png"
       tabindex="0"
     />
     <navigation-options
