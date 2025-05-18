@@ -30,7 +30,7 @@
   },
   "home": {
     "greetings": "Ciao, mi chiamo",
-    "pitch": "Sono uno sviluppatore Full Stack appassionato e versatile, con oltre tre anni di esperienza, specializzato sia in tecnologie front-end che back-end.\n\nHo acquisito una solida esperienza nell'ecosistema Vue.js e JavaScript, maturata in due anni di sviluppo front-end.\n\nDurante la mia ultima esperienza lavorativa, ho ampliato ulteriormente le mie competenze contribuendo a progetti chiave presso Symbol-It, in particolare con Adeo Leroy Merlin, dove ho avuto un ruolo centrale nell'ottimizzazione dei tunnel di transazione e nel miglioramento dei sistemi di valutazione dei fornitori.\n\nLa mia curiosità e dedizione mi spingono a crescere continuamente, e mi trovo a mio agio in ambienti collaborativi dove posso offrire soluzioni innovative. Fluente in inglese, italiano e francese, sono pronto a mettere le mie competenze a disposizione di un team di sviluppo all'avanguardia.",
+    "pitch": "Sviluppatore Full Stack appassionato e versatile, padroneggio sia le tecnologie front-end che back-end. Specializzato nell’ecosistema Vue.js e JavaScript sul front-end, così come in Java sul back-end, intervengo efficacemente su tutto il ciclo di sviluppo.\n\nA Symbol-It, ho contribuito a progetti di rilievo, in particolare per Adeo Leroy Merlin, lavorando sull’ottimizzazione degli stocks, il miglioramento dei processi di transazione e l’incremento delle prestazioni dei sistemi fornitori. Queste esperienze mi hanno permesso di consolidare le mie competenze tecniche sviluppando un approccio incentrato sul valore di business.\n\nSpinto dalla curiosità e dall’attenzione ai dettagli, prospero in ambienti collaborativi dove innovazione e scambio sono al centro delle pratiche. Trilingue in francese, inglese e italiano, do grande importanza a favorire una comunicazione chiara e fluida all’interno dei team.",
     "button": "Scopri i miei progetti",
     "position": "Full Stack Developer"
   },
@@ -140,7 +140,7 @@
     },
     "stocky": {
       "role": "Full Stack Developer",
-      "company": "Leroy Merlin",
+      "company": "Storfy",
       "description": "Stocky è un'applicazione web progettata per semplificare la gestione delle attrezzature informatiche. L'applicazione consente l'accesso al parco, la sua gestione, le statistiche di utilizzo e la fatturazione delle attrezzature.",
       "tasks": [
         {
@@ -222,7 +222,7 @@
     },
     "symbol-it": {
       "role": "Full Stack Developer",
-      "company": "Leroy Merlin",
+      "company": "Symbol-IT",
       "description": "Ho lavorato ai progetti interni dell'agenzia Symbol-IT, includendo il RUN e il BUILD di diversi progetti JS.",
       "tasks": [
         {
