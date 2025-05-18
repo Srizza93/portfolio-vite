@@ -31,7 +31,7 @@
   },
   "home": {
     "greetings": "Hi, my name is",
-    "pitch": "I am a passionate and versatile Full Stack Developer with over three years of experience, specializing in both front-end and back-end technologies.\n\nI have solid expertise in the Vue.js and JavaScript ecosystems, honed over two years of front-end development.\n\nDuring my recent experience, I expanded my skill set by contributing to key projects at Symbol-It, particularly with Adeo Leroy Merlin, where I played a pivotal role in optimizing transaction tunnels and enhancing supplier performance systems.\n\nMy curiosity and dedication drive me to continually grow, and I thrive in collaborative environments where I can contribute innovative solutions. Fluent in English, Italian, and French, I am eager to bring my diverse skill set to a forward-thinking development team.",
+    "pitch": "Passionate and versatile Full Stack Developer, I master both front-end and back-end technologies. Specialized in the Vue.js and JavaScript ecosystem on the front-end, as well as Java on the back-end, I effectively intervene throughout the entire development cycle.\n\nAt Symbol-It, I have contributed to major projects, notably for Adeo Leroy Merlin, working on stock optimization, improving transaction funnels, and enhancing supplier system performance. These experiences have allowed me to consolidate my technical skills while developing a business value-centered approach.\n\nDriven by curiosity and attention to detail, I thrive in collaborative environments where innovation and exchange are at the heart of practices. Trilingual in French, English, and Italian, I place great importance on fostering clear and smooth communication within teams.",
     "button": "Explore my projects",
     "position": "Full Stack Developer"
   },
@@ -141,7 +141,7 @@
     },
     "stocky": {
       "role": "Full Stack Developer",
-      "company": "Leroy Merlin",
+      "company": "Storfy",
       "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing.",
       "tasks": [
         {
@@ -223,7 +223,7 @@
     },
     "symbol-it": {
       "role": "Full Stack Developer",
-      "company": "Leroy Merlin",
+      "company": "Symbol-IT",
       "description": "I worked on internal projects at Symbol-IT, including the RUN and BUILD phases of various JS projects.",
       "tasks": [
         {

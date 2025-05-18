@@ -86,7 +86,7 @@
       "date": ["9", "2023"],
       "image": "symbol-it.png",
       "stack": [
-        "Java 17",
+        "Java 21",
         "SpringBoot",
         "HTML",
         "CSS",
