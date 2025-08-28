@@ -75,6 +75,10 @@
           "description": "Set up multi-topic Kafka producers/consumers to synchronize data flows between different business entities, with Kafka error handling to ensure reliability and resilience of exchanges."
         },
         {
+          "title": "Google Cloud Integration",
+          "description": "Implemented with Terraform provider, Google Cloud services for data synchronization, through buckets and pub/sub notifications."
+        },
+        {
           "title": "Architecture and Integration",
           "description": "Contributed to the technical architecture, API design, and structuring of component interactions within a hexagonal architecture framework to ensure performance and scalability."
         },
@@ -87,6 +91,11 @@
           "description": "Configured environments, selected technologies, automated build and deployment processes, and set up CI/CD pipelines."
         }
       ]
+    },
+    "my-music-vault": {
+      "role": "Frontend Developer",
+      "company": "Personal Project",
+      "description": "With the objective of learning AngularJS, I developed a music library application that allows users to manage their favorite songs and playlists."
     },
     "checkout-store": {
       "role": "Full Stack Developer",
