@@ -74,6 +74,10 @@
           "description": "Ho configurato produttori/consumatori Kafka multi-topic per sincronizzare i flussi di dati tra diverse entità aziendali, con gestione degli errori Kafka per garantire l'affidabilità e la resilienza degli scambi."
         },
         {
+          "title": "Integrazione Google Cloud",
+          "description": "Implementato con il provider Terraform, i servizi Google Cloud per la sincronizzazione di dati tramite bucket e notifiche pub/sub."
+        },
+        {
           "title": "Architettura e Integrazione",
           "description": "Ho contribuito all'architettura tecnica, alla progettazione delle API e alla strutturazione delle interazioni tra componenti all'interno di un framework di architettura esagonale per garantire prestazioni e scalabilità."
         },
@@ -86,6 +90,11 @@
           "description": "Ho configurato gli ambienti, selezionato le tecnologie, automatizzato i processi di build e deployment e impostato le pipeline CI/CD."
         }
       ]
+    },
+    "my-music-vault": {
+      "role": "Frontend Developer",
+      "company": "Progetto Personale",
+      "description": "Con l'obiettivo di apprendere AngularJS, ho sviluppato un'applicazione di biblioteca musicale che consente agli utenti di gestire le proprie canzoni e playlist preferite."
     },
     "checkout-store": {
       "role": "Full Stack Developer",
