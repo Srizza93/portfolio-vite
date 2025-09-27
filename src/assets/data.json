@@ -139,6 +139,34 @@
       "toggle": false
     },
     {
+      "id": "stocky",
+      "name": "Stocky",
+      "date": ["9", "2023"],
+      "image": "symbol-it.png",
+      "techImage": "java.png",
+      "stack": [
+        "Java 21",
+        "SpringBoot",
+        "HTML",
+        "CSS",
+        "Vue",
+        "Typescript",
+        "Vue router",
+        "Vite",
+        "Vitest",
+        "Vue test utils",
+        "Figma",
+        "Jira",
+        "JUnit",
+        "Fly.io",
+        "CockroachDB",
+        "PostgresSQL",
+        "Github, Github Actions",
+        "Methodology Agile Scrum"
+      ],
+      "toggle": false
+    },
+    {
       "id": "todo",
       "name": "Todo App",
       "date": ["10", "2022"],

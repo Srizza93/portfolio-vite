@@ -78,7 +78,7 @@ function openDetails(project: Project) {
 
 .time-circle {
   position: absolute;
-  bottom: -18%;
+  bottom: -54px;
   left: 50%;
   width: 15px;
   height: 15px;
@@ -103,6 +103,7 @@ function openDetails(project: Project) {
   display: flex;
   flex-direction: column;
   width: 200px;
+  height: 100%;
   border: 1px solid global.$detail--color;
   border-radius: global.$border-radius--medium;
   box-shadow: global.$shadow--large;
@@ -145,7 +146,7 @@ function openDetails(project: Project) {
 
 .project-button {
   width: 90%;
-  margin: 0 auto global.$spacing--small auto;
+  margin: auto auto global.$spacing--small auto;
 }
 
 @media screen and (max-width: 500px) {

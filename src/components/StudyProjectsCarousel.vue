@@ -1,11 +1,7 @@
 <template>
   <div class="study-projects-container">
     <div class="study-projects-container__sub">
-      <StudyProjects
-        v-if="studyProjects"
-        :projects="studyProjects"
-        is-gallery
-      />
+      <StudyProjects v-if="studyProjects" :projects="studyProjects" />
     </div>
   </div>
 </template>
