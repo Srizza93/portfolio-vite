@@ -19,7 +19,7 @@
       }
     ]
   },
-  "projects": [
+  "workProjects": [
     {
       "id": "logistic-site-assortment-manager",
       "name": "Logistic Site Assortment Manager",
@@ -49,21 +49,6 @@
         "Github / Github Actions",
         "Gitbook",
         "Jira",
-        "Methodology Agile Scrum"
-      ],
-      "toggle": false
-    },
-    {
-      "id": "my-music-vault",
-      "name": "My Music Vault",
-      "date": ["1", "2025"],
-      "image": "my-music-vault.png",
-      "link": "https://my-music-vault.netlify.app",
-      "stack": [
-        "Angular 19",
-        "Typescript",
-        "Supabase",
-        "Github / Github Actions",
         "Methodology Agile Scrum"
       ],
       "toggle": false
@@ -133,12 +118,32 @@
         "NuxtJS"
       ],
       "toggle": false
+    }
+  ],
+  "studyProjects": [
+    {
+      "id": "my-music-vault",
+      "name": "My Music Vault",
+      "date": ["1", "2025"],
+      "image": "my-music-vault.png",
+      "techImage": "angular.png",
+      "link": "https://my-music-vault.netlify.app",
+      "github": "https://github.com/Srizza93/my-music-vault",
+      "stack": [
+        "Angular 19",
+        "Typescript",
+        "Supabase",
+        "Github / Github Actions",
+        "Methodology Agile Scrum"
+      ],
+      "toggle": false
     },
     {
       "id": "todo",
       "name": "Todo App",
       "date": ["10", "2022"],
       "image": "todo.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/todo-app/",
       "github": "https://github.com/Srizza93/todo-app",
       "stack": ["HTML", "CSS", "SASS", "JS", "Vue", "Nuxt", "Jest"],
@@ -149,6 +154,7 @@
       "name": "Weather App",
       "date": ["10", "2022"],
       "image": "weather.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/weather-app/#/",
       "github": "https://github.com/Srizza93/weather-app",
       "stack": ["HTML", "CSS", "SASS", "JS", "Vue", "Vue-router", "Vite"],
@@ -159,6 +165,7 @@
       "name": "New Portfolio",
       "date": ["6", "2022"],
       "image": "portfolio2.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/portfolio-vite/",
       "github": "https://github.com/Srizza93/portfolio-vite",
       "stack": ["HTML", "CSS", "JS", "Vue", "Vue-router", "Vite", "i18n"],
@@ -169,6 +176,7 @@
       "name": "E-commerce 2",
       "date": ["4", "2022"],
       "image": "e-commerce-2.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/sales/",
       "github": "https://github.com/Srizza93/sales",
       "functionalities": [
@@ -189,6 +197,7 @@
       "name": "Advent Challenges",
       "date": ["1", "2022"],
       "image": "advent.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/advent-challenges/",
       "github": "https://github.com/Srizza93/advent-challenges",
       "stack": ["HTML", "CSS", "JS", "Vue", "Vue-router"],
@@ -199,6 +208,7 @@
       "name": "Social Network",
       "date": ["10", "2021"],
       "image": "social.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/social/",
       "github": "https://github.com/Srizza93/social",
       "functionalities": [
@@ -227,6 +237,7 @@
       "name": "Portfolio",
       "date": ["10", "2021"],
       "image": "portfolio.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/portfolio/",
       "github": "https://github.com/Srizza93/portfolio",
       "stack": ["Webpack", "HTML", "CSS", "JS", "Vue"],
@@ -237,6 +248,7 @@
       "name": "Movie Streaming",
       "date": ["8", "2021"],
       "image": "streaming.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/streaming/",
       "github": "https://github.com/Srizza93/streaming",
       "functionalities": [
@@ -265,6 +277,7 @@
       "name": "E-commerce",
       "date": ["6", "2021"],
       "image": "e-commerce.png",
+      "techImage": "vuejs.png",
       "link": "https://srizza93.github.io/e-commerce/",
       "github": "https://github.com/Srizza93/e-commerce",
       "functionalities": [
@@ -296,6 +309,7 @@
       "name": "HTML Email layout",
       "date": ["6", "2021"],
       "image": "email-layout.png",
+      "techImage": "html.png",
       "link": "https://srizza93.github.io/cv-email-html/",
       "github": "https://github.com/Srizza93/cv-email-html",
       "stack": ["HTML"],
@@ -306,6 +320,7 @@
       "name": "Tooltip plugin",
       "date": ["5", "2021"],
       "image": "tooltip.png",
+      "techImage": "js.png",
       "link": "https://srizza93.github.io/tooltip/",
       "github": "https://github.com/Srizza93/tooltip",
       "functionalities": [
@@ -324,6 +339,7 @@
       "name": "Square task",
       "date": ["1", "2021"],
       "image": "square-task.png",
+      "techImage": "js.png",
       "link": "https://srizza93.github.io/square_task/",
       "github": "https://github.com/Srizza93/square_task",
       "functionalities": [

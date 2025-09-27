@@ -23,6 +23,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "sass": "^1.83.0",
     "stylus": "^0.57.0",
+    "typescript": "^5.9.2",
     "vite": "^6.0.7"
   }
 }

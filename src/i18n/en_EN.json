@@ -37,6 +37,8 @@
   },
   "portfolio": {
     "visit": "View project",
+    "studyProjectTitle": "Study Projects",
+    "workExperiencesTitle": "Work Experiences",
     "showDetails": "Show details",
     "closeDetails": "Close details",
     "github": "View code on GitHub",

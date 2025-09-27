@@ -36,6 +36,8 @@
   },
   "portfolio": {
     "visit": "Découvrez le projet",
+    "studyProjectTitle": "Projets d'études",
+    "workExperiencesTitle": "Experiences Professionnelles",
     "showDetails": "Afficher les détails",
     "closeDetails": "Cacher les détails",
     "github": "Découvrez le code",

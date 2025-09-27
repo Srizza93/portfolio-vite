@@ -4,6 +4,7 @@ export type Project = {
   date: string[];
   link?: string;
   image: string;
+  techImage?: string;
   github?: string;
   functionalities?: string[];
   stack: string[];
