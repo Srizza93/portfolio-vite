@@ -2,9 +2,8 @@
   <div class="details" :class="{ 'details--open': project.toggle }">
     <section>
       <h3 class="project-title">{{ project.name }}</h3>
-      <p>
-        {{ $t(`portfolio.${project.id}.role`) }} -
-        {{ $t(`portfolio.${project.id}.company`) }}
+      <p v-if="roleAndCompany">
+        {{ roleAndCompany }}
       </p>
       <p class="project-description">
         {{ $t(`portfolio.${project.id}.description`) }}
@@ -30,12 +29,12 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
-import i18n from '@/i18n';
-import { Project } from '@/types/project';
+import i18n from "@/i18n";
+import { Project } from "@/types/project";
 
-import ProjectSection from '@/components/ProjectSection.vue';
+import ProjectSection from "@/components/ProjectSection.vue";
 
 const props = defineProps<{
   project: Project;
@@ -44,10 +43,27 @@ const props = defineProps<{
 const tasksFromTranslations = computed(() =>
   Object.values(i18n.global.tm(`portfolio.${props.project.id}.tasks`))
 );
+
+const roleAndCompany = computed(() => {
+  const role = safeTranslation(`portfolio.${props.project.id}.role`);
+  const company = safeTranslation(`portfolio.${props.project.id}.company`);
+
+  if (role && company) return `${role} - ${company}`;
+  return role || company || "";
+});
+
+function safeTranslation(keyTranslation: string) {
+  const translation = i18n.global.t(keyTranslation);
+
+  if (translation === keyTranslation) {
+    return "";
+  }
+  return translation;
+}
 </script>
 
 <style lang="scss" scoped>
-@use '@/assets/global';
+@use "@/assets/global";
 
 .details {
   width: 100%;
