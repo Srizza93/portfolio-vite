@@ -150,6 +150,45 @@
         }
       ]
     },
+    "stocky": {
+      "role": "Full Stack Developer",
+      "company": "Storfy",
+      "description": "Stocky is a web application designed to simplify equipment fleet management. The application provides access to the fleet, its management, usage statistics, and billing.",
+      "tasks": [
+        {
+          "title": "Team Collaboration",
+          "description": "Collaborated within a team comprising a PO, a back-end tech lead, three full-stack developers, and a QA specialist."
+        },
+        {
+          "title": "Conception",
+          "description": "Designed the front-end and back-end architecture, ensuring seamless integration."
+        },
+        {
+          "title": "CI/CD Process",
+          "description": "Implemented Docker images to streamline deployment and environment management."
+        },
+        {
+          "title": "Deployment",
+          "description": "Deployed the application efficiently using Fly.io, ensuring optimal availability."
+        },
+        {
+          "title": "Database Management",
+          "description": "Built a robust PostgreSQL database using CockroachDB for enhanced data reliability."
+        },
+        {
+          "title": "Front-End Development",
+          "description": "Developed the front-end, prioritizing user experience and ease of use."
+        },
+        {
+          "title": "Back-End Development",
+          "description": "Developed the back-end, ensuring robust functionality and performance."
+        },
+        {
+          "title": "Testing",
+          "description": "Configured the CI/CD process to automate testing and deployment for efficient application lifecycle management."
+        }
+      ]
+    },
     "scpt-360": {
       "role": "Frontend Developer",
       "company": "Leroy Merlin",

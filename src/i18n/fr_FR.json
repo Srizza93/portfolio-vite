@@ -149,6 +149,45 @@
         }
       ]
     },
+    "stocky": {
+      "role": "Développeur Full Stack",
+      "company": "Storfy",
+      "description": "Stocky est une application Web visant à simplifier la gestion de parc de matériel. L’application donne accès au parc, sa gestion, des statistiques d'utilisation et la facturation de ce matériel.",
+      "tasks": [
+        {
+          "title": "Collaboration d'Équipe",
+          "description": "L'équipe est composée d'un PO, d'un tech lead back-end, de trois développeurs full-stack et d'un QA."
+        },
+        {
+          "title": "Conception",
+          "description": "Concevoir l'architecture front-end et back-end, en garantissant une intégration fluide."
+        },
+        {
+          "title": "Processus CI/CD",
+          "description": "Mise en œuvre des images Docker pour simplifier le déploiement et la gestion des environnements."
+        },
+        {
+          "title": "Déploiement",
+          "description": "Déploiement efficace de l'application avec Fly.io, en garantissant une disponibilité optimale."
+        },
+        {
+          "title": "Gestion de Base de Données",
+          "description": "Création d'une base de données PostgresSQL robuste à l'aide de CockroachDB pour garantir la fiabilité des données."
+        },
+        {
+          "title": "Développement Front-End",
+          "description": "Développement actif du front-end, en se concentrant sur l'expérience utilisateur et la facilité d'utilisation."
+        },
+        {
+          "title": "Développement Back-End",
+          "description": "Développement du back-end pour assurer une fonctionnalité solide et des performances optimales."
+        },
+        {
+          "title": "Tests",
+          "description": "Configuration complète du processus CI/CD pour automatiser les tests et le déploiement, garantissant une gestion efficace du cycle de vie de l'application."
+        }
+      ]
+    },
     "scpt-360": {
       "role": "Développeur Frontend",
       "company": "Leroy Merlin",
