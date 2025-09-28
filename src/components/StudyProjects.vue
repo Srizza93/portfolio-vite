@@ -158,7 +158,7 @@ function openDetails(project: Project) {
 
 .project-button {
   width: 90%;
-  margin: auto auto global.$spacing--small auto;
+  margin: 0 auto global.$spacing--small auto;
 }
 
 @media screen and (max-width: 500px) {
