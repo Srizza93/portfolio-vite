@@ -28,10 +28,18 @@
         :src="getFilePath(project.techImage)"
         :alt="project.name"
       />
-      <a v-if="project.link" :href="project.link" class="project-link">
+      <a
+        :href="project.link"
+        class="project-link"
+        :class="{ 'project-link--hidden': !project.link }"
+      >
         {{ $t("portfolio.visit") }}
       </a>
-      <a v-if="project.github" :href="project.github" class="project-link">
+      <a
+        :href="project.github"
+        class="project-link"
+        :class="{ 'project-link--hidden': !project.github }"
+      >
         {{ $t("portfolio.github") }}
       </a>
 
@@ -102,8 +110,7 @@ function openDetails(project: Project) {
 .project {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 100%;
+  width: 275px;
   border: 1px solid global.$detail--color;
   border-radius: global.$border-radius--medium;
   box-shadow: global.$shadow--large;
@@ -126,8 +133,8 @@ function openDetails(project: Project) {
 
 .tech-image {
   position: absolute;
-  right: 0;
-  width: 30%;
+  right: -20px;
+  width: 100px;
   height: auto;
 }
 
@@ -137,6 +144,11 @@ function openDetails(project: Project) {
   font-weight: bold;
   margin-bottom: global.$spacing--small;
   display: inline-block;
+
+  &--hidden {
+    visibility: hidden;
+    pointer-events: none;
+  }
 
   &:hover {
     text-decoration: underline;
