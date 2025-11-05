@@ -122,6 +122,17 @@
   ],
   "studyProjects": [
     {
+      "id": "leve",
+      "name": "Leve (Local Event Explorer)",
+      "date": ["9", "2025"],
+      "image": "leve.png",
+      "techImage": "angular.png",
+      "link": "https://srizza93.github.io/leve",
+      "github": "https://github.com/Srizza93/leve",
+      "stack": ["Angular 19", "Typescript", "Github / Github Actions"],
+      "toggle": false
+    },
+    {
       "id": "my-music-vault",
       "name": "My Music Vault",
       "date": ["1", "2025"],
@@ -133,8 +144,7 @@
         "Angular 19",
         "Typescript",
         "Supabase",
-        "Github / Github Actions",
-        "Methodology Agile Scrum"
+        "Github / Github Actions"
       ],
       "toggle": false
     },
