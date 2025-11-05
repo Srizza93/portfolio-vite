@@ -58,6 +58,11 @@
       "Nov",
       "Déc"
     ],
+    "leve": {
+      "role": "Développeur Frontend",
+      "company": "Projet Personnel",
+      "description": "Création d'une application web Angular moderne et minimaliste qui permet aux utilisateurs d’explorer, filtrer et visualiser les festivals à travers la France en utilisant l’API open data officielle OpenEventDatabase / Ministère de la Culture."
+    },
     "logistic-site-assortment-manager": {
       "role": "Développeur Full Stack",
       "company": "Leroy Merlin",

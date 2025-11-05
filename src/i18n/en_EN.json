@@ -59,6 +59,11 @@
     "tasks": "Tasks",
     "functionalities": "Functionalities",
     "stack": "Stack",
+    "leve": {
+      "role": "Frontend Developer",
+      "company": "Personal Project",
+      "description": "Build a modern, minimalist Angular web app that allows users to explore, filter, and visualize festivals across France using the official OpenEventDatabase / Ministère de la Culture open data API."
+    },
     "logistic-site-assortment-manager": {
       "role": "Full Stack Developer",
       "company": "Leroy Merlin",
